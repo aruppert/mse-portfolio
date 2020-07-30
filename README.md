@@ -1,3 +1,9 @@
+# Portfolio for Miriam S. Exner
+
+A great designer with many talents. Stay tuned...
+
+---
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
