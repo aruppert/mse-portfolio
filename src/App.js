@@ -4,6 +4,7 @@ import dark from "./themes/dark";
 import Header from "./components/Header";
 import GlobalStyles from "./GlobalStyles";
 import { BrowserRouter as Router, Switch } from "react-router-dom";
+import Start from "./pages/Start";
 
 function App() {
   return (
@@ -12,7 +13,7 @@ function App() {
         <GlobalStyles />
         <Header />
         <Switch>
-          <h1>Hello people of the internet</h1>
+          <Start />
         </Switch>
       </Router>
     </ThemeProvider>
