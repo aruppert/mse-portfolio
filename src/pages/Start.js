@@ -95,13 +95,10 @@ export default function Start() {
       <MoreWrapper>
         <ActionIcon /> <MoreText>More about me.</MoreText>
       </MoreWrapper>
-      <MoreWorkWrapper>
+      <MoreWorkWrapper to="/work">
         <ActionIcon /> <MoreText>More of my work.</MoreText>
       </MoreWorkWrapper>
       <SliderStartpage />
-      <Navbar>
-        <Navbutton>Impressum.</Navbutton>
-      </Navbar>
     </Container>
   );
 }
