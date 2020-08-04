@@ -60,20 +60,6 @@ const MoreText = styled.p`
   color: ${(props) => props.theme.colors.sec};
 `;
 
-const Navbar = styled.nav`
-  height: 100%;
-  margin: 20px 5px 0;
-  display: flex;
-  font-weight: 400;
-  justify-content: end;
-`;
-
-const Navbutton = styled(Link)`
-  text-decoration: none;
-  align-self: flex-end;
-  color: ${(props) => props.theme.colors.prim};
-`;
-
 export default function Start() {
   return (
     <Container>
@@ -95,13 +81,10 @@ export default function Start() {
       <MoreWrapper>
         <ActionIcon /> <MoreText>More about me.</MoreText>
       </MoreWrapper>
-      <MoreWorkWrapper>
+      <MoreWorkWrapper to="/work">
         <ActionIcon /> <MoreText>More of my work.</MoreText>
       </MoreWorkWrapper>
       <SliderStartpage />
-      <Navbar>
-        <Navbutton>Impressum.</Navbutton>
-      </Navbar>
     </Container>
   );
 }

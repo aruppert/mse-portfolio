@@ -25,8 +25,8 @@ export default function Header() {
   return (
     <Headerbar>
       <Navbar>
-        <Navbutton>Logo.</Navbutton>
-        <Navbutton>Work.</Navbutton>
+        <Navbutton to="/">Logo.</Navbutton>
+        <Navbutton to="/work">Work.</Navbutton>
         <Navbutton>About me.</Navbutton>
         <Navbutton>Contact.</Navbutton>
       </Navbar>
