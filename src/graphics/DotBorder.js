@@ -6,7 +6,7 @@ const Svg = styled.svg`
   height: 20px;
 `;
 
-export default function ThisIsME(props) {
+export default function DotBorder(props) {
   return (
     <Svg
       xmlns="http://www.w3.org/2000/svg"
