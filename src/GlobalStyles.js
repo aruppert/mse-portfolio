@@ -10,13 +10,16 @@ function GlobalStyles() {
         *:after {
           box-sizing: border-box;
         }
-
         body {
+          height: 100%;
           font-size: 16px;
           margin: 0;
           background: ${theme.colors.background};
           color: ${theme.colors.text};
           font-family: "Montserrat", sans-serif, "Abril Fatface", cursive;
+        }
+        #root {
+          height: 100%;
         }
       `}
     />

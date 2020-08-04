@@ -5,7 +5,6 @@ import { Link } from "react-router-dom";
 const Headerbar = styled.div`
   background: #231d24;
   height: 48px;
-  border-bottom: 2px solid white;
 `;
 
 const Navbar = styled.nav`
