@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import MyWork from "../graphics/MyWork";
+import { Link } from "react-router-dom";
 
 // import { Link } from "react-router-dom";
 
@@ -43,7 +44,9 @@ const Topics = styled.div`
   justify-content: center;
 `;
 
-const TopicCard = styled.div`
+const TopicCard = styled(Link)`
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.prim};
   display: flex;
   flex-flow: column;
   border-top: 4px solid white;
@@ -74,16 +77,16 @@ export default function Work() {
         </Right>
       </TopWrapper>
       <Topics>
-        <TopicCard>
+        <TopicCard to="/detail">
           VIDEOGRAPHY <TopicImg src={require(`../graphics/placehold.jpg`)} />
         </TopicCard>
-        <TopicCard>
+        <TopicCard to="/detail">
           GRAPHIC DESIGN <TopicImg src={require(`../graphics/placehold.jpg`)} />
         </TopicCard>
-        <TopicCard>
+        <TopicCard to="/detail">
           CONCEPT/UX/UI <TopicImg src={require(`../graphics/placehold.jpg`)} />
         </TopicCard>
-        <TopicCard>
+        <TopicCard to="/detail">
           PHOTOGRAPHY <TopicImg src={require(`../graphics/placehold.jpg`)} />
         </TopicCard>
       </Topics>

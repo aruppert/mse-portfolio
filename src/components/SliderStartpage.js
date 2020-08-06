@@ -30,6 +30,7 @@ const SlideTitle = styled.h2`
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
+  text-transform: uppercase;
 `;
 
 const SlideYearWrapper = styled.div`
