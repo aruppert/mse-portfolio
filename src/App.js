@@ -7,6 +7,7 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Start from "./pages/Start";
 import Work from "./pages/Work";
 import Footer from "./components/Footer";
+import Detail from "./pages/Detail";
 
 function App() {
   return (
@@ -20,6 +21,9 @@ function App() {
           </Route>
           <Route path="/work">
             <Work />
+          </Route>
+          <Route path="/detail">
+            <Detail />
           </Route>
         </Switch>
         <Footer />
