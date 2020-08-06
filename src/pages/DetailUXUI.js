@@ -20,7 +20,7 @@ const Teaser = styled.p`
   width: 100%;
 `;
 const Description = styled.p`
-  padding: 0 16 %;
+  padding: 0 16%;
   margin: 1.5rem 0 0 0;
   padding: 0 1rem;
   width: 100%;
@@ -34,7 +34,7 @@ const SVGWrapper = styled.div`
   align-items: center;
 `;
 
-export default function Detail() {
+export default function DetailUXUI() {
   const economadData = [
     {
       id: 1,
