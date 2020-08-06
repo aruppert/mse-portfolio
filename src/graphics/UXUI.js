@@ -6,7 +6,7 @@ const Svg = styled.svg`
   width: 80%;
 `;
 
-export default function MyWork(props) {
+export default function UXUI(props) {
   return (
     <Svg
       xmlns="http://www.w3.org/2000/svg"

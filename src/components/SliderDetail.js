@@ -6,12 +6,11 @@ import "slick-carousel/slick/slick-theme.css";
 import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
 import DotFull from "../graphics/DotFull";
-// import DotBorder from "../graphics/DotBorder";
 
 const SliderWrapper = styled.div`
   width: 100%;
   margin: auto;
-  margin-top: 32px;
+  margin-top: 2.5rem;
 `;
 const SliderDetailWrapper = styled.div`
   width: 90%;
@@ -20,18 +19,13 @@ const SliderDetailWrapper = styled.div`
   border-top: 2px solid white;
 `;
 const Slide = styled.div`
-  /* text-align: center; */
-  /* position: relative; */
   display: block;
-  /* text-align: center; */
 `;
 
 const SlideImg = styled.img`
   height: 318px;
   object-fit: cover;
   object-position: center;
-
-  /* text-align: center; */
 `;
 
 const SlideTitle = styled.h2`

@@ -7,7 +7,8 @@ import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
 import Start from "./pages/Start";
 import Work from "./pages/Work";
 import Footer from "./components/Footer";
-import Detail from "./pages/Detail";
+import DetailUXUI from "./pages/DetailUXUI";
+import DetailFoto from "./pages/DetailFoto";
 
 function App() {
   return (
@@ -22,8 +23,11 @@ function App() {
           <Route path="/work">
             <Work />
           </Route>
-          <Route path="/detail">
-            <Detail />
+          <Route path="/detailUXUI">
+            <DetailUXUI />
+          </Route>
+          <Route path="/detailFoto">
+            <DetailFoto />
           </Route>
         </Switch>
         <Footer />

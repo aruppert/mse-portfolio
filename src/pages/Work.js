@@ -83,10 +83,10 @@ export default function Work() {
         <TopicCard to="/detail">
           GRAPHIC DESIGN <TopicImg src={require(`../graphics/placehold.jpg`)} />
         </TopicCard>
-        <TopicCard to="/detail">
+        <TopicCard to="/detailUXUI">
           CONCEPT/UX/UI <TopicImg src={require(`../graphics/placehold.jpg`)} />
         </TopicCard>
-        <TopicCard to="/detail">
+        <TopicCard to="/detailFoto">
           PHOTOGRAPHY <TopicImg src={require(`../graphics/placehold.jpg`)} />
         </TopicCard>
       </Topics>

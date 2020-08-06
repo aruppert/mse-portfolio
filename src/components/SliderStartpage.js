@@ -6,7 +6,6 @@ import "slick-carousel/slick/slick-theme.css";
 import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
 import DotFull from "../graphics/DotFull";
-// import DotBorder from "../graphics/DotBorder";
 
 const SliderWrapper = styled.div`
   width: 320px;
@@ -15,8 +14,6 @@ const SliderWrapper = styled.div`
 `;
 
 const Slide = styled.div`
-  /* text-align: center; */
-  /* position: relative; */
   border-top: 2px solid white;
   display: flex;
 `;
