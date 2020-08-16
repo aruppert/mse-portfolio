@@ -26,6 +26,8 @@ const SlideImg = styled.img`
   height: 318px;
   object-fit: cover;
   object-position: center;
+  max-width: 100%;
+  margin: auto;
 `;
 
 const SlideTitle = styled.h2`
@@ -54,6 +56,10 @@ const SlideYear = styled.aside`
   border-top: 0.5px solid white;
 `;
 
+// const SlideLink = styled.a`
+//   border: 1px solid ${(props) => props.theme.colors.prim};
+// `;
+
 export default function SliderStartpage({ title, subtitle, year, data }) {
   const settings = {
     dots: true,
@@ -76,7 +82,13 @@ export default function SliderStartpage({ title, subtitle, year, data }) {
         <Slider {...settings}>
           {data.map((slide) => (
             <Slide key={slide.id}>
-              <SlideImg src={slide.src} />
+              {slide.link ? (
+                <a href={slide.link} target="_blank" rel="noreferrer">
+                  <SlideImg src={slide.src} />
+                </a>
+              ) : (
+                <SlideImg src={slide.src} />
+              )}
             </Slide>
           ))}
         </Slider>

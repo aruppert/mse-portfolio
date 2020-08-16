@@ -32,8 +32,10 @@ const MoreWorkWrapper = styled(MoreWrapper)`
 `;
 
 const Lady = styled.img`
-  height: max-content;
   width: 127px;
+`;
+const LadyWrapper = styled.div`
+  height: fit-content;
 `;
 
 const Left = styled.div`
@@ -65,7 +67,9 @@ export default function Start() {
     <Container>
       <TopWrapper>
         <Left>
-          <Lady src={lady} />
+          <LadyWrapper>
+            <Lady src={lady} />
+          </LadyWrapper>
         </Left>
         <Right>
           <ThisIsME />
