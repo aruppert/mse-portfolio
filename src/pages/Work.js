@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 import MyWork from "../graphics/MyWork";
 import { Link } from "react-router-dom";
@@ -58,6 +58,9 @@ const TopicImg = styled.img`
 `;
 
 export default function Work() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <Container>
       <TopWrapper>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 import lady from "../graphics/Lady.gif";
 import ThisIsME from "../graphics/ThisIsME";
@@ -63,6 +63,9 @@ const MoreText = styled.p`
 `;
 
 export default function Start() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <Container>
       <TopWrapper>
