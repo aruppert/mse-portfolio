@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 import SliderDetail from "../components/SliderDetail";
 import Photography from "../graphics/Photography";
@@ -227,7 +227,9 @@ export default function DetailFoto() {
         "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733890/Webseite/Work/Photography/CTG/10_CTG-Doc.jpg_decycd.jpg",
     },
   ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <Container>
       <SVGWrapper>

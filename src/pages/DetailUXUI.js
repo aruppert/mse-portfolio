@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 import SliderDetail from "../components/SliderDetail";
 import UXUI from "../graphics/UXUI";
@@ -102,7 +102,9 @@ export default function DetailUXUI() {
       src: "https://i.vimeocdn.com/video/542499921_1280x720.jpg",
     },
   ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <Container>
       <SVGWrapper>

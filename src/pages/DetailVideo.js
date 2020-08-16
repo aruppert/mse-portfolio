@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 import SliderDetail from "../components/SliderDetail";
 import Videography from "../graphics/Videography.js";
@@ -115,7 +115,9 @@ export default function DetailVideo() {
         "https://res.cloudinary.com/dkjkkarud/image/vimeo/c_fill,g_face:auto,q_100,w_450/https://vimeo.com/135347318",
     },
   ];
-
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
   return (
     <Container>
       <SVGWrapper>
