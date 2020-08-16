@@ -77,7 +77,7 @@ export default function Work() {
         </Right>
       </TopWrapper>
       <Topics>
-        <TopicCard to="/detail">
+        <TopicCard to="/detailVideo">
           VIDEOGRAPHY <TopicImg src={require(`../graphics/placehold.jpg`)} />
         </TopicCard>
         <TopicCard to="/detail">

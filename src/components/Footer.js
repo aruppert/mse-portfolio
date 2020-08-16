@@ -7,12 +7,11 @@ const Navbar = styled.nav`
   margin: 20px 5px 0;
   display: flex;
   font-weight: 400;
-  justify-content: end;
+  justify-content: flex-end;
 `;
 
 const Navbutton = styled(Link)`
   text-decoration: none;
-  align-self: flex-end;
   color: ${(props) => props.theme.colors.prim};
 `;
 

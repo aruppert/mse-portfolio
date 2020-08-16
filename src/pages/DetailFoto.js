@@ -1,6 +1,5 @@
 import React from "react";
 import styled from "@emotion/styled";
-import { Link } from "react-router-dom";
 import SliderDetail from "../components/SliderDetail";
 import Photography from "../graphics/Photography";
 
@@ -39,193 +38,193 @@ export default function DetailFoto() {
     {
       id: 1,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731711/Webseite/Work/Photography/Fasion/01_Fashion_qorkan.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596807864/Webseite/Work/Photography/Fasion/01_Fashion_qt9xtb.jpg",
     },
     {
       id: 2,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731715/Webseite/Work/Photography/Fasion/02_Fashion_myd3ie.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731715/Webseite/Work/Photography/Fasion/02_Fashion_myd3ie.jpg",
     },
     {
       id: 3,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731712/Webseite/Work/Photography/Fasion/03_Fashion_gwipkx.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731712/Webseite/Work/Photography/Fasion/03_Fashion_gwipkx.jpg",
     },
     {
       id: 4,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731711/Webseite/Work/Photography/Fasion/04_Fashion_ziis4y.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731711/Webseite/Work/Photography/Fasion/04_Fashion_ziis4y.jpg",
     },
     {
       id: 5,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731714/Webseite/Work/Photography/Fasion/05_Fashion_p6dp5a.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731714/Webseite/Work/Photography/Fasion/05_Fashion_p6dp5a.jpg",
     },
     {
       id: 6,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731720/Webseite/Work/Photography/Fasion/06_Fashion_xblzy1.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731720/Webseite/Work/Photography/Fasion/06_Fashion_xblzy1.jpg",
     },
     {
       id: 7,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731718/Webseite/Work/Photography/Fasion/07_Fashion_mshze5.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731718/Webseite/Work/Photography/Fasion/07_Fashion_mshze5.jpg",
     },
     {
       id: 8,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731717/Webseite/Work/Photography/Fasion/08_Fashion_acyjqr.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731717/Webseite/Work/Photography/Fasion/08_Fashion_acyjqr.jpg",
     },
     {
       id: 9,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731718/Webseite/Work/Photography/Fasion/09_Fashion_tphzqo.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731718/Webseite/Work/Photography/Fasion/09_Fashion_tphzqo.jpg",
     },
     {
       id: 10,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731721/Webseite/Work/Photography/Fasion/10_Fashion_cgxcom.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731721/Webseite/Work/Photography/Fasion/10_Fashion_cgxcom.jpg",
     },
     {
       id: 11,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731721/Webseite/Work/Photography/Fasion/11_Fashion_z52umn.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731721/Webseite/Work/Photography/Fasion/11_Fashion_z52umn.jpg",
     },
   ];
   const lightPainting = [
     {
       id: 1,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731936/Webseite/Work/Photography/%27LightPainting/01_Lightpeinting_Bauklotz_k8kmvb.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731936/Webseite/Work/Photography/%27LightPainting/01_Lightpeinting_Bauklotz_k8kmvb.jpg",
     },
     {
       id: 2,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731961/Webseite/Work/Photography/%27LightPainting/02_Lightpeinting_Betongold_mhpwfr.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731961/Webseite/Work/Photography/%27LightPainting/02_Lightpeinting_Betongold_mhpwfr.jpg",
     },
     {
       id: 3,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731986/Webseite/Work/Photography/%27LightPainting/03_Lightpeinting_Geldwaechshaus_uixl3t.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731986/Webseite/Work/Photography/%27LightPainting/03_Lightpeinting_Geldwaechshaus_uixl3t.jpg",
     },
     {
       id: 4,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731964/Webseite/Work/Photography/%27LightPainting/04_Lightpeinting_Landstrich_2_chuh48.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731964/Webseite/Work/Photography/%27LightPainting/04_Lightpeinting_Landstrich_2_chuh48.jpg",
     },
     {
       id: 5,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731993/Webseite/Work/Photography/%27LightPainting/05_Lightpeinting_Leerraum_ewri05.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731993/Webseite/Work/Photography/%27LightPainting/05_Lightpeinting_Leerraum_ewri05.jpg",
     },
     {
       id: 6,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596731962/Webseite/Work/Photography/%27LightPainting/06_Lightpeinting_Luftschloss_iffdig.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731962/Webseite/Work/Photography/%27LightPainting/06_Lightpeinting_Luftschloss_iffdig.jpg",
     },
     {
       id: 7,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596732064/Webseite/Work/Photography/%27LightPainting/07_Lightpeinting_Ruhestand_eyyrl3.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732064/Webseite/Work/Photography/%27LightPainting/07_Lightpeinting_Ruhestand_eyyrl3.jpg",
     },
     {
       id: 8,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596732079/Webseite/Work/Photography/%27LightPainting/08_Lightpeinting_Stundenhotel_hx0pfn.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732079/Webseite/Work/Photography/%27LightPainting/08_Lightpeinting_Stundenhotel_hx0pfn.jpg",
     },
   ];
   const urbanChoreo = [
     {
       id: 1,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596732141/Webseite/Work/Photography/Urban/001_Urban_Choreography_i0dqwi.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732141/Webseite/Work/Photography/Urban/001_Urban_Choreography_i0dqwi.jpg",
     },
     {
       id: 2,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596732107/Webseite/Work/Photography/Urban/002_Urban_Choreography_kb21vg.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732107/Webseite/Work/Photography/Urban/002_Urban_Choreography_kb21vg.jpg",
     },
     {
       id: 3,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596732121/Webseite/Work/Photography/Urban/003_Urban_Choreography_tdv3ew.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732121/Webseite/Work/Photography/Urban/003_Urban_Choreography_tdv3ew.jpg",
     },
     {
       id: 4,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596732112/Webseite/Work/Photography/Urban/004_Urban_Choreography_upxbc6.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732112/Webseite/Work/Photography/Urban/004_Urban_Choreography_upxbc6.jpg",
     },
     {
       id: 5,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596732137/Webseite/Work/Photography/Urban/005_Urban_Choreography_uzl3qq.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732137/Webseite/Work/Photography/Urban/005_Urban_Choreography_uzl3qq.jpg",
     },
     {
       id: 6,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596732122/Webseite/Work/Photography/Urban/006_Urban_Choreography_nszzgs.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732122/Webseite/Work/Photography/Urban/006_Urban_Choreography_nszzgs.jpg",
     },
     {
       id: 7,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596732140/Webseite/Work/Photography/Urban/007_Urban_Choreography_njihco.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732140/Webseite/Work/Photography/Urban/007_Urban_Choreography_njihco.jpg",
     },
     {
       id: 8,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596732132/Webseite/Work/Photography/Urban/008_Urban_Choreography_vrkwfq.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732132/Webseite/Work/Photography/Urban/008_Urban_Choreography_vrkwfq.jpg",
     },
   ];
   const CTG = [
     {
       id: 1,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596733624/Webseite/Work/Photography/CTG/01_CTG-Doc_ltnl4a.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733624/Webseite/Work/Photography/CTG/01_CTG-Doc_ltnl4a.jpg",
     },
     {
       id: 2,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596733662/Webseite/Work/Photography/CTG/02_CTG-Doc.jpg_nfxihp.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733662/Webseite/Work/Photography/CTG/02_CTG-Doc.jpg_nfxihp.jpg",
     },
     {
       id: 3,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596733623/Webseite/Work/Photography/CTG/03_CTG-Doc.jpg_thx0pf.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733623/Webseite/Work/Photography/CTG/03_CTG-Doc.jpg_thx0pf.jpg",
     },
     {
       id: 4,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596733931/Webseite/Work/Photography/CTG/04_CTG-Doc.jpg_dpmatv.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733931/Webseite/Work/Photography/CTG/04_CTG-Doc.jpg_dpmatv.jpg",
     },
     {
       id: 5,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596733931/Webseite/Work/Photography/CTG/04_CTG-Doc.jpg_dpmatv.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733931/Webseite/Work/Photography/CTG/04_CTG-Doc.jpg_dpmatv.jpg",
     },
     {
       id: 6,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596733879/Webseite/Work/Photography/CTG/06_CTG-Doc.jpg_nrhrac.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733879/Webseite/Work/Photography/CTG/06_CTG-Doc.jpg_nrhrac.jpg",
     },
     {
       id: 7,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596733866/Webseite/Work/Photography/CTG/07_CTG-Doc.jpg_wyvohp.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733866/Webseite/Work/Photography/CTG/07_CTG-Doc.jpg_wyvohp.jpg",
     },
     {
       id: 8,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596733905/Webseite/Work/Photography/CTG/08_CTG-Doc.jpg_surt9o.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733905/Webseite/Work/Photography/CTG/08_CTG-Doc.jpg_surt9o.jpg",
     },
     {
       id: 9,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596733910/Webseite/Work/Photography/CTG/09_CTG-Doc.jpg_qdyozf.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733910/Webseite/Work/Photography/CTG/09_CTG-Doc.jpg_qdyozf.jpg",
     },
     {
       id: 10,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596733890/Webseite/Work/Photography/CTG/10_CTG-Doc.jpg_decycd.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733890/Webseite/Work/Photography/CTG/10_CTG-Doc.jpg_decycd.jpg",
     },
   ];
 
@@ -234,7 +233,10 @@ export default function DetailFoto() {
       <SVGWrapper>
         <Photography />
       </SVGWrapper>
-      <Teaser>Text für Foto .....</Teaser>
+      <Teaser>
+        "If your pictures aren't good enough, you're not close enough." -{" "}
+        <i>Robert Capa</i>
+      </Teaser>
       <SliderDetail
         title="Fashion Photography"
         subtitle="Concept, Photography, Lighting, Color Grading"
