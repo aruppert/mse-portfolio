@@ -4,6 +4,10 @@ import styled from "@emotion/styled";
 const Svg = styled.svg`
   fill: ${(props) => props.theme.colors.sec};
   height: 20px;
+  position: absolute;
+  top: 105%;
+  right: 10%;
+  z-index: 300;
 `;
 
 export default function ArrowRight(props) {

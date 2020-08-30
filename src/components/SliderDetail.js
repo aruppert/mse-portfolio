@@ -8,7 +8,7 @@ import ArrowRight from "../graphics/ArrowRight";
 import DotFull from "../graphics/DotFull";
 
 const SliderWrapper = styled.div`
-  width: 90%;
+  width: 100%;
   margin: auto;
   margin-top: 2.5rem;
 `;
