@@ -1,6 +1,7 @@
 import React from "react";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
+import DropdownMenu from "./DropdownMenu";
 
 const Headerbar = styled.div`
   background: #231d24;
@@ -24,8 +25,35 @@ const Navbar = styled.nav`
 
 const Navbutton = styled(Link)`
   text-decoration: none;
+  position: relative;
   align-self: flex-end;
+  &::first-letter {
+  }
   color: ${(props) => props.theme.colors.prim};
+`;
+
+const Wrapper = styled.button`
+  position: relative;
+  align-self: flex-end;
+  &:focus-within > div {
+    display: flex;
+    animation: fadeIn 1s both;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
+  }
+  font-size: inherit;
+  margin: 0;
+  background: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.text};
+  font-family: inherit;
+  border: none;
+  padding: 0;
 `;
 
 export default function Header() {
@@ -34,7 +62,10 @@ export default function Header() {
       <Headerbar>
         <Navbar>
           <Navbutton to="/">Logo.</Navbutton>
-          <Navbutton to="/work">Work.</Navbutton>
+          <Wrapper>
+            Work.
+            <DropdownMenu />
+          </Wrapper>
           <Navbutton>About me.</Navbutton>
           <Navbutton>Contact.</Navbutton>
         </Navbar>
