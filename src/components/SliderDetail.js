@@ -83,7 +83,7 @@ export default function SliderStartpage({ title, subtitle, year, data }) {
           {data.map((slide) => (
             <Slide key={slide.id}>
               {slide.link ? (
-                <a href={slide.link} target="_blank" rel="noreferrer">
+                <a href={slide.link} target="_blank" rel="noopener noreferrer">
                   <SlideImg src={slide.src} />
                 </a>
               ) : (
