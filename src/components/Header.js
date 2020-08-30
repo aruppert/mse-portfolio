@@ -5,6 +5,13 @@ import { Link } from "react-router-dom";
 const Headerbar = styled.div`
   background: #231d24;
   height: 48px;
+  position: fixed;
+  width: 100%;
+  z-index: 300;
+`;
+
+const Placeholder = styled.div`
+  height: 48px;
 `;
 
 const Navbar = styled.nav`
@@ -23,13 +30,16 @@ const Navbutton = styled(Link)`
 
 export default function Header() {
   return (
-    <Headerbar>
-      <Navbar>
-        <Navbutton to="/">Logo.</Navbutton>
-        <Navbutton to="/work">Work.</Navbutton>
-        <Navbutton>About me.</Navbutton>
-        <Navbutton>Contact.</Navbutton>
-      </Navbar>
-    </Headerbar>
+    <>
+      <Headerbar>
+        <Navbar>
+          <Navbutton to="/">Logo.</Navbutton>
+          <Navbutton to="/work">Work.</Navbutton>
+          <Navbutton>About me.</Navbutton>
+          <Navbutton>Contact.</Navbutton>
+        </Navbar>
+      </Headerbar>
+      <Placeholder></Placeholder>
+    </>
   );
 }
