@@ -37,6 +37,15 @@ const Wrapper = styled.button`
   align-self: flex-end;
   &:focus-within > div {
     display: flex;
+    animation: fadeIn 1s both;
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 1;
+      }
+    }
   }
   font-size: inherit;
   margin: 0;
