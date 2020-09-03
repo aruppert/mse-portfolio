@@ -79,7 +79,7 @@ export default function Header() {
             <DropdownMenu />
           </Wrapper>
           <Navbutton>About me.</Navbutton>
-          <Navbutton>Contact.</Navbutton>
+          <Navbutton to="/contact">Contact.</Navbutton>
         </Navbar>
       </Headerbar>
       <Placeholder></Placeholder>

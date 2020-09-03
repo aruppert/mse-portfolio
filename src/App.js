@@ -10,6 +10,7 @@ import Footer from "./components/Footer";
 import DetailUXUI from "./pages/DetailUXUI";
 import DetailFoto from "./pages/DetailFoto";
 import DetailVideo from "./pages/DetailVideo";
+import Contact from "./pages/Contact";
 
 function App() {
   return (
@@ -32,6 +33,9 @@ function App() {
           </Route>
           <Route path="/detailVideo">
             <DetailVideo />
+          </Route>
+          <Route path="/Contact">
+            <Contact />
           </Route>
         </Switch>
         <Footer />
