@@ -2,8 +2,7 @@ import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 import MyWork from "../graphics/MyWork";
 import { Link } from "react-router-dom";
-
-// import { Link } from "react-router-dom";
+import ActionIcon from "../graphics/ActionIcon";
 
 const Container = styled.div`
   height: 100%;
@@ -33,30 +32,27 @@ const Teaser = styled.p`
   font-size: 18px;
   line-height: 20px;
   width: 191px;
-  margin: 72px 0 0 32px;
+  margin: 72px 0 0 2rem;
 `;
 
-const Topics = styled.div`
-  margin-top: 32px;
-  display: flex;
-  flex-flow: row wrap;
+const WorkLinkContainer = styled("div")`
   width: 100%;
-  justify-content: center;
+  padding: 2.6em 0 0 2rem;
 `;
 
-const TopicCard = styled(Link)`
-  text-decoration: none;
-  color: ${(props) => props.theme.colors.prim};
+const WorkLink = styled(Link)`
+  width: 100%;
   display: flex;
-  flex-flow: column;
-  border-top: 4px solid white;
-  margin: 8px;
+  text-decoration: none;
+  margin: 0.6rem 0 0;
 `;
 
-const TopicImg = styled.img`
-  width: 147px;
+const WorkLinkText = styled.p`
+  margin: 0 5px;
+  width: fit-content;
+  font-weight: 600;
+  color: ${(props) => props.theme.colors.sec};
 `;
-
 export default function Work() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -79,20 +75,24 @@ export default function Work() {
           <MyWork />
         </Right>
       </TopWrapper>
-      <Topics>
-        <TopicCard to="/detailVideo">
-          VIDEOGRAPHY <TopicImg src={require(`../graphics/placehold.jpg`)} />
-        </TopicCard>
-        <TopicCard to="/detail">
-          GRAPHIC DESIGN <TopicImg src={require(`../graphics/placehold.jpg`)} />
-        </TopicCard>
-        <TopicCard to="/detailUXUI">
-          CONCEPT/UX/UI <TopicImg src={require(`../graphics/placehold.jpg`)} />
-        </TopicCard>
-        <TopicCard to="/detailFoto">
-          PHOTOGRAPHY <TopicImg src={require(`../graphics/placehold.jpg`)} />
-        </TopicCard>
-      </Topics>
+      <WorkLinkContainer>
+        <WorkLink to="/detailUXUI">
+          <ActionIcon />
+          <WorkLinkText>UX/UI design.</WorkLinkText>
+        </WorkLink>
+        <WorkLink to="/detailVideo">
+          <ActionIcon />
+          <WorkLinkText>Videography.</WorkLinkText>
+        </WorkLink>
+        <WorkLink to="/detailFoto">
+          <ActionIcon />
+          <WorkLinkText>Photography.</WorkLinkText>
+        </WorkLink>
+        <WorkLink to="/detailGraphic">
+          <ActionIcon />
+          <WorkLinkText>Graphic design.</WorkLinkText>
+        </WorkLink>
+      </WorkLinkContainer>
     </Container>
   );
 }
