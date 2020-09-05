@@ -24,8 +24,9 @@ const SlideImg = styled.img`
 
 const SlideTitle = styled.h2`
   margin: 6px 0 4px;
-  font-size: 18px;
-  line-height: 22px;
+  font-size: 1.2rem;
+  line-height: 1.4rem;
+  height: 2.8rem;
   font-weight: 600;
   text-transform: uppercase;
 `;
