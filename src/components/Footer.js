@@ -3,8 +3,7 @@ import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 
 const Navbar = styled.nav`
-  height: 100%;
-  margin: 20px 5px 0;
+  margin: 3rem 0.5rem 0;
   display: flex;
   font-weight: 400;
   justify-content: flex-end;
