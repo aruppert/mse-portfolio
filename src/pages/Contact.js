@@ -1,7 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-import Photography from "../graphics/Photography";
-// import ContactSVG from "../graphics/ContactSVG.js";
+import ContactSVG from "../graphics/ContactSVG.js";
 
 const Container = styled.div`
   height: 100%;
@@ -26,11 +25,15 @@ const ContactDetails = styled.p`
   }
 `;
 
+const ContactSVGstyled = styled(ContactSVG)`
+  margin: 3rem 1.5rem 1.7rem 0;
+  align-self: flex-end;
+`;
+
 export default function Contact() {
   return (
     <Container>
-      {/* <ContactSVG /> */}
-      <Photography />
+      <ContactSVGstyled />
       <Name>Miriam Exner</Name>
       <ContactDetails>M. 0178 764 16 68</ContactDetails>
       <ContactDetails>
