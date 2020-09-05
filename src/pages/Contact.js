@@ -3,11 +3,10 @@ import styled from "@emotion/styled";
 import ContactSVG from "../graphics/ContactSVG.js";
 
 const Container = styled.div`
-  height: 100%;
+  height: 80vh;
   display: flex;
   flex-flow: column nowrap;
   flex-grow: 1;
-  justify-content: center;
 `;
 
 const Name = styled.h1`

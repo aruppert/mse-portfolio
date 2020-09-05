@@ -20,6 +20,7 @@ function GlobalStyles() {
         }
         #root {
           height: 100%;
+          position: relative;
         }
       `}
     />
