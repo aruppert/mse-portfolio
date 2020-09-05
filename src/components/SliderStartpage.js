@@ -50,13 +50,11 @@ const SlideLabel = styled.label`
 
 export default function SliderStartpage() {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     lazyLoad: "progressive",
     nextArrow: <ArrowRight />,
     prevArrow: <ArrowLeft />,
-    customPaging: (i) => <DotFull />,
   };
 
   const slidesData = [

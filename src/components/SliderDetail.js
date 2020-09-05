@@ -10,12 +10,11 @@ import DotFull from "../graphics/DotFull";
 const SliderWrapper = styled.div`
   width: 100%;
   margin: auto;
-  margin-top: 2.5rem;
+  margin: 4rem 0;
 `;
 const SliderDetailWrapper = styled.div`
   width: 90%;
   margin: auto;
-
   border-top: 2px solid white;
 `;
 const Slide = styled.div`
@@ -40,7 +39,7 @@ const SlideTitle = styled.h2`
 
 const SlideSubtitle = styled(SlideTitle)`
   text-transform: none;
-  margin: 2rem 0 0;
+  margin: 3rem 0 0;
 `;
 
 const SlideYearWrapper = styled.div`
@@ -62,13 +61,11 @@ const SlideYear = styled.aside`
 
 export default function SliderStartpage({ title, subtitle, year, data }) {
   const settings = {
-    dots: true,
     infinite: true,
     speed: 500,
     lazyLoad: "progressive",
     nextArrow: <ArrowRight />,
     prevArrow: <ArrowLeft />,
-    customPaging: (i) => <DotFull />,
   };
 
   return (
