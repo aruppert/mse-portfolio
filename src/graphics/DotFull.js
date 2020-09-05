@@ -4,6 +4,10 @@ import styled from "@emotion/styled";
 const Svg = styled.svg`
   fill: ${(props) => props.theme.colors.sec};
   height: 12px;
+  position: absolute;
+  top: 130%;
+  right: 10%;
+  z-index: 300;
 `;
 
 export default function DotFull(props) {
