@@ -38,12 +38,12 @@ export default function DetailFoto() {
     {
       id: 1,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596807864/Webseite/Work/Photography/Fasion/01_Fashion_qt9xtb.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596807864/Webseite/Work/Photography/Fasion/01_Fashion_Square_capc2y.jpg",
     },
     {
       id: 2,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731715/Webseite/Work/Photography/Fasion/02_Fashion_myd3ie.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731715/Webseite/Work/Photography/02_Fashion_Square_acccg8.jpg",
     },
     {
       id: 3,
@@ -95,7 +95,7 @@ export default function DetailFoto() {
     {
       id: 1,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731936/Webseite/Work/Photography/%27LightPainting/01_Lightpeinting_Bauklotz_k8kmvb.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731936/Webseite/Work/Photography/%27LightPainting/01_Lightpeinting_Bauklotz_square_dcj6hm.jpg",
     },
     {
       id: 2,
@@ -105,7 +105,7 @@ export default function DetailFoto() {
     {
       id: 3,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731986/Webseite/Work/Photography/%27LightPainting/03_Lightpeinting_Geldwaechshaus_uixl3t.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731986/Webseite/Work/Photography/%27LightPainting/03_Lightpeinting_Geldwaechshaus_square_moajk7.jpg",
     },
     {
       id: 4,
@@ -115,22 +115,22 @@ export default function DetailFoto() {
     {
       id: 5,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731993/Webseite/Work/Photography/%27LightPainting/05_Lightpeinting_Leerraum_ewri05.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731993/Webseite/Work/Photography/%27LightPainting/05_Lightpeinting_Leerraum_square_qjlqzw.jpg",
     },
     {
       id: 6,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731962/Webseite/Work/Photography/%27LightPainting/06_Lightpeinting_Luftschloss_iffdig.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731962/Webseite/Work/Photography/%27LightPainting/06_Lightpeinting_Luftschloss_square_kgragy.jpg",
     },
     {
       id: 7,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732064/Webseite/Work/Photography/%27LightPainting/07_Lightpeinting_Ruhestand_eyyrl3.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732064/Webseite/Work/Photography/%27LightPainting/07_Lightpeinting_Ruhestand_square_rq8kxg.jpg",
     },
     {
       id: 8,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732079/Webseite/Work/Photography/%27LightPainting/08_Lightpeinting_Stundenhotel_hx0pfn.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596732079/Webseite/Work/Photography/%27LightPainting/08_Lightpeinting_Stundenhotel_square_be4g7k.jpg",
     },
   ];
   const urbanChoreo = [

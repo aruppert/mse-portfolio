@@ -62,7 +62,7 @@ export default function SliderStartpage() {
       id: 1,
       title: "Final Thesis (Bachelor Degree)",
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/vimeo/c_fill,g_face:auto,q_100,w_450/https://vimeo.com/135182937",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/v1599309073/135182937_rshxp9.jpg",
       year: "2015",
       label: "Concept. UX/UI. Graphic Design. Videography. Content.",
     },
@@ -78,7 +78,7 @@ export default function SliderStartpage() {
       id: 3,
       title: "Social Media Content (probonoTV)",
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/youtube/c_fill,g_face:auto,q_100,w_450/https://youtu.be/94mosRYYod0",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/v1599310323/03_probon_square_xi0ygy.jpg",
       year: "2016",
       label: "Illustration. Graphic Design. Concept. Videography. Animation.",
     },
