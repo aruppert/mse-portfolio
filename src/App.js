@@ -1,4 +1,5 @@
 import React from "react";
+import styled from "@emotion/styled";
 import { ThemeProvider } from "emotion-theming";
 import dark from "./themes/dark";
 import Header from "./components/Header";
@@ -12,37 +13,49 @@ import DetailFoto from "./pages/DetailFoto";
 import DetailVideo from "./pages/DetailVideo";
 import Contact from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
+import DetailGraphic from "./pages/DetailGraphic";
+
+const TempDesktopContainer = styled.div`
+  max-width: 375px;
+  margin: auto;
+`;
+
 
 function App() {
   return (
     <ThemeProvider theme={dark}>
       <Router>
         <GlobalStyles />
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <Start />
-          </Route>
-          <Route path="/work">
-            <Work />
-          </Route>
-          <Route path="/detailUXUI">
-            <DetailUXUI />
-          </Route>
-          <Route path="/detailFoto">
-            <DetailFoto />
-          </Route>
-          <Route path="/detailVideo">
-            <DetailVideo />
-          </Route>
-          <Route path="/aboutMe">
+        <TempDesktopContainer>
+          <Header />
+          <Switch>
+            <Route exact path="/">
+              <Start />
+            </Route>
+            <Route path="/work">
+              <Work />
+            </Route>
+            <Route path="/detailUXUI">
+              <DetailUXUI />
+            </Route>
+            <Route path="/detailFoto">
+              <DetailFoto />
+            </Route>
+            <Route path="/detailVideo">
+              <DetailVideo />
+             <Route path="/aboutMe">
             <AboutMe />
           </Route>
-          <Route path="/contact">
-            <Contact />
+            </Route>
+            <Route path="/detailGraphic">
+            <DetailGraphic />
           </Route>
-        </Switch>
-        <Footer />
+            <Route path="/Contact">
+              <Contact />
+            </Route>
+          </Switch>
+          <Footer />
+        </TempDesktopContainer>
       </Router>
     </ThemeProvider>
   );
