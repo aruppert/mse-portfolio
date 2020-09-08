@@ -145,7 +145,7 @@ export default function DetailGraphic() {
 
       <SliderDetail
         title="Illustrations for this website"
-        subtitle="Illustration"
+        subtitle="Illustration."
         year="2020"
         data={illustration}
       />
@@ -155,7 +155,7 @@ export default function DetailGraphic() {
       </Description>
       <SliderDetail
         title="The Wheel of Believes (CI)"
-        subtitle="Layout, Illustration. CI"
+        subtitle="Layout. Illustration. CI."
         year="2015"
         data={wheelOfBelieves}
       />
@@ -165,7 +165,7 @@ export default function DetailGraphic() {
       </Description>
       <SliderDetail
         title="Come To Gather (Image Campaign)"
-        subtitle="Concept, Photography, Graphic Design"
+        subtitle="Concept. Photography. Graphic Design."
         year="2013"
         data={CTGIG}
         imagestyle="contain"

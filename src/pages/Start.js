@@ -85,7 +85,7 @@ export default function Start() {
           </Teaser>
         </Right>
       </TopWrapper>
-      <MoreWrapper>
+      <MoreWrapper to="/aboutMe">
         <ActionIcon /> <MoreText>More about me.</MoreText>
       </MoreWrapper>
       <MoreWorkWrapper to="/work">

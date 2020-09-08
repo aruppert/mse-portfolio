@@ -7,7 +7,7 @@ const Svg = styled.svg`
   position: absolute;
   top: 105%;
   right: 10%;
-  z-index: 300;
+  z-index: 50;
 `;
 
 export default function ArrowRight(props) {

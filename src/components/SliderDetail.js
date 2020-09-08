@@ -9,7 +9,7 @@ import ArrowRight from "../graphics/ArrowRight";
 const SliderWrapper = styled.div`
   width: 100%;
   margin: auto;
-  margin: 4rem 0;
+  margin: 4rem 0 1rem;
 `;
 const SliderDetailWrapper = styled.div`
   width: 90%;

@@ -12,6 +12,7 @@ const Headerbar = styled.div`
   width: inherit;
   min-width: 375px;
   z-index: 300;
+  padding: 0 0 0.5rem;
 `;
 
 const Placeholder = styled.div`
