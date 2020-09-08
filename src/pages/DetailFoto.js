@@ -227,6 +227,44 @@ export default function DetailFoto() {
         "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733890/Webseite/Work/Photography/CTG/10_CTG-Doc.jpg_decycd.jpg",
     },
   ];
+
+  const misc = [
+    {
+      id: 1,
+      src:
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1599561536/Webseite/Work/Photography/Misc/01_Misc_Photo_zmscq2.jpg",
+    },
+    {
+      id: 2,
+      src:
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1599561545/Webseite/Work/Photography/Misc/02_Misc_Photo_jxhfw5.jpg",
+    },
+    {
+      id: 3,
+      src:
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1599561539/Webseite/Work/Photography/Misc/03_Misc_Photo_mexlji.jpg",
+    },
+    {
+      id: 4,
+      src:
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1599561545/Webseite/Work/Photography/Misc/04_Misc_Photo_c4lnnq.jpg",
+    },
+    {
+      id: 5,
+      src:
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1599561536/Webseite/Work/Photography/Misc/05_Misc_Photo_qiyqr3.jpg",
+    },
+    {
+      id: 6,
+      src:
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1599561546/Webseite/Work/Photography/Misc/06_Misc_Photo_rjugnq.jpg",
+    },
+    {
+      id: 7,
+      src:
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1599561545/Webseite/Work/Photography/Misc/07_Misc_Photo_xfes87.jpg",
+    },
+  ];
   useEffect(() => {
     window.scrollTo(0, 0);
   });
@@ -287,6 +325,16 @@ export default function DetailFoto() {
         Claim-your-streets-event to bring together the people living in these
         part of town no matter if they have a roof over their head or not..
         These pictures document our journey.
+      </Description>
+      <SliderDetail
+        title="Miscellaneous Photography"
+        subtitle="Photography, Color Grading, Picture Editing"
+        year="on going"
+        data={misc}
+      />
+      <Description>
+        Here you find some selected pictures from my street and travel
+        photography.
       </Description>
     </Container>
   );
