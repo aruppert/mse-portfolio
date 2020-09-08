@@ -11,6 +11,7 @@ import DetailUXUI from "./pages/DetailUXUI";
 import DetailFoto from "./pages/DetailFoto";
 import DetailVideo from "./pages/DetailVideo";
 import Contact from "./pages/Contact";
+import AboutMe from "./pages/AboutMe";
 
 function App() {
   return (
@@ -34,7 +35,10 @@ function App() {
           <Route path="/detailVideo">
             <DetailVideo />
           </Route>
-          <Route path="/Contact">
+          <Route path="/aboutMe">
+            <AboutMe />
+          </Route>
+          <Route path="/contact">
             <Contact />
           </Route>
         </Switch>
