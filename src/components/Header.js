@@ -9,7 +9,8 @@ const Headerbar = styled.div`
   height: 48px;
   position: fixed;
   display: flex;
-  width: 100%;
+  width: inherit;
+  min-width: 375px;
   z-index: 300;
 `;
 
