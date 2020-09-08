@@ -64,6 +64,7 @@ export default function SliderStartpage() {
         "https://res.cloudinary.com/dkjkkarud/image/upload/v1599309073/135182937_rshxp9.jpg",
       year: "2015",
       label: "Concept. UX/UI. Graphic Design. Videography. Content.",
+      link: "https://vimeo.com/135182937",
     },
     {
       id: 2,
@@ -80,6 +81,7 @@ export default function SliderStartpage() {
         "https://res.cloudinary.com/dkjkkarud/image/upload/v1599310323/03_probon_square_xi0ygy.jpg",
       year: "2016",
       label: "Illustration. Graphic Design. Concept. Videography. Animation.",
+      link: "https://youtu.be/94mosRYYod0",
     },
     {
       id: 4,
@@ -88,6 +90,7 @@ export default function SliderStartpage() {
         "https://res.cloudinary.com/dkjkkarud/image/vimeo/c_fill,g_face:auto,q_100,w_450/https://vimeo.com/144620833",
       year: "2014",
       label: "Design Research. Concept. UX. Arduino Coding. Content.",
+      link: "https://vimeo.com/144620833",
     },
     {
       id: 5,
@@ -110,7 +113,14 @@ export default function SliderStartpage() {
               <SlideYearPlaceholder />
               <SlideYear>{slide.year}</SlideYear>
             </SlideYearWrapper>
-            <SlideImg src={slide.src} />
+
+            {slide.link ? (
+              <a href={slide.link} target="_blank" rel="noopener noreferrer">
+                <SlideImg src={slide.src} />
+              </a>
+            ) : (
+              <SlideImg src={slide.src} />
+            )}
             <SlideLabel>{slide.label}</SlideLabel>
           </Slide>
         ))}
