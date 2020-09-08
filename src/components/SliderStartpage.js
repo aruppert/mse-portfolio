@@ -64,7 +64,7 @@ export default function SliderStartpage() {
         "https://res.cloudinary.com/dkjkkarud/image/upload/v1599309073/135182937_rshxp9.jpg",
       year: "2015",
       label: "Concept. UX/UI. Graphic Design. Videography. Content.",
-      link: "https://vimeo.com/135182937",
+      link: "https://vimeo.com/135183746",
     },
     {
       id: 2,
