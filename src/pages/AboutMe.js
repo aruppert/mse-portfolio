@@ -1,7 +1,22 @@
 import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 import AboutMeSVG from "../graphics/AboutMeSVG";
-import { Link } from "react-router-dom";
+import Ae from "../graphics/Ae.svg";
+import Ai from "../graphics/Ai.svg";
+import Css from "../graphics/Css.svg";
+import Html from "../graphics/Html.svg";
+import Id from "../graphics/Id.svg";
+import Lr from "../graphics/Lr.svg";
+import Pr from "../graphics/Pr.svg";
+import Ps from "../graphics/Ps.svg";
+import XD from "../graphics/XD.svg";
+import Sketch from "../graphics/Sketch.svg";
+import Office from "../graphics/Office.svg";
+import fields1 from "../graphics/Fields1.svg";
+import fields2 from "../graphics/Fields2.svg";
+import Hobby_Reisen from "../graphics/Hobby_Reisen.svg";
+import Hobby_Musik from "../graphics/Hobby_Musik.svg";
+import Hobby_Foto from "../graphics/Hobby_Foto.svg";
 
 const Container = styled.div`
   height: 100%;
@@ -27,9 +42,11 @@ const QuoteAuthor = styled.p`
 
 const FotoWrapper = styled.div`
   height: 162px;
+  width: 100%;
   display: flex;
   justify-content: flex-end;
   margin: 2rem 0.8rem;
+  padding: 0 2rem 0 0;
   align-self: end;
 `;
 
@@ -37,6 +54,13 @@ const Foto = styled.img`
   height: 100%;
   margin: 0 0.3rem;
 `;
+
+const SectionContainer = styled.section`
+  width: 90%;
+  border-top: 3px solid #fff;
+  margin: 2rem 0;
+`;
+
 const SoftwareSkillsContainer = styled.section`
   width: 90%;
   border-top: 3px solid #fff;
@@ -50,19 +74,29 @@ const SectionTitle = styled.h2`
   text-transform: uppercase;
 `;
 
-const WorkLink = styled(Link)`
-  width: 100%;
+const IconRow = styled.div`
   display: flex;
-  text-decoration: none;
-  margin: 0.6rem 0 0;
+  justify-content: space-around;
+  width: 100%;
 `;
 
-const WorkLinkText = styled.p`
-  margin: 0 5px;
-  width: fit-content;
-  font-weight: 600;
-  color: ${(props) => props.theme.colors.sec};
+const IconRowMiddle = styled(IconRow)`
+  width: 80%;
+  margin: auto;
 `;
+const HobbiesWrapper = styled.div`
+  display: flex;
+`;
+
+const Icon = styled.img`
+  height: 4rem;
+`;
+const Img = styled.img``;
+
+const HobbyIcons = styled.img`
+  height: 6rem;
+`;
+
 export default function AboutMe() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -84,7 +118,41 @@ export default function AboutMe() {
       </Quote>
       <SoftwareSkillsContainer>
         <SectionTitle>Software Skills</SectionTitle>
+        <IconRow>
+          <Icon src={Ps} alt="Ps Icon" />
+          <Icon src={Ai} alt="Ai Icon" />
+          <Icon src={Lr} alt="Lr Icon" />
+          <Icon src={Id} alt="Id Icon" />
+        </IconRow>
+        <IconRowMiddle>
+          <Icon src={Pr} alt="Pr Icon" />
+          <Icon src={Ae} alt="Ae Icon" />
+          <Icon src={Office} alt="Office Icon" />
+        </IconRowMiddle>
+        <IconRow>
+          <Icon src={XD} alt="XD Icon" />
+          <Icon src={Sketch} alt="Sketch Icon" />
+          <Icon src={Html} alt="Html Icon" />
+          <Icon src={Css} alt="Css Icon" />
+        </IconRow>
       </SoftwareSkillsContainer>
+      <SectionContainer>
+        <SectionTitle>Fields of Work</SectionTitle>
+        <Img src={fields1} />
+        <Img src={fields2} />
+      </SectionContainer>
+      <SectionContainer>
+        <SectionTitle>languages</SectionTitle>
+        <p>German, English</p>
+      </SectionContainer>
+      <SectionContainer>
+        <SectionTitle>Hobbies</SectionTitle>
+        <HobbiesWrapper>
+          <HobbyIcons src={Hobby_Foto} />
+          <HobbyIcons src={Hobby_Musik} />
+          <HobbyIcons src={Hobby_Reisen} />
+        </HobbiesWrapper>
+      </SectionContainer>
     </Container>
   );
 }
