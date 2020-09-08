@@ -9,35 +9,45 @@ const Container = styled.div`
   flex-flow: column nowrap;
   flex-grow: 1;
   justify-content: center;
-`;
-
-const TopWrapper = styled.div`
-  display: flex;
-  flex-grow: 1;
-  justify-content: center;
+  align-items: center;
 `;
 
 const Quote = styled.aside`
   font-size: 18px;
+  font-weight: 200;
   line-height: 20px;
+  margin: 1.5rem;
   width: 90%;
-  margin: 72px 0 0 2rem;
+`;
+
+const QuoteAuthor = styled.p`
+  font-weight: 400;
+  text-align: end;
 `;
 
 const FotoWrapper = styled.div`
   height: 162px;
   display: flex;
   justify-content: flex-end;
-  margin: 2rem;
+  margin: 2rem 0.8rem;
+  align-self: end;
 `;
 
 const Foto = styled.img`
   height: 100%;
   margin: 0 0.3rem;
 `;
-const WorkLinkContainer = styled.div`
-  width: 100%;
-  padding: 2.6em 0 0 2rem;
+const SoftwareSkillsContainer = styled.section`
+  width: 90%;
+  border-top: 3px solid #fff;
+`;
+
+const SectionTitle = styled.h2`
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 20px;
+  text-transform: uppercase;
 `;
 
 const WorkLink = styled(Link)`
@@ -66,12 +76,15 @@ export default function AboutMe() {
           alt="Portait of me"
         />
       </FotoWrapper>
-      <TopWrapper>
-        <Quote>
-          "You can design and create, and build the most wonderful place in the
-          world. But it takes people to make the dream a reality."
-        </Quote>
-      </TopWrapper>
+
+      <Quote>
+        "You can design and create, and build the most wonderful place in the
+        world. But it takes people to make the dream a reality."
+        <QuoteAuthor>-Walt Disney</QuoteAuthor>
+      </Quote>
+      <SoftwareSkillsContainer>
+        <SectionTitle>Software Skills</SectionTitle>
+      </SoftwareSkillsContainer>
     </Container>
   );
 }
