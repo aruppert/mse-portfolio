@@ -71,6 +71,7 @@ export default function DetailUXUI() {
       id: 1,
       src:
         "https://res.cloudinary.com/dkjkkarud/image/upload/v1596704063/Webseite/Work/UX%20UI/02%20Wheel%20of%20Believes/01_Wheel_of_Believes_bylhbi.jpg",
+      link: "https://vimeo.com/135183746",
     },
     {
       id: 2,
