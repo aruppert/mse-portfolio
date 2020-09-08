@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
-import DotFull from "../graphics/DotFull";
 
 const SliderWrapper = styled.div`
   width: 320px;
