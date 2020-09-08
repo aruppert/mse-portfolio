@@ -5,7 +5,6 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
-import DotFull from "../graphics/DotFull";
 
 const SliderWrapper = styled.div`
   width: 100%;
@@ -55,11 +54,13 @@ const SlideYear = styled.aside`
   border-top: 0.5px solid white;
 `;
 
-// const SlideLink = styled.a`
-//   border: 1px solid ${(props) => props.theme.colors.prim};
-// `;
-
-export default function SliderStartpage({ title, subtitle, year, data }) {
+export default function SliderStartpage({
+  title,
+  subtitle,
+  year,
+  data,
+  imagestyle,
+}) {
   const settings = {
     infinite: true,
     speed: 500,
@@ -83,6 +84,8 @@ export default function SliderStartpage({ title, subtitle, year, data }) {
                 <a href={slide.link} target="_blank" rel="noopener noreferrer">
                   <SlideImg src={slide.src} />
                 </a>
+              ) : imagestyle === "contain" ? (
+                <SlideImg src={slide.src} style={{ "object-fit": "contain" }} />
               ) : (
                 <SlideImg src={slide.src} />
               )}

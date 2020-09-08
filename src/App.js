@@ -12,6 +12,7 @@ import DetailUXUI from "./pages/DetailUXUI";
 import DetailFoto from "./pages/DetailFoto";
 import DetailVideo from "./pages/DetailVideo";
 import Contact from "./pages/Contact";
+import DetailGraphic from "./pages/DetailGraphic";
 
 const TempDesktopContainer = styled.div`
   max-width: 375px;
@@ -41,6 +42,9 @@ function App() {
             <Route path="/detailVideo">
               <DetailVideo />
             </Route>
+    <Route path="/detailGraphic">
+            <DetailGraphic />
+          </Route>
             <Route path="/Contact">
               <Contact />
             </Route>
