@@ -89,11 +89,11 @@ export default function DetailUXUI() {
       src:
         "https://res.cloudinary.com/dkjkkarud/image/upload/v1596704097/Webseite/Work/UX%20UI/03%2010%20Facetten%20Website/03_10_Facetten_nproia.jpg",
     },
-    {
-      id: 3,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596704097/Webseite/Work/UX%20UI/03%2010%20Facetten%20Website/01_10_Facetten_kret6q.jpg",
-    },
+    // {
+    //   id: 3,
+    //   src:
+    //     "https://res.cloudinary.com/dkjkkarud/image/upload/v1596704097/Webseite/Work/UX%20UI/03%2010%20Facetten%20Website/01_10_Facetten_kret6q.jpg",
+    // },
   ];
 
   const cantTouchThis = [
@@ -117,18 +117,22 @@ export default function DetailUXUI() {
 
       <SliderDetail
         title="Economad"
-        subtitle="UX, UI, Graphics, Prototyping"
+        subtitle="UX. UI. Graphics. Prototyping."
         year="2020"
         data={economadData}
       />
       <Description>
         The task during the UX-AdobeXD course at “cimdata Bildungsakademie” was
         to develop a project from idea generation to a first prototype. Our
-        group has dealt with the idea of{" "}
+        group has dealt with the idea of ​​a sustainable travel tool that
+        connects fair and climate-friendly businesses with travelers. A special
+        challenge was the function of the “Reisefinder”, which offers ideas
+        based on specific data instead of looking for offers in a specific
+        place. The implementation of a user story was build individually.
       </Description>
       <SliderDetail
         title="The Wheel of Believes (Final Thesis)"
-        subtitle="UX, UI, Graphics, CI, Videography, Animation, Content"
+        subtitle="UX. UI. Graphics. CI. Videography. Animation. Content."
         year="2015"
         data={wheelOfBelieves}
       />
@@ -146,12 +150,12 @@ export default function DetailUXUI() {
       </Description>
       <SliderDetail
         title="10 Facetten Webseite"
-        subtitle="UX, UI, Graphics, CI, Videography"
+        subtitle="UX. UI. Graphics. CI. Videography."
         year="2014"
         data={facettenWebseite}
       />
       <Description>
-        For the web documentary <i>www.10facetten.ch</i> we had to find an
+        For the web documentary <i>www.10facetten.ch</i> we had to find an
         online solution, which allows direct access to each of the videoclips
         without forcing a priority between the clips. Therefore we used the
         wellknown slideshow model. To give an easy access to each individual
@@ -160,7 +164,7 @@ export default function DetailUXUI() {
       </Description>
       <SliderDetail
         title="Can't touch this"
-        subtitle="Design Research, Concept, UX, Arduino Coding, Content"
+        subtitle="Design Research. Concept. UX. Arduino Coding. Content."
         data={cantTouchThis}
       />
       <Description>

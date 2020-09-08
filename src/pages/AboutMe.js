@@ -12,7 +12,6 @@ import Ps from "../graphics/Ps.svg";
 import XD from "../graphics/XD.svg";
 import Sketch from "../graphics/Sketch.svg";
 import Office from "../graphics/Office.svg";
-import fields1 from "../graphics/Fields1.svg";
 import fields2 from "../graphics/Fields2.svg";
 import Hobby_Reisen from "../graphics/Hobby_Reisen.svg";
 import Hobby_Musik from "../graphics/Hobby_Musik.svg";
@@ -67,7 +66,8 @@ const SoftwareSkillsContainer = styled.section`
 `;
 
 const SectionTitle = styled.h2`
-  margin: 0;
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 400;
   line-height: 20px;
@@ -91,12 +91,16 @@ const HobbiesWrapper = styled.div`
 const Icon = styled.img`
   height: 4rem;
 `;
-const Img = styled.img``;
+const Img = styled.img`
+  margin-top: 0.3rem;
+`;
 
 const HobbyIcons = styled.img`
   height: 6rem;
 `;
-
+const Text = styled.p`
+  margin-bottom: -1rem;
+`;
 export default function AboutMe() {
   useEffect(() => {
     window.scrollTo(0, 0);
@@ -138,12 +142,11 @@ export default function AboutMe() {
       </SoftwareSkillsContainer>
       <SectionContainer>
         <SectionTitle>Fields of Work</SectionTitle>
-        <Img src={fields1} />
         <Img src={fields2} />
       </SectionContainer>
       <SectionContainer>
         <SectionTitle>languages</SectionTitle>
-        <p>German, English</p>
+        <Text>German, English</Text>
       </SectionContainer>
       <SectionContainer>
         <SectionTitle>Hobbies</SectionTitle>

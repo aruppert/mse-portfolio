@@ -130,7 +130,7 @@ export default function DetailVideo() {
       </Teaser>
       <SliderDetail
         title="Social Media Content for probono TV"
-        subtitle="Videoshoot, Post Production, Animation, Graphics, CI, Social Media, Color Grading, Image Processing"
+        subtitle="Videoshoot. Post Production. Animation. Graphics. CI. Social Media. Color Grading. Image Processing."
         year="2016"
         data={probonoTV}
       />
@@ -154,7 +154,7 @@ export default function DetailVideo() {
       </Description>
       <SliderDetail
         title="The Wheel of Believes (Documentary Content)"
-        subtitle="Video Shoot, Sound, Lighting, Interviews, Directing, Post Production, Animation, Graphics"
+        subtitle="Video Shoot. Sound. Lighting. Interviews. Directing. Post Production. Animation. Graphics."
         year="2015"
         data={wheelOfBelieves}
       />
@@ -175,7 +175,7 @@ export default function DetailVideo() {
       </Description>
       <SliderDetail
         title="10 Facetten (Documentary Content)"
-        subtitle="Video Shoot, Sound, Lighting, Interviews, Directing, Post Production"
+        subtitle="Video Shoot. Sound. Lighting. Interviews. Directing. Post Production."
         year="2014"
         data={zehnFacetten}
       />
@@ -197,7 +197,7 @@ export default function DetailVideo() {
       </Description>
       <SliderDetail
         title="ZFF daily 2014 Youtube channel"
-        subtitle="Video Shoot, Post Production, Interviews"
+        subtitle="Video Shoot. Post Production. Interviews."
         year="2016"
         data={ZFF}
       />
@@ -219,7 +219,7 @@ export default function DetailVideo() {
       </Description>
       <SliderDetail
         title="Lightpainting Stopp-Trick-Editing (Lichtfaktor)"
-        subtitle="Postproduction, Colorgrading"
+        subtitle="Postproduction. Colorgrading."
         year="2014"
         data={lichtfaktor}
       />
@@ -228,7 +228,11 @@ export default function DetailVideo() {
         "Lichtfaktor" I edited some of their Light-Painting-Stop-Trick-Videos.
         Here are some examples. For more work of this great crew have a look
         here:
-        <VideoLink href="https://www.lichtfaktor.com/">
+        <VideoLink
+          href="https://www.lichtfaktor.com/"
+          target="_blank"
+          rel="noreferrer"
+        >
           www.lichtfaktor.com
         </VideoLink>
       </Description>

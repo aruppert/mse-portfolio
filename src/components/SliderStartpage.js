@@ -75,7 +75,7 @@ export default function SliderStartpage() {
     },
     {
       id: 3,
-      title: "Social Media Content (probonoTV)",
+      title: "Social Media Content (probono TV)",
       src:
         "https://res.cloudinary.com/dkjkkarud/image/upload/v1599310323/03_probon_square_xi0ygy.jpg",
       year: "2016",
@@ -87,7 +87,7 @@ export default function SliderStartpage() {
       src:
         "https://res.cloudinary.com/dkjkkarud/image/vimeo/c_fill,g_face:auto,q_100,w_450/https://vimeo.com/144620833",
       year: "2014",
-      label: "Design Research, Concept, UX, Arduino Coding, Content",
+      label: "Design Research. Concept. UX. Arduino Coding. Content.",
     },
     {
       id: 5,
@@ -96,7 +96,7 @@ export default function SliderStartpage() {
         "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731993/Webseite/Work/Photography/%27LightPainting/05_Lightpeinting_Leerraum_ewri05.jpg",
       year: "2013",
       label:
-        "Concept, Location Scouting, Photography, Lightpainting, Directing (Choreography), Color Grading",
+        "Concept. Location Scouting. Photography. Lightpainting. Directing (Choreography). Color Grading.",
     },
   ];
 

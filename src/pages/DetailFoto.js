@@ -196,11 +196,11 @@ export default function DetailFoto() {
       src:
         "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733931/Webseite/Work/Photography/CTG/04_CTG-Doc.jpg_dpmatv.jpg",
     },
-    {
-      id: 5,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733931/Webseite/Work/Photography/CTG/04_CTG-Doc.jpg_dpmatv.jpg",
-    },
+    // {
+    //   id: 5,
+    //   src:
+    //     "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596733931/Webseite/Work/Photography/CTG/04_CTG-Doc.jpg_dpmatv.jpg",
+    // },
     {
       id: 6,
       src:
@@ -247,7 +247,7 @@ export default function DetailFoto() {
     {
       id: 4,
       src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1599561545/Webseite/Work/Photography/Misc/04_Misc_Photo_c4lnnq.jpg",
+        "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1599561545/Webseite/Work/Photography/Misc/04_Misc_Photo_Square_un6qad.jpg",
     },
     {
       id: 5,
@@ -279,7 +279,7 @@ export default function DetailFoto() {
       </Teaser>
       <SliderDetail
         title="Fashion Photography"
-        subtitle="Concept, Photography, Lighting, Color Grading"
+        subtitle="Concept. Photography. Lighting. Color Grading."
         year="2013"
         data={fashion}
       />
@@ -289,7 +289,7 @@ export default function DetailFoto() {
       </Description>
       <SliderDetail
         title="Light Painting Photography"
-        subtitle="Concept, Location Scouting, Photography, Light painting, Directing (Choreography), Color Grading"
+        subtitle="Concept. Location Scouting. Photography. Light painting. Directing (Choreography). Color Grading."
         year="2013"
         data={lightPainting}
       />
@@ -300,7 +300,7 @@ export default function DetailFoto() {
       </Description>
       <SliderDetail
         title="Urban Choreography"
-        subtitle="Concept, Photography, Color Grading"
+        subtitle="Concept. Photography. Color Grading."
         year="2013"
         data={urbanChoreo}
       />
@@ -310,7 +310,7 @@ export default function DetailFoto() {
       </Description>
       <SliderDetail
         title='"Come To Gather"-Project (Documentation)'
-        subtitle="Photography, Social Design"
+        subtitle="Photography. Social Design."
         year="2013"
         data={CTG}
       />
@@ -328,7 +328,7 @@ export default function DetailFoto() {
       </Description>
       <SliderDetail
         title="Miscellaneous Photography"
-        subtitle="Photography, Color Grading, Picture Editing"
+        subtitle="Photography. Color Grading. Picture Editing."
         year="on going"
         data={misc}
       />

@@ -20,7 +20,6 @@ const TempDesktopContainer = styled.div`
   margin: auto;
 `;
 
-
 function App() {
   return (
     <ThemeProvider theme={dark}>
@@ -43,13 +42,13 @@ function App() {
             </Route>
             <Route path="/detailVideo">
               <DetailVideo />
-             <Route path="/aboutMe">
-            <AboutMe />
-          </Route>
+            </Route>
+            <Route path="/aboutMe">
+              <AboutMe />
             </Route>
             <Route path="/detailGraphic">
-            <DetailGraphic />
-          </Route>
+              <DetailGraphic />
+            </Route>
             <Route path="/Contact">
               <Contact />
             </Route>
