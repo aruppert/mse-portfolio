@@ -100,6 +100,7 @@ export default function DetailUXUI() {
     {
       id: 1,
       src: "https://i.vimeocdn.com/video/542499921_1280x720.jpg",
+      link: "https://vimeo.com/144620833",
     },
   ];
   useEffect(() => {

@@ -189,7 +189,7 @@ export default function DetailVideo() {
         documentary at
         <VideoLink
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
           href="https://10facetten.ch/"
         >
           www.10facetten.ch.
@@ -211,7 +211,7 @@ export default function DetailVideo() {
         the festival centre midtown. If you want to see more have look here:
         <VideoLink
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
           href="https://www.youtube.com/playlist?list=PLayrw-0c9mOa4tJbi8HRgRRoXYUEJs1ao"
         >
           ZFF daily 2014 Youtube-Playlist
@@ -231,7 +231,7 @@ export default function DetailVideo() {
         <VideoLink
           href="https://www.lichtfaktor.com/"
           target="_blank"
-          rel="noreferrer"
+          rel="noreferrer noopener"
         >
           www.lichtfaktor.com
         </VideoLink>
