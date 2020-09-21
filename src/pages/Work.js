@@ -4,17 +4,17 @@ import MyWork from "../graphics/MyWork";
 import { Link } from "react-router-dom";
 import ActionIcon from "../graphics/ActionIcon";
 
-const Container = styled.div`
-  height: 100%;
+const Container = styled.main`
   display: flex;
   flex-flow: column nowrap;
-  flex-grow: 1;
   justify-content: center;
+  flex-grow: 1;
+  height: 100%;
 `;
 
 const TopWrapper = styled.div`
-  display: flex;
   flex-grow: 1;
+  display: flex;
   justify-content: center;
 `;
 
@@ -29,10 +29,10 @@ const Right = styled.div`
 `;
 
 const Teaser = styled.p`
-  font-size: 18px;
-  line-height: 20px;
   width: 191px;
   margin: 72px 0 0 2rem;
+  font-size: 18px;
+  line-height: 20px;
 `;
 
 const WorkLinkContainer = styled("div")`
@@ -41,17 +41,17 @@ const WorkLinkContainer = styled("div")`
 `;
 
 const WorkLink = styled(Link)`
-  width: 100%;
   display: flex;
-  text-decoration: none;
+  width: 100%;
   margin: 0.6rem 0 0;
+  text-decoration: none;
 `;
 
 const WorkLinkText = styled.p`
-  margin: 0 5px;
   width: fit-content;
-  font-weight: 600;
+  margin: 0 5px;
   color: ${(props) => props.theme.colors.sec};
+  font-weight: 600;
 `;
 export default function Work() {
   useEffect(() => {

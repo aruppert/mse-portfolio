@@ -17,36 +17,36 @@ import Hobby_Reisen from "../graphics/Hobby_Reisen.svg";
 import Hobby_Musik from "../graphics/Hobby_Musik.svg";
 import Hobby_Foto from "../graphics/Hobby_Foto.svg";
 
-const Container = styled.div`
-  height: 100%;
+const Container = styled.main`
   display: flex;
   flex-flow: column nowrap;
-  flex-grow: 1;
   justify-content: center;
   align-items: center;
+  flex-grow: 1;
+  height: 100%;
 `;
 
 const Quote = styled.aside`
+  width: 90%;
+  margin: 1.5rem;
   font-size: 18px;
   font-weight: 200;
   line-height: 20px;
-  margin: 1.5rem;
-  width: 90%;
 `;
 
 const QuoteAuthor = styled.p`
-  font-weight: 400;
   text-align: end;
+  font-weight: 400;
 `;
 
 const FotoWrapper = styled.div`
-  height: 162px;
-  width: 100%;
+  align-self: end;
   display: flex;
   justify-content: flex-end;
+  width: 100%;
+  height: 162px;
   margin: 2rem 0.8rem;
   padding: 0 2rem 0 0;
-  align-self: end;
 `;
 
 const Foto = styled.img`
@@ -84,6 +84,7 @@ const IconRowMiddle = styled(IconRow)`
   width: 80%;
   margin: auto;
 `;
+
 const HobbiesWrapper = styled.div`
   display: flex;
 `;
@@ -91,6 +92,7 @@ const HobbiesWrapper = styled.div`
 const Icon = styled.img`
   height: 4rem;
 `;
+
 const Img = styled.img`
   margin-top: 0.3rem;
 `;
@@ -98,9 +100,11 @@ const Img = styled.img`
 const HobbyIcons = styled.img`
   height: 6rem;
 `;
+
 const Text = styled.p`
   margin-bottom: -1rem;
 `;
+
 export default function AboutMe() {
   useEffect(() => {
     window.scrollTo(0, 0);

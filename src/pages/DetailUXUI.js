@@ -2,108 +2,43 @@ import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 import SliderDetail from "../components/SliderDetail";
 import UXUI from "../graphics/UXUI";
+import {
+  economadData,
+  wheelOfBelieves,
+  facettenWebseite,
+  cantTouchThis,
+} from "../slider-data/UXUIData";
 
 const Container = styled.div`
-  height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  flex-grow: 1;
   justify-content: center;
+  flex-grow: 1;
+  height: 100%;
 `;
 
 const Teaser = styled.p`
-  font-size: 18px;
-  line-height: 20px;
+  width: 100%;
   padding: 0 16%;
   margin: 1rem 0;
-  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
 `;
 const Description = styled.p`
-  padding: 0 16%;
-  margin: 1.5rem 0 0 0;
-  padding: 0 1rem;
   width: 100%;
+  padding: 0 1rem;
+  margin: 1.5rem 0 0 0;
 `;
 
 const SVGWrapper = styled.div`
-  width: 100%;
-  margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 1rem 0;
 `;
 
 export default function DetailUXUI() {
-  const economadData = [
-    {
-      id: 1,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596547270/Webseite/Work/UX%20UI/01%20Economad/01_economad_plvnjg.png",
-    },
-    {
-      id: 2,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596547269/Webseite/Work/UX%20UI/01%20Economad/02_economad_jktqd6.png",
-    },
-    {
-      id: 3,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596547270/Webseite/Work/UX%20UI/01%20Economad/03_economad_lpe05b.png",
-    },
-    {
-      id: 4,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596547269/Webseite/Work/UX%20UI/01%20Economad/04_economad_kul1dz.png",
-    },
-    {
-      id: 5,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596547270/Webseite/Work/UX%20UI/01%20Economad/05_economad_fngkpw.png",
-    },
-  ];
-  const wheelOfBelieves = [
-    // {
-    //   id: 0,
-    //   src: "https://i.vimeocdn.com/video/529011401_1280x720.jpg",
-    // info: 'Ist identisch mit Bild 2'
-    // },
-    {
-      id: 1,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596704063/Webseite/Work/UX%20UI/02%20Wheel%20of%20Believes/01_Wheel_of_Believes_bylhbi.jpg",
-      link: "https://vimeo.com/135183746",
-    },
-    {
-      id: 2,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596704056/Webseite/Work/UX%20UI/02%20Wheel%20of%20Believes/02_Wheel_of_Believes.jpg_ntfbqn.jpg",
-    },
-  ];
-  const facettenWebseite = [
-    {
-      id: 1,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596704097/Webseite/Work/UX%20UI/03%2010%20Facetten%20Website/02_10_Facetten_gqielh.jpg",
-    },
-    {
-      id: 2,
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/upload/v1596704097/Webseite/Work/UX%20UI/03%2010%20Facetten%20Website/03_10_Facetten_nproia.jpg",
-    },
-    // {
-    //   id: 3,
-    //   src:
-    //     "https://res.cloudinary.com/dkjkkarud/image/upload/v1596704097/Webseite/Work/UX%20UI/03%2010%20Facetten%20Website/01_10_Facetten_kret6q.jpg",
-    // },
-  ];
-
-  const cantTouchThis = [
-    {
-      id: 1,
-      src: "https://i.vimeocdn.com/video/542499921_1280x720.jpg",
-      link: "https://vimeo.com/144620833",
-    },
-  ];
   useEffect(() => {
     window.scrollTo(0, 0);
   });

@@ -3,19 +3,20 @@ import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 
 const Container = styled("div")`
-  width: 150px;
-  background: #fff;
-  display: none;
+  position: absolute;
+  display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  position: absolute;
+  display: none;
+  width: 150px;
+  background: #fff;
 `;
 
 const Items = styled(Link)`
-  text-decoration: none;
   align-self: flex-start;
   color: ${(props) => props.theme.colors.background};
+  text-decoration: none;
 `;
 
 export default function DropdownMenu() {
