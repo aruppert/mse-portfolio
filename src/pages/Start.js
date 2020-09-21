@@ -6,23 +6,23 @@ import ActionIcon from "../graphics/ActionIcon";
 import { Link } from "react-router-dom";
 import SliderStartpage from "../components/SliderStartpage";
 
-const Container = styled.div`
-  height: 100%;
+const Container = styled.main`
   display: flex;
   flex-flow: column nowrap;
-  flex-grow: 1;
   justify-content: center;
+  flex-grow: 1;
+  height: 100%;
 `;
 
 const TopWrapper = styled.div`
   display: flex;
-  flex-grow: 1;
   justify-content: center;
+  flex-grow: 1;
 `;
 
 const MoreWrapper = styled(Link)`
-  width: 100%;
   display: flex;
+  width: 100%;
   padding: 0 0 0 120px;
   text-decoration: none;
 `;
@@ -50,16 +50,16 @@ const Right = styled.div`
 `;
 
 const Teaser = styled.p`
+  width: 191px;
   font-size: 18px;
   line-height: 20px;
-  width: 191px;
 `;
 
 const MoreText = styled.p`
-  margin: 0 5px;
   width: fit-content;
-  font-weight: 600;
+  margin: 0 5px;
   color: ${(props) => props.theme.colors.sec};
+  font-weight: 600;
 `;
 
 export default function Start() {

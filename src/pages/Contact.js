@@ -2,22 +2,22 @@ import React from "react";
 import styled from "@emotion/styled";
 import ContactSVG from "../graphics/ContactSVG.js";
 
-const Container = styled.div`
-  height: 80vh;
+const Container = styled.main`
   display: flex;
   flex-flow: column nowrap;
   flex-grow: 1;
+  height: 80vh;
 `;
 
 const Name = styled.h1`
+  padding: 0 3rem;
   font-weight: 200;
   font-size: 1.2rem;
-  padding: 0 3rem;
 `;
 
 const ContactDetails = styled.p`
-  margin: 0.3rem 0;
   width: 100%;
+  margin: 0.3rem 0;
   padding: 0 3rem;
   a {
     color: #fff;
@@ -25,8 +25,8 @@ const ContactDetails = styled.p`
 `;
 
 const ContactSVGstyled = styled(ContactSVG)`
-  margin: 3rem 1.5rem 1.7rem 0;
   align-self: flex-end;
+  margin: 3rem 1.5rem 1.7rem 0;
 `;
 
 export default function Contact() {

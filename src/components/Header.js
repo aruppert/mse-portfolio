@@ -5,14 +5,14 @@ import DropdownMenu from "./DropdownMenu";
 import logo from "../graphics/logo.svg";
 
 const Headerbar = styled.div`
-  background: #231d24;
-  height: 48px;
   position: fixed;
+  z-index: 300;
   display: flex;
   width: inherit;
   min-width: 375px;
-  z-index: 300;
+  height: 48px;
   padding: 0 0 0.5rem;
+  background: #231d24;
 `;
 
 const Placeholder = styled.div`
@@ -20,22 +20,20 @@ const Placeholder = styled.div`
 `;
 
 const Navbar = styled.nav`
-  height: 100%;
-  margin: 0 5px;
   display: flex;
-  padding: 0 1rem;
   flex-grow: 1;
   justify-content: space-between;
+  height: 100%;
+  padding: 0 1rem;
+  margin: 0 5px;
   font-weight: 400;
 `;
 
 const Navbutton = styled(Link)`
-  text-decoration: none;
   position: relative;
   align-self: flex-end;
-  &::first-letter {
-  }
   color: ${(props) => props.theme.colors.prim};
+  text-decoration: none;
 `;
 
 const LogoLink = styled(Navbutton)`
@@ -47,6 +45,13 @@ const LogoLink = styled(Navbutton)`
 const Wrapper = styled.button`
   position: relative;
   align-self: flex-end;
+  border: none;
+  margin: 0;
+  padding: 0;
+  background: ${({ theme }) => theme.colors.background};
+  color: ${({ theme }) => theme.colors.text};
+  font-size: inherit;
+  font-family: inherit;
   &:focus-within > div {
     display: flex;
     animation: fadeIn 1s both;
@@ -59,13 +64,6 @@ const Wrapper = styled.button`
       }
     }
   }
-  font-size: inherit;
-  margin: 0;
-  background: ${({ theme }) => theme.colors.background};
-  color: ${({ theme }) => theme.colors.text};
-  font-family: inherit;
-  border: none;
-  padding: 0;
 `;
 
 export default function Header() {

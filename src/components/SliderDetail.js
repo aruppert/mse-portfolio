@@ -1,5 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
+import PropTypes from "prop-types";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
@@ -8,32 +9,32 @@ import ArrowRight from "../graphics/ArrowRight";
 
 const SliderWrapper = styled.div`
   width: 100%;
-  margin: auto;
   margin: 4rem 0 1rem;
 `;
 const SliderDetailWrapper = styled.div`
   width: 90%;
-  margin: auto;
   border-top: 2px solid white;
+  margin: auto;
 `;
+
 const Slide = styled.div`
   display: block;
 `;
 
 const SlideImg = styled.img`
+  max-width: 100%;
   height: 318px;
   object-fit: cover;
   object-position: center;
-  max-width: 100%;
   margin: auto;
 `;
 
 const SlideTitle = styled.h2`
-  margin: 6px 0 4px;
   font-size: 18px;
   line-height: 22px;
   font-weight: 600;
   text-transform: uppercase;
+  margin: 6px 0 4px;
 `;
 
 const SlideSubtitle = styled(SlideTitle)`
@@ -50,11 +51,11 @@ const SlideYearPlaceholder = styled.div`
 `;
 const SlideYear = styled.aside`
   width: fit-content;
-  font-weight: 100;
   border-top: 0.5px solid white;
+  font-weight: 100;
 `;
 
-export default function SliderStartpage({
+export default function SliderDetail({
   title,
   subtitle,
   year,
@@ -97,3 +98,11 @@ export default function SliderStartpage({
     </SliderWrapper>
   );
 }
+
+SliderDetail.propTypes = {
+  title: PropTypes.string,
+  subtitle: PropTypes.string,
+  year: PropTypes.string,
+  data: PropTypes.object,
+  imagestyle: PropTypes.string,
+};

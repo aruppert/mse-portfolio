@@ -2,119 +2,50 @@ import React, { useEffect } from "react";
 import styled from "@emotion/styled";
 import SliderDetail from "../components/SliderDetail";
 import Videography from "../graphics/Videography.js";
+import {
+  probonoTV,
+  wheelOfBelieves,
+  zehnFacetten,
+  ZFF,
+  lichtfaktor,
+} from "../slider-data/VideoData";
 
 const Container = styled.div`
-  height: 100%;
   display: flex;
   flex-flow: column nowrap;
-  flex-grow: 1;
   justify-content: center;
+  flex-grow: 1;
+  height: 100%;
 `;
 
 const Teaser = styled.p`
-  font-size: 18px;
-  line-height: 20px;
+  width: 100%;
   padding: 0 16%;
   margin: 1rem 0;
-  width: 100%;
+  font-size: 18px;
+  line-height: 20px;
 `;
+
 const Description = styled.p`
-  padding: 0 16%;
+  width: 100%;
   margin: 1.5rem 0 0 0;
   padding: 0 1rem;
-  width: 100%;
 `;
 
 const SVGWrapper = styled.div`
-  width: 100%;
-  margin: 1rem 0;
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 100%;
+  margin: 1rem 0;
 `;
 
 const VideoLink = styled.a`
-  color: ${(props) => props.theme.colors.sec};
   display: block;
+  color: ${(props) => props.theme.colors.sec};
 `;
 
 export default function DetailVideo() {
-  const probonoTV = [
-    {
-      id: 1,
-      link: "https://youtu.be/HoVhOiCEKr8",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/youtube/c_fill,g_face:auto,q_100,w_450/https://youtu.be/HoVhOiCEKr8",
-    },
-    {
-      id: 2,
-      link: "https://youtu.be/94mosRYYod0",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/youtube/c_fill,g_face:auto,q_100,w_450/https://youtu.be/94mosRYYod0",
-    },
-    {
-      id: 3,
-      link: "https://youtu.be/Nl8iW7zxteg",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/youtube/c_fill,g_face:auto,q_100,w_450/https://youtu.be/Nl8iW7zxteg",
-    },
-    {
-      id: 4,
-      link: "https://youtu.be/Kw9yrbJLsDI",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/youtube/c_fill,g_face:auto,q_100,w_450/https://youtu.be/Kw9yrbJLsDI",
-    },
-  ];
-  const wheelOfBelieves = [
-    {
-      id: 1,
-      link: "https://vimeo.com/135182937",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/vimeo/c_fill,g_face:auto,q_100,w_450/https://vimeo.com/135182937",
-    },
-  ];
-  const zehnFacetten = [
-    {
-      id: 1,
-      link: "https://vimeo.com/114900510",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/vimeo/c_fill,g_face:auto,q_100,w_450/https://vimeo.com/114900510",
-    },
-    {
-      id: 2,
-      link: "https://youtu.be/RU5gpvfFR1Y",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/youtube/c_fill,g_face:auto,q_100,w_450/https://youtu.be/RU5gpvfFR1Y",
-    },
-  ];
-  const ZFF = [
-    {
-      id: 0,
-      link: "https://youtu.be/iSOk8zzSohw",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/youtube/c_fill,g_face:auto,q_100,w_450/https://youtu.be/iSOk8zzSohw",
-    },
-    {
-      id: 1,
-      link: "https://vimeo.com/144621827",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/vimeo/c_fill,g_face:auto,q_100,w_450/https://vimeo.com/144621827",
-    },
-  ];
-  const lichtfaktor = [
-    {
-      id: 1,
-      link: "https://vimeo.com/92716102",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/vimeo/c_fill,g_face:auto,q_100,w_450/https://vimeo.com/92716102",
-    },
-    {
-      id: 2,
-      link: "https://vimeo.com/135347318",
-      src:
-        "https://res.cloudinary.com/dkjkkarud/image/vimeo/c_fill,g_face:auto,q_100,w_450/https://vimeo.com/135347318",
-    },
-  ];
   useEffect(() => {
     window.scrollTo(0, 0);
   });
