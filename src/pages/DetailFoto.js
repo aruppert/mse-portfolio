@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import styled from "@emotion/styled";
 import SliderDetail from "../components/SliderDetail";
 import Photography from "../graphics/Photography";
 import {
@@ -9,35 +8,12 @@ import {
   CTG,
   misc,
 } from "../slider-data/FotoData";
-
-const Container = styled.main`
-  display: flex;
-  flex-flow: column nowrap;
-  justify-content: center;
-  flex-grow: 1;
-  height: 100%;
-`;
-
-const Teaser = styled.p`
-  width: 100%;
-  padding: 0 16%;
-  margin: 1rem 0;
-  font-size: 18px;
-  line-height: 20px;
-`;
-const Description = styled.p`
-  width: 100%;
-  margin: 1.5rem 0 0 0;
-  padding: 0 1rem;
-`;
-
-const SVGWrapper = styled.div`
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  width: 100%;
-  margin: 1rem 0;
-`;
+import {
+  Container,
+  Teaser,
+  Description,
+  SVGWrapper,
+} from "../styles/DetailPage";
 
 export default function DetailFoto() {
   useEffect(() => {

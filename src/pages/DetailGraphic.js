@@ -1,5 +1,4 @@
 import React, { useEffect } from "react";
-import styled from "@emotion/styled";
 import SliderDetail from "../components/SliderDetail";
 import GraphicDesign from "../graphics/GraphicDesign";
 import {
@@ -7,36 +6,12 @@ import {
   wheelOfBelieves,
   CTGIG,
 } from "../slider-data/GraphicData";
-
-const Container = styled.div`
-  height: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  flex-grow: 1;
-  justify-content: center;
-`;
-
-const Teaser = styled.p`
-  font-size: 18px;
-  line-height: 20px;
-  padding: 0 16%;
-  margin: 1rem 0;
-  width: 100%;
-`;
-const Description = styled.p`
-  padding: 0 16%;
-  margin: 1.5rem 0 0 0;
-  padding: 0 1rem;
-  width: 100%;
-`;
-
-const SVGWrapper = styled.div`
-  width: 100%;
-  margin: 1rem 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-`;
+import {
+  Container,
+  Teaser,
+  Description,
+  SVGWrapper,
+} from "../styles/DetailPage";
 
 export default function DetailGraphic() {
   useEffect(() => {
