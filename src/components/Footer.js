@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 // import { Link } from "react-router-dom";
 
-const Navbar = styled.nav`
+const Navbar = styled.footer`
   display: flex;
   justify-content: flex-end;
   margin: 4rem 1.2rem 0.5rem;
