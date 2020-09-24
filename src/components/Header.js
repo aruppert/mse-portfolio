@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 import DropdownMenu from "./DropdownMenu";
 import logo from "../graphics/logo.svg";
+import { useLocation } from "react-router-dom";
 
 const Headerbar = styled.div`
   position: fixed;
@@ -66,7 +67,49 @@ const Wrapper = styled.button`
   }
 `;
 
+const Sidebar = styled.aside`
+  position: fixed;
+  height: auto;
+  width: 25px;
+  writing-mode: vertical-lr;
+  text-orientation: mixed;
+  font-weight: 200;
+  transform: rotate(180deg);
+`;
+
 export default function Header() {
+  let sidebarTitle = "";
+  let location = useLocation();
+  switch (location.pathname) {
+    case "/":
+      sidebarTitle = "Home.";
+      break;
+    case "/work":
+      sidebarTitle = "Work.";
+      break;
+    case "/detailUXUI":
+      sidebarTitle = "UX/UI.";
+      break;
+    case "/detailVideo":
+      sidebarTitle = "Videography.";
+      break;
+    case "/detailFoto":
+      sidebarTitle = "Photography.";
+      break;
+    case "/detailGraphic":
+      sidebarTitle = "Graphic Design.";
+      break;
+    case "/aboutMe":
+      sidebarTitle = "About Me.";
+      break;
+    case "/contact":
+      sidebarTitle = "Contact.";
+      break;
+    default:
+      sidebarTitle = "";
+      break;
+  }
+
   return (
     <>
       <Headerbar>
@@ -83,6 +126,7 @@ export default function Header() {
         </Navbar>
       </Headerbar>
       <Placeholder></Placeholder>
+      <Sidebar>{sidebarTitle}</Sidebar>
     </>
   );
 }

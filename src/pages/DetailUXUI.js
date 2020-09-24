@@ -12,7 +12,7 @@ import {
   Teaser,
   Description,
   SVGWrapper,
-} from "../styles/DetailPage";
+} from "../components/DetailPage";
 
 export default function DetailUXUI() {
   useEffect(() => {
@@ -27,7 +27,6 @@ export default function DetailUXUI() {
         The art of User experience- and User interface design is to find the
         best combination of function and form.
       </Teaser>
-
       <SliderDetail
         title="Economad"
         subtitle="UX. UI. Graphics. Prototyping."

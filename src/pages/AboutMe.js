@@ -23,7 +23,9 @@ const Container = styled.main`
   justify-content: center;
   align-items: center;
   flex-grow: 1;
+  width: 90%;
   height: 100%;
+  margin: 0 auto;
 `;
 
 const Quote = styled.aside`
@@ -98,7 +100,7 @@ const Img = styled.img`
 `;
 
 const HobbyIcons = styled.img`
-  height: 6rem;
+  height: 5.5rem;
 `;
 
 const Text = styled.p`
