@@ -100,7 +100,7 @@ const Img = styled.img`
 `;
 
 const HobbyIcons = styled.img`
-  height: 6rem;
+  height: 5.5rem;
 `;
 
 const Text = styled.p`
