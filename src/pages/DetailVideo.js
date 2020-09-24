@@ -14,7 +14,7 @@ import {
   Teaser,
   Description,
   SVGWrapper,
-} from "../styles/DetailPage";
+} from "../components/DetailPage";
 
 const VideoLink = styled.a`
   display: block;

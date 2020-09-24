@@ -11,7 +11,7 @@ import {
   Teaser,
   Description,
   SVGWrapper,
-} from "../styles/DetailPage";
+} from "../components/DetailPage";
 
 export default function DetailGraphic() {
   useEffect(() => {
