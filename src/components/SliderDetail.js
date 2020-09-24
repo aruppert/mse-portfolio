@@ -8,9 +8,10 @@ import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
 
 const SliderWrapper = styled.div`
-  width: 100%;
-  margin: 4rem 0 1rem;
+  width: 90%;
+  margin: 4rem auto 1rem;
 `;
+
 const SliderDetailWrapper = styled.div`
   width: 90%;
   border-top: 2px solid white;
