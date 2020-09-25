@@ -30,27 +30,44 @@ const Navbar = styled.nav`
   font-weight: 400;
 `;
 
-const Navbutton = styled(Link)`
+const NavLink = styled(Link)`
   position: relative;
   align-self: flex-end;
   color: ${(props) => props.theme.colors.prim};
   text-decoration: none;
 `;
 
-const LogoLink = styled(Navbutton)`
+const AboutLink = styled(NavLink)`
+  color: ${(props) =>
+    props.pathname === "/aboutMe"
+      ? props.theme.colors.sec
+      : props.theme.colors.prim};
+`;
+
+const ContactLink = styled(NavLink)`
+  color: ${(props) =>
+    props.pathname === "/contact"
+      ? props.theme.colors.sec
+      : props.theme.colors.prim};
+`;
+
+const LogoLink = styled(NavLink)`
   display: flex;
   align-items: flex-end;
   margin: 0 0 0 0.8rem;
 `;
 
-const Wrapper = styled.button`
+const WorkWrapper = styled.button`
   position: relative;
   align-self: flex-end;
   border: none;
   margin: 0;
   padding: 0;
   background: ${({ theme }) => theme.colors.background};
-  color: ${({ theme }) => theme.colors.text};
+  color: ${(props) =>
+    props.pathname === "/work"
+      ? props.theme.colors.sec
+      : props.theme.colors.prim};
   font-size: inherit;
   font-family: inherit;
   &:focus-within > div {
@@ -80,7 +97,8 @@ const Sidebar = styled.aside`
 export default function Header() {
   let sidebarTitle = "";
   let location = useLocation();
-  switch (location.pathname) {
+  let pathname = location.pathname;
+  switch (pathname) {
     case "/":
       sidebarTitle = "Home.";
       break;
@@ -117,12 +135,16 @@ export default function Header() {
           <img src={logo} alt="Logo" />
         </LogoLink>
         <Navbar>
-          <Wrapper>
+          <WorkWrapper pathname={pathname}>
             Work.
             <DropdownMenu />
-          </Wrapper>
-          <Navbutton to="/aboutMe">About me.</Navbutton>
-          <Navbutton to="/contact">Contact.</Navbutton>
+          </WorkWrapper>
+          <AboutLink pathname={pathname} to="/aboutMe">
+            About me.
+          </AboutLink>
+          <ContactLink pathname={pathname} to="/contact">
+            Contact.
+          </ContactLink>
         </Navbar>
       </Headerbar>
       <Placeholder></Placeholder>
