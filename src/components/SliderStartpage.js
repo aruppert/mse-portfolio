@@ -6,6 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
 import StartPageData from "../slider-data/StartPageData";
+import { Link } from "react-router-dom";
 
 const SliderWrapper = styled.div`
   width: 320px;
@@ -22,11 +23,15 @@ const SlideImg = styled.img`
   height: 318px;
 `;
 
-const SlideTitle = styled.h2`
+const SlideTitleWrapper = styled.h2`
   margin: 6px 0 4px;
   font-size: 1.2rem;
   line-height: 1.4rem;
   height: 2.8rem;
+`;
+const SlideTitle = styled(Link)`
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.sec};
   font-weight: 600;
   text-transform: uppercase;
 `;
@@ -62,7 +67,9 @@ export default function SliderStartpage() {
       <Slider {...settings}>
         {StartPageData.map((slide) => (
           <Slide key={slide.id}>
-            <SlideTitle>{slide.title}</SlideTitle>
+            <SlideTitleWrapper>
+              <SlideTitle to={slide.path}>{slide.title}</SlideTitle>
+            </SlideTitleWrapper>
             <SlideYearWrapper>
               <SlideYearPlaceholder />
               <SlideYear>{slide.year}</SlideYear>
