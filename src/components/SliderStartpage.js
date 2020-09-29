@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick-theme.css";
 import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
 import StartPageData from "../slider-data/StartPageData";
-import { Link } from "react-router-dom";
+import { HashLink as Link } from "react-router-hash-link";
 
 const SliderWrapper = styled.div`
   width: 320px;
@@ -68,7 +68,14 @@ export default function SliderStartpage() {
         {StartPageData.map((slide) => (
           <Slide key={slide.id}>
             <SlideTitleWrapper>
-              <SlideTitle to={slide.path}>{slide.title}</SlideTitle>
+              <SlideTitle
+                scroll={(el) =>
+                  el.scrollIntoView({ behavior: "smooth", block: "center" })
+                }
+                to={slide.path}
+              >
+                {slide.title}
+              </SlideTitle>
             </SlideTitleWrapper>
             <SlideYearWrapper>
               <SlideYearPlaceholder />
