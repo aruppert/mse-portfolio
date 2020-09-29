@@ -40,6 +40,7 @@ export default function DetailVideo() {
         subtitle="Videoshoot. Post Production. Animation. Graphics. CI. Social Media. Color Grading. Image Processing."
         year="2016"
         data={probonoTV}
+        id="probono"
       />
       <Description>
         Here are just a few examples. For more visit:{" "}
