@@ -65,7 +65,11 @@ const WorkWrapper = styled.button`
   padding: 0;
   background: ${({ theme }) => theme.colors.background};
   color: ${(props) =>
-    props.pathname === "/work"
+    props.pathname === "/work" ||
+    props.pathname === "/detailUXUI" ||
+    props.pathname === "/detailVideo" ||
+    props.pathname === "/detailFoto" ||
+    props.pathname === "/detailGraphic"
       ? props.theme.colors.sec
       : props.theme.colors.prim};
   font-size: inherit;
