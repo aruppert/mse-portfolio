@@ -57,6 +57,14 @@ const LogoLink = styled(NavLink)`
   margin: 0 0 0 0.8rem;
 `;
 
+const WorkPathArray = [
+  "/work",
+  "/detailUXUI",
+  "/detailVideo",
+  "/detailFoto",
+  "/detailGraphic",
+];
+
 const WorkWrapper = styled.button`
   position: relative;
   align-self: flex-end;
@@ -65,11 +73,7 @@ const WorkWrapper = styled.button`
   padding: 0;
   background: ${({ theme }) => theme.colors.background};
   color: ${(props) =>
-    props.pathname === "/work" ||
-    props.pathname === "/detailUXUI" ||
-    props.pathname === "/detailVideo" ||
-    props.pathname === "/detailFoto" ||
-    props.pathname === "/detailGraphic"
+    WorkPathArray.includes(props.pathname)
       ? props.theme.colors.sec
       : props.theme.colors.prim};
   font-size: inherit;
