@@ -1,10 +1,9 @@
 import React from "react";
 import styled from "@emotion/styled";
 import ContactSVG from "../graphics/ContactSVG.js";
-import { useForm } from "react-hook-form";
-import isEmail from "validator/lib/isEmail";
 import ActionIcon from "../graphics/ActionIcon.js";
 import { css } from "@emotion/core";
+import axios from "axios";
 
 const Container = styled.main`
   display: flex;
@@ -59,7 +58,6 @@ const InputStyles = css`
 
 const NameInput = styled.input`
   ${InputStyles};
-  border-color: ${(props) => (props.errors.name ? "var(--dark-danger)" : "")};
 `;
 
 const MiscInput = styled.input`
@@ -68,13 +66,11 @@ const MiscInput = styled.input`
 
 const EmailInput = styled.input`
   ${InputStyles};
-  border-color: ${(props) => (props.errors.email ? "var(--dark-danger)" : "")};
 `;
 
 const MessageInput = styled.textarea`
   ${InputStyles};
-  border-color: ${(props) =>
-    props.errors.message ? "var(--dark-danger)" : ""};
+
   height: 10rem;
   ::placeholder {
     font-family: "Montserrat", sans-serif;
@@ -94,14 +90,51 @@ const SubmitButton = styled.button`
   font-size: 1.2rem;
 `;
 
+const ResultMessage = styled.p`
+  width: 80%;
+  margin: 2rem auto;
+`;
 export default function Contact() {
-  const { register, handleSubmit, errors, formState } = useForm({
-    mode: "onBlur",
+  const [state, setState] = React.useState({
+    email: "",
+    message: "",
+    name: "",
+    subject: "",
+    tel: "",
   });
+  const [result, setResult] = React.useState(null);
 
-  const onSubmit = (data) => {
-    console.log(data);
+  const sendEmail = (event) => {
+    event.preventDefault();
+    axios
+      .post("/send", { ...state })
+      .then((response) => {
+        setResult(response.data);
+        setState({
+          name: "",
+          email: "",
+          subject: "",
+          message: "",
+          tel: "",
+        });
+      })
+      .catch(() => {
+        setResult({
+          success: false,
+          message: "Something went wrong. Try again later",
+        });
+      });
   };
+
+  const onInputChange = (event) => {
+    const { name, value } = event.target;
+    setState({
+      ...state,
+      [name]: value,
+    });
+    console.log(state);
+  };
+
   return (
     <Container>
       <ContactSVGstyled />
@@ -113,46 +146,42 @@ export default function Contact() {
           exner.miriam@gmail.com
         </a>
       </ContactDetails>
-      <Form onSubmit={handleSubmit(onSubmit)}>
+      {result && <ResultMessage>{result.message}</ResultMessage>}
+      <Form onSubmit={sendEmail}>
         <NameInput
-          ref={register({
-            required: true,
-            minLength: 2,
-            maxLength: 200,
-            pattern: /^[A-Za-z]+$/i,
-          })}
+          type="text"
           name="name"
+          value={state.name}
           placeholder="Name *"
-          errors={errors}
+          onChange={onInputChange}
         />
         <MiscInput
-          ref={register({ maxLength: 500 })}
+          type="text"
           name="subject"
+          value={state.subject}
           placeholder="Subject"
-          errors={errors}
+          onChange={onInputChange}
         />
         <EmailInput
-          ref={register({
-            required: true,
-            validate: (input) => isEmail(input),
-          })}
+          type="text"
           name="email"
+          value={state.email}
           placeholder="E-Mail *"
-          errors={errors}
+          onChange={onInputChange}
         />
         <MiscInput
-          ref={register({ maxLength: 20 })}
           name="tel"
           placeholder="Telefon"
-          errors={errors}
+          value={state.tel}
+          onChange={onInputChange}
         />
         <MessageInput
-          ref={register({ required: true, minLength: 2, maxLength: 10000 })}
           name="message"
           placeholder="Message *"
-          errors={errors}
+          value={state.message}
+          onChange={onInputChange}
         />
-        <SubmitButton type="submit" disabled={formState.isSubmitting}>
+        <SubmitButton type="submit">
           <ActionIcon />
           Send
         </SubmitButton>
