@@ -33,6 +33,7 @@ export default function DetailFoto() {
         subtitle="Concept. Photography. Lighting. Color Grading."
         year="2013"
         data={fashion}
+        id="fashion"
       />
       <Description>
         During my work with Stu Shapiro in Cape Town we arranged fashion shoots
@@ -43,6 +44,7 @@ export default function DetailFoto() {
         subtitle="Concept. Location Scouting. Photography. Light painting. Directing (Choreography). Color Grading."
         year="2013"
         data={lightPainting}
+        id="light-painting"
       />
       <Description>
         These pictures were taken during a project at KISD. Using light painting
