@@ -14,12 +14,18 @@ function GlobalStyles() {
           height: 100%;
           font-size: 16px;
           margin: 0;
-          background: ${theme.colors.background};
-          color: ${theme.colors.text};
+          background: ${theme.colors.bg};
+          color: ${theme.colors.txt};
           font-family: "Montserrat", sans-serif, "Abril Fatface", cursive;
         }
         #root {
           height: 100%;
+          --dark-bg: #231d24;
+          --dark-txt: #fff;
+          --dark-pri: #fff;
+          --dark-sec: #55f297;
+          --dark-danger: #f26055;
+          --dark-form: rgba(255, 255, 255, 0.5);
         }
       `}
     />
