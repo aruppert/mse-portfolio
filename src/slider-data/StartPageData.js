@@ -7,6 +7,7 @@ const dataForStartpageSlider = [
     year: "2015",
     label: "Concept. UX/UI. Graphic Design. Videography. Content.",
     link: "https://vimeo.com/135183746",
+    path: "/detailUXUI#final_thesis",
   },
   {
     id: 2,
@@ -15,6 +16,7 @@ const dataForStartpageSlider = [
       "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1596731715/Webseite/Work/Photography/Fasion/02_Fashion_myd3ie.jpg",
     year: "2013",
     label: "Photography. Lighting. Location Scouting. Concept.",
+    path: "/detailFoto#fashion",
   },
   {
     id: 3,
@@ -24,6 +26,7 @@ const dataForStartpageSlider = [
     year: "2016",
     label: "Illustration. Graphic Design. Concept. Videography. Animation.",
     link: "https://youtu.be/94mosRYYod0",
+    path: "/detailVideo#probono",
   },
   {
     id: 4,
@@ -33,6 +36,7 @@ const dataForStartpageSlider = [
     year: "2014",
     label: "Design Research. Concept. UX. Arduino Coding. Content.",
     link: "https://vimeo.com/144620833",
+    path: "/detailUXUI#canttouchthis",
   },
   {
     id: 5,
@@ -42,6 +46,7 @@ const dataForStartpageSlider = [
     year: "2013",
     label:
       "Concept. Location Scouting. Photography. Lightpainting. Directing (Choreography). Color Grading.",
+    path: "/detailFoto#light-painting",
   },
 ];
 

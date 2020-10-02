@@ -47,6 +47,7 @@ export default function DetailUXUI() {
         subtitle="UX. UI. Graphics. CI. Videography. Animation. Content."
         year="2015"
         data={wheelOfBelieves}
+        id="final_thesis"
       />
       <Description>
         The <i>Wheel of Believes</i> is a draft of an interactive web
@@ -78,6 +79,7 @@ export default function DetailUXUI() {
         title="Can't touch this"
         subtitle="Design Research. Concept. UX. Arduino Coding. Content."
         data={cantTouchThis}
+        id="canttouchthis"
       />
       <Description>
         The task during this KISD short term project was it to design an

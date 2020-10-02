@@ -62,6 +62,7 @@ export default function SliderDetail({
   year,
   data,
   imagestyle,
+  id,
 }) {
   const settings = {
     infinite: true,
@@ -72,7 +73,7 @@ export default function SliderDetail({
   };
 
   return (
-    <SliderWrapper>
+    <SliderWrapper id={id}>
       <SliderDetailWrapper>
         <SlideTitle>{title}</SlideTitle>
         <SlideYearWrapper>
@@ -106,4 +107,5 @@ SliderDetail.propTypes = {
   year: PropTypes.string,
   data: PropTypes.object,
   imagestyle: PropTypes.string,
+  id: PropTypes.string,
 };
