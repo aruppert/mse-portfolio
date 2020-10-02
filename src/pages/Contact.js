@@ -4,6 +4,8 @@ import ContactSVG from "../graphics/ContactSVG.js";
 import ActionIcon from "../graphics/ActionIcon.js";
 import { css } from "@emotion/core";
 import axios from "axios";
+import { useForm } from "react-hook-form";
+import isEmail from "validator/lib/isEmail";
 
 const Container = styled.main`
   display: flex;
@@ -58,6 +60,7 @@ const InputStyles = css`
 
 const NameInput = styled.input`
   ${InputStyles};
+  border-color: ${(props) => (props.errors.name ? "var(--dark-danger)" : "")};
 `;
 
 const MiscInput = styled.input`
@@ -66,11 +69,13 @@ const MiscInput = styled.input`
 
 const EmailInput = styled.input`
   ${InputStyles};
+  border-color: ${(props) => (props.errors.email ? "var(--dark-danger)" : "")};
 `;
 
 const MessageInput = styled.textarea`
   ${InputStyles};
-
+  border-color: ${(props) =>
+    props.errors.message ? "var(--dark-danger)" : ""};
   height: 10rem;
   ::placeholder {
     font-family: "Montserrat", sans-serif;
@@ -95,6 +100,9 @@ const ResultMessage = styled.p`
   margin: 2rem auto;
 `;
 export default function Contact() {
+  const { register, errors } = useForm({
+    mode: "onBlur",
+  });
   const [state, setState] = React.useState({
     email: "",
     message: "",
@@ -149,10 +157,16 @@ export default function Contact() {
       {result && <ResultMessage>{result.message}</ResultMessage>}
       <Form onSubmit={sendEmail}>
         <NameInput
+          ref={register({
+            required: true,
+            minLength: 2,
+            maxLength: 200,
+          })}
           type="text"
           name="name"
           value={state.name}
           placeholder="Name *"
+          errors={errors}
           onChange={onInputChange}
         />
         <MiscInput
@@ -163,10 +177,15 @@ export default function Contact() {
           onChange={onInputChange}
         />
         <EmailInput
-          type="text"
+          ref={register({
+            required: true,
+            validate: (input) => isEmail(input),
+          })}
+          type="email"
           name="email"
           value={state.email}
           placeholder="E-Mail *"
+          errors={errors}
           onChange={onInputChange}
         />
         <MiscInput
@@ -176,8 +195,10 @@ export default function Contact() {
           onChange={onInputChange}
         />
         <MessageInput
+          ref={register({ required: true, minLength: 2, maxLength: 10000 })}
           name="message"
           placeholder="Message *"
+          errors={errors}
           value={state.message}
           onChange={onInputChange}
         />
