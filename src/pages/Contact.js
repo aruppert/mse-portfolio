@@ -98,11 +98,17 @@ const SubmitButton = styled.button`
 const ResultMessage = styled.p`
   width: 80%;
   margin: 2rem auto;
+  text-align: center;
+  color: ${(props) =>
+    props.result ? "var(--dark-sec)" : "var(--dark-danger)"};
 `;
+
+const LoadingMessage = styled(ResultMessage)`
+  color: var(--dark-pri);
+`;
+
 export default function Contact() {
-  const { register, errors } = useForm({
-    mode: "onBlur",
-  });
+  const [loading, setLoading] = React.useState(false);
   const [state, setState] = React.useState({
     email: "",
     message: "",
@@ -111,6 +117,9 @@ export default function Contact() {
     tel: "",
   });
   const [result, setResult] = React.useState(null);
+  const { register, errors } = useForm({
+    mode: "onBlur",
+  });
 
   const sendEmail = (event) => {
     event.preventDefault();
@@ -140,7 +149,28 @@ export default function Contact() {
       ...state,
       [name]: value,
     });
-    console.log(state);
+  };
+
+  React.useEffect(() => {
+    console.log(loading);
+    if (result != null) {
+      setLoading(false);
+    }
+    setState({
+      name: "",
+      email: "",
+      subject: "",
+      message: "",
+      tel: "",
+    });
+
+    console.log(loading);
+  }, [result]);
+
+  const formValidation = () => {
+    if (state.name && state.email && state.message) {
+      setLoading(true);
+    }
   };
 
   return (
@@ -154,7 +184,12 @@ export default function Contact() {
           exner.miriam@gmail.com
         </a>
       </ContactDetails>
-      {result && <ResultMessage>{result.message}</ResultMessage>}
+      {loading && !result && (
+        <LoadingMessage>Loading... please wait.</LoadingMessage>
+      )}
+      {result && (
+        <ResultMessage result={result.success}>{result.message}</ResultMessage>
+      )}
       <Form onSubmit={sendEmail}>
         <NameInput
           ref={register({
@@ -202,7 +237,11 @@ export default function Contact() {
           value={state.message}
           onChange={onInputChange}
         />
-        <SubmitButton type="submit">
+        <SubmitButton
+          type="submit"
+          onClick={() => formValidation()}
+          disabled={loading}
+        >
           <ActionIcon />
           Send
         </SubmitButton>
