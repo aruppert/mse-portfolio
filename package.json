@@ -17,17 +17,18 @@
     "react-dom": "^16.13.1",
     "react-hook-form": "^6.8.6",
     "react-router-dom": "^5.2.0",
-    "react-scripts": "^3.4.3",
     "react-router-hash-link": "^2.1.0",
+    "react-scripts": "^3.4.3",
     "react-slick": "^0.27.1",
     "slick-carousel": "^1.8.1",
+    "validator": "^13.1.17"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "start-server": "node server/index.js",
+    "server": "npx nodemon server/index.js",
     "start-app": "npm run build && npm run start-server"
   },
   "browserslist": {
@@ -47,5 +48,6 @@
     "eslint": "^6.8.0",
     "eslint-plugin-react": "^7.20.5",
     "nodemailer": "^6.4.3"
-  }
+  },
+  "proxy": "http://localhost:3030"
 }
