@@ -123,24 +123,27 @@ export default function Contact() {
 
   const sendEmail = (event) => {
     event.preventDefault();
-    axios
-      .post("/send", { ...state })
-      .then((response) => {
-        setResult(response.data);
-        setState({
-          name: "",
-          email: "",
-          subject: "",
-          message: "",
-          tel: "",
+    if (state.name && state.email && state.message) {
+      setLoading(true);
+      axios
+        .post("/send", { ...state })
+        .then((response) => {
+          setResult(response.data);
+          setState({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+            tel: "",
+          });
+        })
+        .catch(() => {
+          setResult({
+            success: false,
+            message: "Something went wrong. Reload and try again later",
+          });
         });
-      })
-      .catch(() => {
-        setResult({
-          success: false,
-          message: "Something went wrong. Try again later",
-        });
-      });
+    }
   };
 
   const onInputChange = (event) => {
@@ -167,12 +170,6 @@ export default function Contact() {
     console.log(loading);
   }, [result]);
 
-  const formValidation = () => {
-    if (state.name && state.email && state.message) {
-      setLoading(true);
-    }
-  };
-
   return (
     <Container>
       <ContactSVGstyled />
@@ -185,7 +182,7 @@ export default function Contact() {
         </a>
       </ContactDetails>
       {loading && !result && (
-        <LoadingMessage>Loading... please wait.</LoadingMessage>
+        <LoadingMessage>Sending form... please wait.</LoadingMessage>
       )}
       {result && (
         <ResultMessage result={result.success}>{result.message}</ResultMessage>
@@ -237,11 +234,7 @@ export default function Contact() {
           value={state.message}
           onChange={onInputChange}
         />
-        <SubmitButton
-          type="submit"
-          onClick={() => formValidation()}
-          disabled={loading}
-        >
+        <SubmitButton type="submit" disabled={loading || result != undefined}>
           <ActionIcon />
           Send
         </SubmitButton>
