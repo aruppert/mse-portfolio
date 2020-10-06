@@ -18,6 +18,10 @@ const TopWrapper = styled.div`
   display: flex;
   justify-content: center;
   flex-grow: 1;
+  margin: auto;
+`;
+const MiddleWrapper = styled.section`
+  margin: auto;
 `;
 
 const MoreWrapper = styled(Link)`
@@ -85,12 +89,14 @@ export default function Start() {
           </Teaser>
         </Right>
       </TopWrapper>
-      <MoreWrapper to="/aboutMe">
-        <ActionIcon /> <MoreText>More about me.</MoreText>
-      </MoreWrapper>
-      <MoreWorkWrapper to="/work">
-        <ActionIcon /> <MoreText>More of my work.</MoreText>
-      </MoreWorkWrapper>
+      <MiddleWrapper>
+        <MoreWrapper to="/aboutMe">
+          <ActionIcon /> <MoreText>More about me.</MoreText>
+        </MoreWrapper>
+        <MoreWorkWrapper to="/work">
+          <ActionIcon /> <MoreText>More of my work.</MoreText>
+        </MoreWorkWrapper>
+      </MiddleWrapper>
       <SliderStartpage />
     </Container>
   );

@@ -12,10 +12,11 @@ const Container = styled.main`
   height: 100%;
 `;
 
-const TopWrapper = styled.div`
+const TopWrapper = styled.section`
   flex-grow: 1;
   display: flex;
   justify-content: center;
+  margin: auto;
 `;
 
 const Left = styled.div`
@@ -35,9 +36,9 @@ const Teaser = styled.p`
   line-height: 20px;
 `;
 
-const WorkLinkContainer = styled("div")`
-  width: 100%;
+const WorkLinkContainer = styled.section`
   padding: 2.6em 0 0 2rem;
+  margin: auto;
 `;
 
 const WorkLink = styled(Link)`
