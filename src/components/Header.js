@@ -11,6 +11,7 @@ const Headerbar = styled.div`
   display: flex;
   width: inherit;
   min-width: 375px;
+  width: 100%;
   height: 48px;
   padding: 0 0 0.5rem;
   background: #231d24;
@@ -19,10 +20,15 @@ const Headerbar = styled.div`
 const Placeholder = styled.div`
   height: 48px;
 `;
+const ResponsivePlaceholder = styled.div`
+  flex-grow: 100;
+`;
 
 const Navbar = styled.nav`
   display: flex;
-  flex-grow: 1;
+  flex-grow: 99;
+  min-width: 300px;
+  max-width: 460px;
   justify-content: space-between;
   height: 100%;
   padding: 0 1rem;
@@ -142,6 +148,7 @@ export default function Header() {
         <LogoLink to="/">
           <img src={logo} alt="Logo" />
         </LogoLink>
+        <ResponsivePlaceholder />
         <Navbar>
           <WorkWrapper pathname={pathname}>
             Work.
