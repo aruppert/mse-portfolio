@@ -5,6 +5,7 @@ import ThisIsME from "../graphics/ThisIsME";
 import ActionIcon from "../graphics/ActionIcon";
 import { Link } from "react-router-dom";
 import SliderStartpage from "../components/SliderStartpage";
+import { mq } from "../components/MediaQueries";
 
 const Container = styled.main`
   display: flex;
@@ -36,8 +37,11 @@ const MoreWorkWrapper = styled(MoreWrapper)`
 `;
 
 const Lady = styled.img`
-  width: 127px;
+  width: 100%;
+  max-width: 18em;
+  height: auto;
 `;
+
 const LadyWrapper = styled.div`
   height: fit-content;
 `;
@@ -45,7 +49,7 @@ const LadyWrapper = styled.div`
 const Left = styled.div`
   display: flex;
   justify-content: flex-end;
-  width: 148px;
+  /* width: 148px; */
 `;
 
 const Right = styled.div`
@@ -54,9 +58,14 @@ const Right = styled.div`
 `;
 
 const Teaser = styled.p`
-  width: 191px;
-  font-size: 18px;
-  line-height: 20px;
+  width: 12rem;
+  font-size: 1.125rem;
+  line-height: 1.25rem;
+  ${mq("small")} {
+    width: 14em;
+    font-size: 1.3rem;
+    line-height: 1.4rem;
+  }
 `;
 
 const MoreText = styled.p`

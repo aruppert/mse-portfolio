@@ -3,7 +3,9 @@ import styled from "@emotion/styled";
 
 const Svg = styled.svg`
   fill: ${(props) => props.theme.colors.pri};
-  height: 151px;
+  width: 100%;
+  max-width: 18em;
+  height: auto;
 `;
 
 export default function ThisIsME(props) {
