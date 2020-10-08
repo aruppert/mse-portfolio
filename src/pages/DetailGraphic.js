@@ -5,7 +5,7 @@ import {
   illustration,
   wheelOfBelieves,
   CTGIG,
-} from "../slider-data/GraphicData";
+} from "../content-data/GraphicData";
 import {
   Container,
   Teaser,

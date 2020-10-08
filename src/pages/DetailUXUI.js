@@ -6,7 +6,7 @@ import {
   wheelOfBelieves,
   facettenWebseite,
   cantTouchThis,
-} from "../slider-data/UXUIData";
+} from "../content-data/UXUIData";
 import {
   Container,
   Teaser,
