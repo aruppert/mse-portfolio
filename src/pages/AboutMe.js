@@ -17,10 +17,14 @@ import Hobby_Reisen from "../graphics/Hobby_Reisen.svg";
 import Hobby_Musik from "../graphics/Hobby_Musik.svg";
 import Hobby_Foto from "../graphics/Hobby_Foto.svg";
 import CV from "../components/CV";
+import { mq } from "../components/MediaQueries";
 
 const Container = styled.main`
   display: flex;
   flex-flow: column nowrap;
+  ${mq("medium")} {
+    flex-flow: row wrap;
+  }
   justify-content: center;
   align-items: center;
   flex-grow: 1;
@@ -29,9 +33,26 @@ const Container = styled.main`
   margin: 0 auto;
 `;
 
+const Top = styled.section`
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  ${mq("medium")} {
+  }
+`;
+
+const Placeholder = styled.div`
+  width: 0em;
+  ${mq("medium")} {
+    flex-grow: 1;
+    width: 20em;
+  }
+`;
+
 const Quote = styled.aside`
   width: 90%;
-  margin: 1.5rem;
+  max-width: 26.5em;
+  margin: 1.5rem 1.5rem 1.5rem auto;
   font-size: 18px;
   font-weight: 200;
   line-height: 20px;
@@ -39,6 +60,7 @@ const Quote = styled.aside`
 
 const QuoteAuthor = styled.p`
   text-align: end;
+  padding: 0 1.5rem;
   font-weight: 400;
 `;
 
@@ -47,25 +69,36 @@ const FotoWrapper = styled.div`
   display: flex;
   justify-content: flex-end;
   width: 100%;
-  height: 162px;
+  height: 12em;
+  ${mq("medium")} {
+    height: 18em;
+  }
   margin: 2rem 0.8rem;
   padding: 0 2rem 0 0;
 `;
 
 const Foto = styled.img`
   height: 100%;
+  border-radius: 0.5em;
   margin: 0 0.3rem;
 `;
 
 const SectionContainer = styled.section`
   width: 90%;
+  max-width: 25em;
   border-top: 3px solid #fff;
   margin: 2rem 0;
+  ${mq("medium")} {
+    height: 9em;
+    margin: 4em 2em;
+  }
 `;
 
-const SoftwareSkillsContainer = styled.section`
-  width: 90%;
-  border-top: 3px solid #fff;
+const TopSectionContainer = styled(SectionContainer)`
+  ${mq("medium")} {
+    height: 27em;
+    margin: 0 2em;
+  }
 `;
 
 const SectionTitle = styled.h2`
@@ -116,19 +149,22 @@ export default function AboutMe() {
   });
   return (
     <Container>
-      <FotoWrapper>
-        <AboutMeSVG />
-        <Foto
-          src="https://res.cloudinary.com/dkjkkarud/image/upload/v1599483556/Miriam_Exner_c_tmj40i.jpg"
-          alt="Portait of me"
-        />
-      </FotoWrapper>
-      <Quote>
-        "You can design and create, and build the most wonderful place in the
-        world. But it takes people to make the dream a reality."
-        <QuoteAuthor>-Walt Disney</QuoteAuthor>
-      </Quote>
-      <SoftwareSkillsContainer>
+      <Top>
+        <Placeholder />
+        <FotoWrapper>
+          <AboutMeSVG />
+          <Foto
+            src="https://res.cloudinary.com/dkjkkarud/image/upload/v1599483556/Miriam_Exner_c_tmj40i.jpg"
+            alt="Portait of me"
+          />
+        </FotoWrapper>
+        <Quote>
+          "You can design and create, and build the most wonderful place in the
+          world. But it takes people to make the dream a reality."
+          <QuoteAuthor>- Walt Disney</QuoteAuthor>
+        </Quote>
+      </Top>
+      <TopSectionContainer>
         <SectionTitle>Software Skills</SectionTitle>
         <IconRow>
           <Icon src={Ps} alt="Ps Icon" />
@@ -147,11 +183,11 @@ export default function AboutMe() {
           <Icon src={Html} alt="Html Icon" />
           <Icon src={Css} alt="Css Icon" />
         </IconRow>
-      </SoftwareSkillsContainer>
-      <SectionContainer>
+      </TopSectionContainer>
+      <TopSectionContainer>
         <SectionTitle>Fields of Work</SectionTitle>
         <FieldsOfWorkGraphic src={fields2} />
-      </SectionContainer>
+      </TopSectionContainer>
       <SectionContainer>
         <SectionTitle>languages</SectionTitle>
         <Text>German, English</Text>
@@ -164,10 +200,7 @@ export default function AboutMe() {
           <HobbyIcons src={Hobby_Reisen} />
         </HobbiesWrapper>
       </SectionContainer>
-      <SectionContainer>
-        <SectionTitle>Long story short</SectionTitle>
-        <CV />
-      </SectionContainer>
+      <CV />
     </Container>
   );
 }
