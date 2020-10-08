@@ -3,6 +3,7 @@ import styled from "@emotion/styled";
 import ActionIcon from "../graphics/ActionIcon";
 import { Link } from "react-router-dom";
 import { mq } from "../components/MediaQueries";
+import { educationData, workExperienceData } from "../content-data/CVData";
 
 export default function CV() {
   return (
@@ -14,84 +15,27 @@ export default function CV() {
           <CVHeading>Education</CVHeading>
         </CVHeadingWrapper>
 
-        <CVEntryContainer>
-          <CVEntryYear>2020</CVEntryYear>
-          <CVEntryText>
-            Courses in UX and UI design at cimdata academy, Cologne 
-          </CVEntryText>
-        </CVEntryContainer>
-
-        <CVEntryContainer>
-          <CVEntryYear>2014</CVEntryYear>
-          <CVEntryText>Exchange semester at ZHDK, Zurich</CVEntryText>
-        </CVEntryContainer>
-
-        <CVEntryContainer>
-          <CVEntryYear>2010 - 2015</CVEntryYear>
-          <CVEntryText>
-            Bachelor degree in Integrated Design at KISD, Cologne
-          </CVEntryText>
-        </CVEntryContainer>
-
-        <CVEntryContainer>
-          <CVEntryYear>2005 - 2008 </CVEntryYear>
-          <CVEntryText>
-            Apprenticeship as Mediadesigner in audiovisual Media, Fraunhofer
-            IAIS
-          </CVEntryText>
-        </CVEntryContainer>
-
-        <CVEntryContainer>
-          <CVEntryYear>2004</CVEntryYear>
-          <CVEntryText>High School, Martinus Gymnasium Linz/Rhein</CVEntryText>
-        </CVEntryContainer>
+        {educationData.map((entry) => (
+          <CVEntryContainer key={entry.id}>
+            <CVEntryYear>{entry.year}</CVEntryYear>
+            <CVEntryText>{entry.text}</CVEntryText>
+          </CVEntryContainer>
+        ))}
       </SectionContainer>
 
       <SecondPartContainer>
         <SecondPartTitle>Long story short Part II</SecondPartTitle>
-
         <CVHeadingWrapper>
           <CVHeadingPlaceholder />
           <CVHeading>Work Experience</CVHeading>
         </CVHeadingWrapper>
 
-        <CVEntryContainer>
-          <CVEntryYear>2016</CVEntryYear>
-          <CVEntryText>Social media editor, probono TV, Cologne </CVEntryText>
-        </CVEntryContainer>
-
-        <CVEntryContainer>
-          <CVEntryYear>since 2014</CVEntryYear>
-          <CVEntryText>Freelance designer and photographer </CVEntryText>
-        </CVEntryContainer>
-
-        <CVEntryContainer>
-          <CVEntryYear>2014 - 2017</CVEntryYear>
-          <CVEntryText>
-            Freelance graphic designer and photographer, Lichtfaktor, Cologne
-          </CVEntryText>
-        </CVEntryContainer>
-
-        <CVEntryContainer>
-          <CVEntryYear>2013</CVEntryYear>
-          <CVEntryText>
-            Graphic designer and photographer, Stu Shapiro, Cape Town
-          </CVEntryText>
-        </CVEntryContainer>
-
-        <CVEntryContainer>
-          <CVEntryYear>2013</CVEntryYear>
-          <CVEntryText>
-            Social design project „Come To Gather“, Cape Town
-          </CVEntryText>
-        </CVEntryContainer>
-
-        <CVEntryContainer>
-          <CVEntryYear>2008 - 2009</CVEntryYear>
-          <CVEntryText>
-            Mediadesigner in audiovisual Media, Fraunhofer IAIS
-          </CVEntryText>
-        </CVEntryContainer>
+        {workExperienceData.map((entry) => (
+          <CVEntryContainer key={entry.id}>
+            <CVEntryYear>{entry.year}</CVEntryYear>
+            <CVEntryText>{entry.text}</CVEntryText>
+          </CVEntryContainer>
+        ))}
 
         <ContactLink to="/contact">
           <ActionIcon />
