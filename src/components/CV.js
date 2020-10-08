@@ -48,17 +48,18 @@ export default function CV() {
 
 const SectionContainer = styled.section`
   width: 90%;
-  max-width: 25em;
+  max-width: 23em;
   height: 30em;
-  border-top: 3px solid #fff;
+  border-top: 0.2em solid #fff;
   margin: 2rem 0;
   ${mq("medium")} {
-    margin: 4em 2em;
+    margin: 3em 1em;
   }
 `;
 
 const SecondPartContainer = styled(SectionContainer)`
-  border-top: 3px solid ${(props) => props.theme.colors.bg};
+  border-top: 0.2em solid ${(props) => props.theme.colors.bg};
+  margin: 3rem 0;
 `;
 
 const SectionTitle = styled.h2`
@@ -66,7 +67,7 @@ const SectionTitle = styled.h2`
   margin-bottom: 1rem;
   font-size: 1.2rem;
   font-weight: 400;
-  line-height: 20px;
+  line-height: 1.25rem;
   text-transform: uppercase;
 `;
 
@@ -76,7 +77,7 @@ const SecondPartTitle = styled(SectionTitle)`
 
 const CVHeadingWrapper = styled.div`
   display: flex;
-  margin: 0 0 10px;
+  margin: 0 0 0.6em;
 `;
 
 const CVHeadingPlaceholder = styled.div`
@@ -87,7 +88,7 @@ const CVHeading = styled.h2`
   width: fit-content;
   font-weight: 100;
   font-size: 1.3rem;
-  border-top: 0.5px solid white;
+  border-top: 0.03em solid white;
 `;
 
 const CVEntryContainer = styled.div`
@@ -106,7 +107,7 @@ const CVEntryYear = styled.aside`
 const CVEntryText = styled.p`
   width: 75%;
   font-weight: 100;
-  border-left: 1px solid #fff;
+  border-left: 0.006em solid #fff;
   margin: 0;
   padding: 0 0.6rem;
 `;

@@ -19,130 +19,6 @@ import Hobby_Foto from "../graphics/Hobby_Foto.svg";
 import CV from "../components/CV";
 import { mq } from "../components/MediaQueries";
 
-const Container = styled.main`
-  display: flex;
-  flex-flow: column nowrap;
-  ${mq("medium")} {
-    flex-flow: row wrap;
-  }
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-  width: 90%;
-  height: 100%;
-  margin: 0 auto;
-`;
-
-const Top = styled.section`
-  width: 100%;
-  display: flex;
-  flex-flow: column nowrap;
-  ${mq("medium")} {
-  }
-`;
-
-const Placeholder = styled.div`
-  width: 0em;
-  ${mq("medium")} {
-    flex-grow: 1;
-    width: 20em;
-  }
-`;
-
-const Quote = styled.aside`
-  width: 90%;
-  max-width: 26.5em;
-  margin: 1.5rem 1.5rem 1.5rem auto;
-  font-size: 18px;
-  font-weight: 200;
-  line-height: 20px;
-`;
-
-const QuoteAuthor = styled.p`
-  text-align: end;
-  padding: 0 1.5rem;
-  font-weight: 400;
-`;
-
-const FotoWrapper = styled.div`
-  align-self: end;
-  display: flex;
-  justify-content: flex-end;
-  width: 100%;
-  height: 12em;
-  ${mq("medium")} {
-    height: 18em;
-  }
-  margin: 2rem 0.8rem;
-  padding: 0 2rem 0 0;
-`;
-
-const Foto = styled.img`
-  height: 100%;
-  border-radius: 0.5em;
-  margin: 0 0.3rem;
-`;
-
-const SectionContainer = styled.section`
-  width: 90%;
-  max-width: 25em;
-  border-top: 3px solid #fff;
-  margin: 2rem 0;
-  ${mq("medium")} {
-    height: 9em;
-    margin: 4em 2em;
-  }
-`;
-
-const TopSectionContainer = styled(SectionContainer)`
-  ${mq("medium")} {
-    height: 27em;
-    margin: 0 2em;
-  }
-`;
-
-const SectionTitle = styled.h2`
-  margin-top: 0.2rem;
-  margin-bottom: 1rem;
-  font-size: 1.2rem;
-  font-weight: 400;
-  line-height: 20px;
-  text-transform: uppercase;
-`;
-
-const IconRow = styled.div`
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-`;
-
-const IconRowMiddle = styled(IconRow)`
-  width: 80%;
-  margin: auto;
-`;
-
-const HobbiesWrapper = styled.div`
-  display: flex;
-`;
-
-const Icon = styled.img`
-  height: 4rem;
-`;
-
-const FieldsOfWorkGraphic = styled.img`
-  margin-top: 0.3rem;
-  max-height: 400px;
-  margin: auto;
-`;
-
-const HobbyIcons = styled.img`
-  height: 5.5rem;
-`;
-
-const Text = styled.p`
-  margin-bottom: -1rem;
-`;
-
 export default function AboutMe() {
   useEffect(() => {
     window.scrollTo(0, document.body.scrollHeight);
@@ -204,3 +80,126 @@ export default function AboutMe() {
     </Container>
   );
 }
+
+const Container = styled.main`
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+  flex-grow: 1;
+  width: 90%;
+  height: 100%;
+  margin: 0 auto;
+  ${mq("medium")} {
+    width: 95%;
+    flex-flow: row wrap;
+  }
+`;
+
+const Top = styled.section`
+  width: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+`;
+
+const Placeholder = styled.div`
+  width: 0em;
+  ${mq("medium")} {
+    flex-grow: 1;
+    width: 20em;
+  }
+`;
+
+const Quote = styled.aside`
+  width: 90%;
+  max-width: 26.5em;
+  margin: 1.5rem 1.5rem 1.5rem auto;
+  font-size: 1.125rem;
+  font-weight: 200;
+  line-height: 1.25rem;
+`;
+
+const QuoteAuthor = styled.p`
+  text-align: end;
+  padding: 0 1.5rem;
+  font-weight: 400;
+`;
+
+const FotoWrapper = styled.div`
+  align-self: end;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 12em;
+  ${mq("medium")} {
+    height: 18em;
+  }
+  margin: 2rem 0.8rem;
+  padding: 0 1rem 0 0;
+`;
+
+const Foto = styled.img`
+  height: 100%;
+  border-radius: 0.5em;
+  margin: 0 0.3rem;
+`;
+
+const SectionContainer = styled.section`
+  width: 90%;
+  max-width: 23em;
+  border-top: 0.2em solid #fff;
+  margin: 2rem 0;
+  ${mq("medium")} {
+    height: 9em;
+    margin: 3em 1em;
+  }
+`;
+
+const TopSectionContainer = styled(SectionContainer)`
+  ${mq("medium")} {
+    height: 27em;
+    margin: 0 1em;
+  }
+`;
+
+const SectionTitle = styled.h2`
+  margin-top: 0.2rem;
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+`;
+
+const IconRow = styled.div`
+  display: flex;
+  justify-content: space-around;
+  width: 100%;
+`;
+
+const IconRowMiddle = styled(IconRow)`
+  width: 80%;
+  margin: auto;
+`;
+
+const HobbiesWrapper = styled.div`
+  display: flex;
+`;
+
+const Icon = styled.img`
+  height: 4rem;
+`;
+
+const FieldsOfWorkGraphic = styled.img`
+  margin-top: 0.3rem;
+  max-height: 25em;
+  margin: auto;
+`;
+
+const HobbyIcons = styled.img`
+  height: 5.5rem;
+`;
+
+const Text = styled.p`
+  margin-bottom: -1rem;
+`;
