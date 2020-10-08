@@ -1,5 +1,6 @@
 import React from "react";
 import { Global, css } from "@emotion/core";
+import { mq } from "../src/components/MediaQueries";
 
 function GlobalStyles() {
   return (
@@ -12,7 +13,10 @@ function GlobalStyles() {
         }
         body {
           height: 100%;
-          font-size: 16px;
+          font-size: 1em;
+          ${mq("medium")} {
+            font-size: 1.25em;
+          }
           margin: 0;
           background: ${theme.colors.bg};
           color: ${theme.colors.txt};

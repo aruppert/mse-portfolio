@@ -7,7 +7,7 @@ import {
   urbanChoreo,
   CTG,
   misc,
-} from "../slider-data/FotoData";
+} from "../content-data/FotoData";
 import {
   Container,
   Teaser,

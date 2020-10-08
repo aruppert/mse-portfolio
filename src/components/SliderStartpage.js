@@ -5,7 +5,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
-import StartPageData from "../slider-data/StartPageData";
+import StartPageData from "../content-data/StartPageData";
 import { HashLink as Link } from "react-router-hash-link";
 
 const SliderWrapper = styled.div`

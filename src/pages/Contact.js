@@ -155,7 +155,6 @@ export default function Contact() {
   };
 
   React.useEffect(() => {
-    console.log(loading);
     if (result != null) {
       setLoading(false);
     }
@@ -166,8 +165,6 @@ export default function Contact() {
       message: "",
       tel: "",
     });
-
-    console.log(loading);
   }, [result]);
 
   return (
@@ -234,7 +231,7 @@ export default function Contact() {
           value={state.message}
           onChange={onInputChange}
         />
-        <SubmitButton type="submit" disabled={loading || result != undefined}>
+        <SubmitButton type="submit" disabled={loading || result !== undefined}>
           <ActionIcon />
           Send
         </SubmitButton>

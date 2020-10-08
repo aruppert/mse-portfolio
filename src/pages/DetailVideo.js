@@ -8,7 +8,7 @@ import {
   zehnFacetten,
   ZFF,
   lichtfaktor,
-} from "../slider-data/VideoData";
+} from "../content-data/VideoData";
 import {
   Container,
   Teaser,

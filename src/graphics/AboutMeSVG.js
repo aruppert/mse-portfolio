@@ -3,7 +3,9 @@ import styled from "@emotion/styled";
 
 const Svg = styled.svg`
   fill: ${(props) => props.theme.colors.pri};
-  height: 100%;
+  max-height: 100%;
+  margin: 0 0 0 1.3em;
+  align-self: flex-end;
 `;
 
 export default function AboutMeSVG(props) {
