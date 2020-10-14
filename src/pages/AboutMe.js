@@ -21,7 +21,7 @@ import { mq } from "../components/MediaQueries";
 
 export default function AboutMe() {
   useEffect(() => {
-    window.scrollTo(0, document.body.scrollHeight);
+    window.scrollTo(0, 0);
   });
   return (
     <Container>
@@ -30,7 +30,7 @@ export default function AboutMe() {
         <FotoWrapper>
           <AboutMeSVG />
           <Foto
-            src="https://res.cloudinary.com/dkjkkarud/image/upload/v1599483556/Miriam_Exner_c_tmj40i.jpg"
+            src="https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_450/v1599483556/Miriam_Exner_c_tmj40i.jpg"
             alt="Portait of me"
           />
         </FotoWrapper>
@@ -114,9 +114,9 @@ const Quote = styled.aside`
   width: 90%;
   max-width: 26.5em;
   margin: 1.5rem 1.5rem 1.5rem auto;
-  font-size: 1.125rem;
+  font-size: 1.125em;
   font-weight: 200;
-  line-height: 1.25rem;
+  line-height: 1.25em;
 `;
 
 const QuoteAuthor = styled.p`
@@ -129,6 +129,7 @@ const FotoWrapper = styled.div`
   align-self: end;
   display: flex;
   justify-content: flex-end;
+  align-items: flex-end;
   width: 100%;
   height: 12em;
   ${mq("medium")} {
@@ -184,10 +185,11 @@ const IconRowMiddle = styled(IconRow)`
 
 const HobbiesWrapper = styled.div`
   display: flex;
+  justify-content: center;
 `;
 
 const Icon = styled.img`
-  height: 4rem;
+  height: 4em;
 `;
 
 const FieldsOfWorkGraphic = styled.img`
@@ -197,9 +199,9 @@ const FieldsOfWorkGraphic = styled.img`
 `;
 
 const HobbyIcons = styled.img`
-  height: 5.5rem;
+  height: 5.5em;
 `;
 
 const Text = styled.p`
-  margin-bottom: -1rem;
+  margin-bottom: -1em;
 `;
