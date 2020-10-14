@@ -9,7 +9,7 @@ const Container = styled("div")`
   justify-content: center;
   align-items: center;
   display: none;
-  width: 150px;
+  width: 8.5em;
   background: #fff;
 `;
 

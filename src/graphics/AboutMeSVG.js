@@ -1,11 +1,18 @@
 import React from "react";
 import styled from "@emotion/styled";
+import { mq } from "../components/MediaQueries";
+
 
 const Svg = styled.svg`
   fill: ${(props) => props.theme.colors.pri};
+  width:7.5em;
+  ${mq("medium")} {
+    width: 12em;
+  }
+  min-height: 12em;
   max-height: 100%;
   margin: 0 0 0 1.3em;
-  align-self: flex-end;
+  align-self:End;
 `;
 
 export default function AboutMeSVG(props) {

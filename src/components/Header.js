@@ -14,7 +14,7 @@ const Headerbar = styled.div`
   width: 100%;
   height: 48px;
   padding: 0 0 0.5rem;
-  background: #231d24;
+  background: var(--dark-bg);
 `;
 
 const Placeholder = styled.div`
