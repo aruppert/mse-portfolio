@@ -6,10 +6,16 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
+import { mq } from "../components/MediaQueries";
+
 
 const SliderWrapper = styled.div`
   width: 90%;
   margin: 4rem auto 1rem;
+  ${mq("medium")} {
+    width: 95%;
+    margin: 2em 1em;
+  }
 `;
 
 const SliderDetailWrapper = styled.div`

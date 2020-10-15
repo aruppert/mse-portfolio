@@ -14,6 +14,7 @@ import {
   Teaser,
   Description,
   SVGWrapper,
+  SectionWrapper
 } from "../components/DetailPage";
 
 const VideoLink = styled.a`
@@ -26,7 +27,8 @@ export default function DetailVideo() {
     window.scrollTo(0, 0);
   });
   return (
-    <Container>
+      <>
+      <div>
       <SVGWrapper>
         <Videography />
       </SVGWrapper>
@@ -35,6 +37,10 @@ export default function DetailVideo() {
         combined to let the moving picture shine. A subtle change of light or
         sound can make the difference.
       </Teaser>
+      </div>
+    <Container>
+        <SectionWrapper>
+            
       <SliderDetail
         title="Social Media Content for probono TV"
         subtitle="Videoshoot. Post Production. Animation. Graphics. CI. Social Media. Color Grading. Image Processing."
@@ -60,6 +66,9 @@ export default function DetailVideo() {
         team-efforts, which do not always reflect my opinions, but it is an
         on-going trial to make journalism great again. ;)
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
+          
       <SliderDetail
         title="The Wheel of Believes (Documentary Content)"
         subtitle="Video Shoot. Sound. Lighting. Interviews. Directing. Post Production. Animation. Graphics."
@@ -81,6 +90,9 @@ export default function DetailVideo() {
         </VideoLink>{" "}
         If you want to see more, please contact me.
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
+
       <SliderDetail
         title="10 Facetten (Documentary Content)"
         subtitle="Video Shoot. Sound. Lighting. Interviews. Directing. Post Production."
@@ -103,6 +115,9 @@ export default function DetailVideo() {
           www.10facetten.ch.
         </VideoLink>
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
+
       <SliderDetail
         title="ZFF daily 2014 Youtube channel"
         subtitle="Video Shoot. Post Production. Interviews."
@@ -125,6 +140,9 @@ export default function DetailVideo() {
           ZFF daily 2014 Youtube-Playlist
         </VideoLink>
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
+
       <SliderDetail
         title="Lightpainting Stopp-Trick-Editing (Lichtfaktor)"
         subtitle="Postproduction. Colorgrading."
@@ -144,6 +162,9 @@ export default function DetailVideo() {
           www.lichtfaktor.com
         </VideoLink>
       </Description>
+
+      </SectionWrapper>
     </Container>
+    </>
   );
 }

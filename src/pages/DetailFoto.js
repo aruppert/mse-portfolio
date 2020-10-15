@@ -13,6 +13,7 @@ import {
   Teaser,
   Description,
   SVGWrapper,
+  SectionWrapper
 } from "../components/DetailPage";
 
 export default function DetailFoto() {
@@ -20,7 +21,9 @@ export default function DetailFoto() {
     window.scrollTo(0, 0);
   });
   return (
-    <Container>
+      <>
+      <div>
+
       <SVGWrapper>
         <Photography />
       </SVGWrapper>
@@ -28,6 +31,11 @@ export default function DetailFoto() {
         "If your pictures aren't good enough, you're not close enough." -{" "}
         <i>Robert Capa</i>
       </Teaser>
+      </div>
+    <Container>
+
+        <SectionWrapper>
+
       <SliderDetail
         title="Fashion Photography"
         subtitle="Concept. Photography. Lighting. Color Grading."
@@ -39,6 +47,9 @@ export default function DetailFoto() {
         During my work with Stu Shapiro in Cape Town we arranged fashion shoots
         for models to top upgrade their portfolios.
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
+
       <SliderDetail
         title="Light Painting Photography"
         subtitle="Concept. Location Scouting. Photography. Light painting. Directing (Choreography). Color Grading."
@@ -51,6 +62,9 @@ export default function DetailFoto() {
         we protested against the housing and gentrification problems in major
         German cities.
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
+
       <SliderDetail
         title="Urban Choreography"
         subtitle="Concept. Photography. Color Grading."
@@ -61,6 +75,9 @@ export default function DetailFoto() {
         This project at KISD was about capturing moments in Colognes daily
         street life and unite them in a series.
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
+
       <SliderDetail
         title='"Come To Gather"-Project (Documentation)'
         subtitle="Photography. Social Design."
@@ -79,6 +96,9 @@ export default function DetailFoto() {
         part of town no matter if they have a roof over their head or not..
         These pictures document our journey.
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
+
       <SliderDetail
         title="Miscellaneous Photography"
         subtitle="Photography. Color Grading. Picture Editing."
@@ -89,6 +109,10 @@ export default function DetailFoto() {
         Here you find some selected pictures from my street and travel
         photography.
       </Description>
+      </SectionWrapper>
+
+
     </Container>
+    </>
   );
 }

@@ -10,7 +10,6 @@ import {
   Redirect,
 } from "react-router-dom";
 import Start from "./pages/Start";
-import Work from "./pages/Work";
 import Footer from "./components/Footer";
 import DetailUXUI from "./pages/DetailUXUI";
 import DetailFoto from "./pages/DetailFoto";
@@ -28,9 +27,6 @@ function App() {
         <Switch>
           <Route exact path="/">
             <Start />
-          </Route>
-          <Route path="/work">
-            <Work />
           </Route>
           <Route path="/detailUXUI">
             <DetailUXUI />

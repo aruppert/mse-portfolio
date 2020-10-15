@@ -12,6 +12,7 @@ import {
   Teaser,
   Description,
   SVGWrapper,
+  SectionWrapper
 } from "../components/DetailPage";
 
 export default function DetailUXUI() {
@@ -19,7 +20,8 @@ export default function DetailUXUI() {
     window.scrollTo(0, 0);
   });
   return (
-    <Container>
+      <>
+        <div>
       <SVGWrapper>
         <UXUI />
       </SVGWrapper>
@@ -27,6 +29,9 @@ export default function DetailUXUI() {
         The art of User experience- and User interface design is to find the
         best combination of function and form.
       </Teaser>
+        </div>
+    <Container>
+        <SectionWrapper>
       <SliderDetail
         title="Economad"
         subtitle="UX. UI. Graphics. Prototyping."
@@ -42,6 +47,8 @@ export default function DetailUXUI() {
         based on specific data instead of looking for offers in a specific
         place. The implementation of a user story was build individually.
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
       <SliderDetail
         title="The Wheel of Believes (Final Thesis)"
         subtitle="UX. UI. Graphics. CI. Videography. Animation. Content."
@@ -61,6 +68,9 @@ export default function DetailUXUI() {
         beliefs. This being my final thesis of my bachelor degree I developed
         the whole project from start to finish individually.
       </Description>
+     </SectionWrapper>
+     <SectionWrapper>
+         
       <SliderDetail
         title="10 Facetten Webseite"
         subtitle="UX. UI. Graphics. CI. Videography."
@@ -75,6 +85,9 @@ export default function DetailUXUI() {
         film, we decided to use special icons, which relate to the topics. The
         project was implemented in collaboration with <i>www.srsly.ch</i>.
       </Description>
+          
+      </SectionWrapper>
+      <SectionWrapper>
       <SliderDetail
         title="Can't touch this"
         subtitle="Design Research. Concept. UX. Arduino Coding. Content."
@@ -89,6 +102,8 @@ export default function DetailUXUI() {
         sensations, then 'pictures behind glass'. The Cabinet of Curiosities was
         presented during the Expo Case Touch in 2014.
       </Description>
+      </SectionWrapper>
     </Container>
+    </>
   );
 }

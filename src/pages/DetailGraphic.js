@@ -11,6 +11,7 @@ import {
   Teaser,
   Description,
   SVGWrapper,
+  SectionWrapper
 } from "../components/DetailPage";
 
 export default function DetailGraphic() {
@@ -19,14 +20,17 @@ export default function DetailGraphic() {
   });
 
   return (
-    <Container>
+      <>
+      <div>
       <SVGWrapper>
         <GraphicDesign />
       </SVGWrapper>
       <Teaser>
         “If no one hates it, no one really loves it.” – Jessica Walsh
       </Teaser>
-
+      </div>
+    <Container>
+<SectionWrapper>
       <SliderDetail
         title="Illustrations for this website"
         subtitle="Illustration."
@@ -37,6 +41,8 @@ export default function DetailGraphic() {
         I wanted to have an Eye-Catching starting point for this website, so I
         tried out different illustration styles until I selected the curly girl.
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
       <SliderDetail
         title="The Wheel of Believes (CI)"
         subtitle="Layout. Illustration. CI."
@@ -47,6 +53,9 @@ export default function DetailGraphic() {
         For my Bachelor Thesis I also designed the logo and graphical elements
         for the fictional website.
       </Description>
+      </SectionWrapper>
+      <SectionWrapper>
+
       <SliderDetail
         title="Come To Gather (Image Campaign)"
         subtitle="Concept. Photography. Graphic Design."
@@ -65,6 +74,8 @@ export default function DetailGraphic() {
         Claim-your-streets-event to bring together the people living in these
         part of town no matter if they have a roof over their head or not.
       </Description>
+      </SectionWrapper>
     </Container>
+    </>
   );
 }
