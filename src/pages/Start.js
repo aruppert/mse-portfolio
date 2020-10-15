@@ -10,16 +10,20 @@ import { mq } from "../components/MediaQueries";
 const Container = styled.main`
   display: flex;
   flex-flow: column nowrap;
-  justify-content: center;
-  flex-grow: 1;
+  justify-content: space-evenly;
   height: 100%;
+  ${mq("medium")} {
+   flex-flow: row wrap;
+  }
 `;
 
 const TopWrapper = styled.div`
   display: flex;
   justify-content: center;
-  flex-grow: 1;
   margin: auto;
+  ${mq("medium")} {
+margin: 0;
+  }
 `;
 const MiddleWrapper = styled.section`
   margin: auto;
@@ -28,18 +32,19 @@ const MiddleWrapper = styled.section`
 const MoreWrapper = styled(Link)`
   display: flex;
   width: 100%;
-  padding: 0 0 0 120px;
   text-decoration: none;
-`;
-
-const MoreWorkWrapper = styled(MoreWrapper)`
-  margin: 30px 0 0;
 `;
 
 const Lady = styled.img`
   width: 100%;
-  max-width: 18em;
+  max-width: 16em;
   height: auto;
+  padding: 0.5em 0 0 1em;
+  ${mq("medium")} {
+  padding: 0;
+  font-size: 0.8em;
+  max-width: 12em; 
+  }
 `;
 
 const LadyWrapper = styled.div`
@@ -61,6 +66,7 @@ const Teaser = styled.p`
   width: 12rem;
   font-size: 1.125rem;
   line-height: 1.25rem;
+  padding: 0 0.4em;
   ${mq("small")} {
     width: 14em;
     font-size: 1.3rem;
@@ -69,6 +75,32 @@ const Teaser = styled.p`
 `;
 
 const MoreText = styled.p`
+  width: fit-content;
+  margin: 0 5px;
+  color: ${(props) => props.theme.colors.sec};
+  font-weight: 600;
+`;
+
+const WorkLinkContainer = styled.section`
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr;
+  padding: 2.8em 2em;
+  margin: auto;
+  max-width: 25em;
+  ${mq("medium")}{
+  padding: 3em 0 0 0.3em;
+  }
+`;
+
+const WorkLink = styled(Link)`
+  display: flex;
+  margin: 0.6rem 0 0;
+  text-decoration: none;
+  width: max-content;
+`;
+
+const WorkLinkText = styled.p`
   width: fit-content;
   margin: 0 5px;
   color: ${(props) => props.theme.colors.sec};
@@ -96,17 +128,34 @@ export default function Start() {
             experienced photographer and graphic designer, who is able to plan
             and create a project from the first step.{" "}
           </Teaser>
-        </Right>
-      </TopWrapper>
       <MiddleWrapper>
         <MoreWrapper to="/aboutMe">
           <ActionIcon /> <MoreText>More about me.</MoreText>
         </MoreWrapper>
-        <MoreWorkWrapper to="/work">
-          <ActionIcon /> <MoreText>More of my work.</MoreText>
-        </MoreWorkWrapper>
       </MiddleWrapper>
+        </Right>
+      </TopWrapper>
+      <div>
       <SliderStartpage />
+      <WorkLinkContainer>
+        <WorkLink to="/detailUXUI">
+          <ActionIcon />
+          <WorkLinkText>UX/UI design.</WorkLinkText>
+        </WorkLink>
+        <WorkLink to="/detailVideo">
+          <ActionIcon />
+          <WorkLinkText>Videography.</WorkLinkText>
+        </WorkLink>
+        <WorkLink to="/detailFoto">
+          <ActionIcon />
+          <WorkLinkText>Photography.</WorkLinkText>
+        </WorkLink>
+        <WorkLink to="/detailGraphic">
+          <ActionIcon />
+          <WorkLinkText>Graphic design.</WorkLinkText>
+        </WorkLink>
+      </WorkLinkContainer>
+      </div>
     </Container>
   );
 }

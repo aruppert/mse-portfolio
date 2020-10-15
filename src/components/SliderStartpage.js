@@ -7,11 +7,17 @@ import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
 import StartPageData from "../content-data/StartPageData";
 import { HashLink as Link } from "react-router-hash-link";
+import { mq } from "../components/MediaQueries";
+
 
 const SliderWrapper = styled.div`
-  width: 320px;
+  width: 20em;
   margin: auto;
-  margin-top: 32px;
+  margin-top: 2em;
+  align-self:center;
+  ${mq("medium")} {
+    margin: 3em 0 0;
+  }
 `;
 
 const Slide = styled.div`
@@ -20,7 +26,9 @@ const Slide = styled.div`
 `;
 
 const SlideImg = styled.img`
-  height: 318px;
+  width:100%;
+  max-width:fit-content;
+  height: 20em;
 `;
 
 const SlideTitleWrapper = styled.h2`
