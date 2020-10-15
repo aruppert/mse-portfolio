@@ -6,6 +6,7 @@ const Svg = styled.svg`
   width: 100%;
   max-width: 18em;
   height: auto;
+  padding: 0 1em 0 0;
 `;
 
 export default function ThisIsME(props) {
