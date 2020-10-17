@@ -8,7 +8,6 @@ import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
 import { mq } from "../components/MediaQueries";
 
-
 const SliderWrapper = styled.div`
   width: 90%;
   margin: 4rem auto 1rem;

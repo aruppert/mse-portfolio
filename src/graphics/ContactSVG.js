@@ -4,7 +4,7 @@ import styled from "@emotion/styled";
 const Svg = styled.svg`
   fill: ${(props) => props.theme.colors.pri};
   width: 80%;
-  max-width:22em;
+  max-width: 22em;
 `;
 
 export default function ContactSVG(props) {
