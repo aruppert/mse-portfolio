@@ -231,7 +231,10 @@ export default function Contact() {
           value={state.message}
           onChange={onInputChange}
         />
-        <SubmitButton type="submit" disabled={loading || !state.name || !state.message || !state.email}>
+        <SubmitButton
+          type="submit"
+          disabled={loading || !state.name || !state.message || !state.email}
+        >
           <ActionIcon />
           Send
         </SubmitButton>

@@ -13,7 +13,7 @@ const Container = styled.main`
   justify-content: space-evenly;
   height: 100%;
   ${mq("medium")} {
-   flex-flow: row wrap;
+    flex-flow: row wrap;
   }
 `;
 
@@ -22,7 +22,7 @@ const TopWrapper = styled.div`
   justify-content: center;
   margin: auto;
   ${mq("medium")} {
-margin: 0;
+    margin: 0;
   }
 `;
 const MiddleWrapper = styled.section`
@@ -41,9 +41,9 @@ const Lady = styled.img`
   height: auto;
   padding: 0.5em 0 0 1em;
   ${mq("medium")} {
-  padding: 0;
-  font-size: 0.8em;
-  max-width: 12em; 
+    padding: 0;
+    font-size: 0.8em;
+    max-width: 12em;
   }
 `;
 
@@ -88,8 +88,8 @@ const WorkLinkContainer = styled.section`
   padding: 2.8em 2em;
   margin: auto;
   max-width: 25em;
-  ${mq("medium")}{
-  padding: 3em 0 0 0.3em;
+  ${mq("medium")} {
+    padding: 3em 0 0 0.3em;
   }
 `;
 
@@ -128,33 +128,33 @@ export default function Start() {
             experienced photographer and graphic designer, who is able to plan
             and create a project from the first step.{" "}
           </Teaser>
-      <MiddleWrapper>
-        <MoreWrapper to="/aboutMe">
-          <ActionIcon /> <MoreText>More about me.</MoreText>
-        </MoreWrapper>
-      </MiddleWrapper>
+          <MiddleWrapper>
+            <MoreWrapper to="/aboutMe">
+              <ActionIcon /> <MoreText>More about me.</MoreText>
+            </MoreWrapper>
+          </MiddleWrapper>
         </Right>
       </TopWrapper>
       <div>
-      <SliderStartpage />
-      <WorkLinkContainer>
-        <WorkLink to="/detailUXUI">
-          <ActionIcon />
-          <WorkLinkText>UX/UI design.</WorkLinkText>
-        </WorkLink>
-        <WorkLink to="/detailVideo">
-          <ActionIcon />
-          <WorkLinkText>Videography.</WorkLinkText>
-        </WorkLink>
-        <WorkLink to="/detailFoto">
-          <ActionIcon />
-          <WorkLinkText>Photography.</WorkLinkText>
-        </WorkLink>
-        <WorkLink to="/detailGraphic">
-          <ActionIcon />
-          <WorkLinkText>Graphic design.</WorkLinkText>
-        </WorkLink>
-      </WorkLinkContainer>
+        <SliderStartpage />
+        <WorkLinkContainer>
+          <WorkLink to="/detailUXUI">
+            <ActionIcon />
+            <WorkLinkText>UX/UI design.</WorkLinkText>
+          </WorkLink>
+          <WorkLink to="/detailVideo">
+            <ActionIcon />
+            <WorkLinkText>Videography.</WorkLinkText>
+          </WorkLink>
+          <WorkLink to="/detailFoto">
+            <ActionIcon />
+            <WorkLinkText>Photography.</WorkLinkText>
+          </WorkLink>
+          <WorkLink to="/detailGraphic">
+            <ActionIcon />
+            <WorkLinkText>Graphic design.</WorkLinkText>
+          </WorkLink>
+        </WorkLinkContainer>
       </div>
     </Container>
   );

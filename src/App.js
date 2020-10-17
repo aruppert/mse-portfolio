@@ -17,6 +17,7 @@ import DetailVideo from "./pages/DetailVideo";
 import Contact from "./pages/Contact";
 import AboutMe from "./pages/AboutMe";
 import DetailGraphic from "./pages/DetailGraphic";
+import Imprint from "./pages/Imprint";
 
 function App() {
   return (
@@ -43,8 +44,11 @@ function App() {
           <Route path="/detailGraphic">
             <DetailGraphic />
           </Route>
-          <Route path="/Contact">
+          <Route path="/contact">
             <Contact />
+          </Route>
+          <Route path="/imprint">
+            <Imprint />
           </Route>
           <Route path="*">
             <Redirect to="/" />
