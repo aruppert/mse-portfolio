@@ -1,6 +1,6 @@
 import React from "react";
 import styled from "@emotion/styled";
-// import { Link } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 const Navbar = styled.footer`
   display: flex;
@@ -9,11 +9,15 @@ const Navbar = styled.footer`
   font-weight: 400;
 `;
 
-// const Navbutton = styled(Link)`
-//   text-decoration: none;
-//   color: ${(props) => props.theme.colors.pri};
-// `;
+const Navbutton = styled(Link)`
+  text-decoration: none;
+  color: ${(props) => props.theme.colors.pri};
+`;
 
 export default function Footer() {
-  return <Navbar>{/* <Navbutton>Impressum.</Navbutton> */}</Navbar>;
+  return (
+    <Navbar>
+      <Navbutton to="/imprint">Impressum.</Navbutton>
+    </Navbar>
+  );
 }
