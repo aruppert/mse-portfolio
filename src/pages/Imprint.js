@@ -421,7 +421,7 @@ export default function Imprint() {
           <a
             href="https://adssettings.google.com/authenticated"
             target="_blank"
-            rel="nofollow"
+            rel="noopener noreferrer"
           >
             https://adssettings.google.com/authenticated
           </a>
@@ -433,7 +433,7 @@ export default function Imprint() {
           <a
             href="https://www.youtube.com/t/terms"
             target="_blank"
-            rel="nofollow"
+            rel="noopener noreferrer"
           >
             https://www.youtube.com/t/terms
           </a>
@@ -442,7 +442,7 @@ export default function Imprint() {
           <a
             href="https://policies.google.com/technologies/ads"
             target="_blank"
-            rel="nofollow"
+            rel="noopener noreferrer"
           >
             https://policies.google.com/technologies/ads
           </a>
@@ -457,7 +457,7 @@ export default function Imprint() {
           <a
             href="https://policies.google.com/privacy"
             target="_blank"
-            rel="nofollow"
+            rel="noopener noreferrer"
           >
             https://policies.google.com/privacy
           </a>
