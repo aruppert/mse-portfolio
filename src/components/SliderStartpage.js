@@ -24,8 +24,14 @@ const Slide = styled.div`
   display: flex;
 `;
 
-const SlideImg = styled.img`
+const SlideImgWrapper = styled.div`
   width: 100%;
+  display: flex;
+  justify-content: center;
+  overflow: hidden;
+`;
+
+const SlideImg = styled.img`
   max-width: fit-content;
   height: 20em;
 `;
@@ -57,7 +63,10 @@ const SlideYear = styled.aside`
 `;
 
 const SlideLabel = styled.label`
+  display: flex;
+  height: 4em;
   width: 100%;
+  align-items: center;
 `;
 
 export default function SliderStartpage() {
@@ -88,13 +97,15 @@ export default function SliderStartpage() {
               <SlideYearPlaceholder />
               <SlideYear>{slide.year}</SlideYear>
             </SlideYearWrapper>
-            {slide.link ? (
-              <a href={slide.link} target="_blank" rel="noopener noreferrer">
+            <SlideImgWrapper>
+              {slide.link ? (
+                <a href={slide.link} target="_blank" rel="noopener noreferrer">
+                  <SlideImg src={slide.src} />
+                </a>
+              ) : (
                 <SlideImg src={slide.src} />
-              </a>
-            ) : (
-              <SlideImg src={slide.src} />
-            )}
+              )}
+            </SlideImgWrapper>
             <SlideLabel>{slide.label}</SlideLabel>
           </Slide>
         ))}
