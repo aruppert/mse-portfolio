@@ -3,7 +3,7 @@ const dataForStartpageSlider = [
     id: 1,
     title: "Final Thesis (Bachelor Degree)",
     src:
-      "https://res.cloudinary.com/dkjkkarud/image/upload/v1599309073/135182937_rshxp9.jpg",
+      "https://res.cloudinary.com/dkjkkarud/image/upload/c_fill,g_face:auto,q_100,w_650/v1599309073/135182937_rshxp9.jpg",
     year: "2015",
     label: "Concept. UX/UI. Graphic Design. Videography. Content.",
     link: "https://vimeo.com/135183746",
@@ -22,7 +22,7 @@ const dataForStartpageSlider = [
     id: 3,
     title: "Social Media Content (probono TV)",
     src:
-      "https://res.cloudinary.com/dkjkkarud/image/upload/v1599310323/03_probon_square_xi0ygy.jpg",
+      "https://res.cloudinary.com/dkjkkarud/image/youtube/c_fill,g_face:auto,q_100,w_650/https://youtu.be/94mosRYYod0",
     year: "2016",
     label: "Illustration. Graphic Design. Concept. Videography. Animation.",
     link: "https://youtu.be/94mosRYYod0",
