@@ -92,6 +92,7 @@ export default function DetailUXUI() {
             title="Can't touch this"
             subtitle="Design Research. Concept. UX. Arduino Coding. Content."
             data={cantTouchThis}
+            year="2014"
             id="canttouchthis"
           />
           <Description>
