@@ -15,7 +15,7 @@ const Container = styled("div")`
 
 const Items = styled(Link)`
   align-self: flex-start;
-  color: ${(props) => props.theme.colors.bg};
+  color: var(--dark-bg);
   text-decoration: none;
 `;
 

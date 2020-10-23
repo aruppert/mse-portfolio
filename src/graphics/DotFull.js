@@ -2,7 +2,7 @@ import React from "react";
 import styled from "@emotion/styled";
 
 const Svg = styled.svg`
-  fill: ${(props) => props.theme.colors.sec};
+  fill: var(--dark-sec);
   height: 12px;
   position: absolute;
   top: 130%;

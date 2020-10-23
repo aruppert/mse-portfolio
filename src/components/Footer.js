@@ -11,7 +11,7 @@ const Navbar = styled.footer`
 
 const Navbutton = styled(Link)`
   text-decoration: none;
-  color: ${(props) => props.theme.colors.pri};
+  color: var(--dark-pri);
 `;
 
 export default function Footer() {

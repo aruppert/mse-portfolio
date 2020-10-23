@@ -1,6 +1,4 @@
 import React from "react";
-import { ThemeProvider } from "emotion-theming";
-import dark from "./themes/dark";
 import Header from "./components/Header";
 import GlobalStyles from "./GlobalStyles";
 import {
@@ -21,42 +19,40 @@ import Imprint from "./pages/Imprint";
 
 function App() {
   return (
-    <ThemeProvider theme={dark}>
-      <Router>
-        <GlobalStyles />
-        <Header />
-        <Switch>
-          <Route exact path="/">
-            <Start />
-          </Route>
-          <Route path="/detailUXUI">
-            <DetailUXUI />
-          </Route>
-          <Route path="/detailFoto">
-            <DetailFoto />
-          </Route>
-          <Route path="/detailVideo">
-            <DetailVideo />
-          </Route>
-          <Route path="/aboutMe">
-            <AboutMe />
-          </Route>
-          <Route path="/detailGraphic">
-            <DetailGraphic />
-          </Route>
-          <Route path="/contact">
-            <Contact />
-          </Route>
-          <Route path="/imprint">
-            <Imprint />
-          </Route>
-          <Route path="*">
-            <Redirect to="/" />
-          </Route>
-        </Switch>
-        <Footer />
-      </Router>
-    </ThemeProvider>
+    <Router>
+      <GlobalStyles />
+      <Header />
+      <Switch>
+        <Route exact path="/">
+          <Start />
+        </Route>
+        <Route path="/detailUXUI">
+          <DetailUXUI />
+        </Route>
+        <Route path="/detailFoto">
+          <DetailFoto />
+        </Route>
+        <Route path="/detailVideo">
+          <DetailVideo />
+        </Route>
+        <Route path="/aboutMe">
+          <AboutMe />
+        </Route>
+        <Route path="/detailGraphic">
+          <DetailGraphic />
+        </Route>
+        <Route path="/contact">
+          <Contact />
+        </Route>
+        <Route path="/imprint">
+          <Imprint />
+        </Route>
+        <Route path="*">
+          <Redirect to="/" />
+        </Route>
+      </Switch>
+      <Footer />
+    </Router>
   );
 }
 

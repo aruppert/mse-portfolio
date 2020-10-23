@@ -77,7 +77,7 @@ const Teaser = styled.p`
 const MoreText = styled.p`
   width: fit-content;
   margin: 0 5px;
-  color: ${(props) => props.theme.colors.sec};
+  color: var(--dark-sec);
   font-weight: 600;
 `;
 
@@ -103,7 +103,7 @@ const WorkLink = styled(Link)`
 const WorkLinkText = styled.p`
   width: fit-content;
   margin: 0 5px;
-  color: ${(props) => props.theme.colors.sec};
+  color: var(--dark-sec);
   font-weight: 600;
 `;
 

@@ -19,7 +19,7 @@ import {
 
 const VideoLink = styled.a`
   display: block;
-  color: ${(props) => props.theme.colors.sec};
+  color: var(--dark-sec);
 `;
 
 export default function DetailVideo() {

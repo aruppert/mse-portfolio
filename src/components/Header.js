@@ -39,22 +39,18 @@ const Navbar = styled.nav`
 const NavLink = styled(Link)`
   position: relative;
   align-self: flex-end;
-  color: ${(props) => props.theme.colors.pri};
+  color: var(--dark-pri);
   text-decoration: none;
 `;
 
 const AboutLink = styled(NavLink)`
   color: ${(props) =>
-    props.pathname === "/aboutMe"
-      ? props.theme.colors.sec
-      : props.theme.colors.pri};
+    props.pathname === "/aboutMe" ? "var(--dark-sec)" : "var(--dark-pri)"};
 `;
 
 const ContactLink = styled(NavLink)`
   color: ${(props) =>
-    props.pathname === "/contact"
-      ? props.theme.colors.sec
-      : props.theme.colors.pri};
+    props.pathname === "/contact" ? "var(--dark-sec)" : "var(--dark-pri)"};
 `;
 
 const LogoLink = styled(NavLink)`
@@ -77,11 +73,11 @@ const WorkWrapper = styled.button`
   border: none;
   margin: 0;
   padding: 0;
-  background: ${({ theme }) => theme.colors.bg};
+  background: var(--dark-bg);
   color: ${(props) =>
     WorkPathArray.includes(props.pathname)
-      ? props.theme.colors.sec
-      : props.theme.colors.pri};
+      ? "var(--dark-sec)"
+      : "var(--dark-pri)"};
   font-size: inherit;
   font-family: inherit;
   &:focus-within > div {

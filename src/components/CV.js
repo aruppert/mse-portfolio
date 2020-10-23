@@ -24,7 +24,7 @@ export default function CV() {
       </SectionContainer>
 
       <SecondPartContainer>
-        <SecondPartTitle>Long story short Part II</SecondPartTitle>
+        <SecondPartTitle>Long story short part II</SecondPartTitle>
         <CVHeadingWrapper>
           <CVHeadingPlaceholder />
           <CVHeading>Work Experience</CVHeading>
@@ -58,7 +58,7 @@ const SectionContainer = styled.section`
 `;
 
 const SecondPartContainer = styled(SectionContainer)`
-  border-top: 0.2em solid ${(props) => props.theme.colors.bg};
+  border-top: 0.2em solid var(--dark-bg);
   margin: 3rem 0;
 `;
 
@@ -72,7 +72,7 @@ const SectionTitle = styled.h2`
 `;
 
 const SecondPartTitle = styled(SectionTitle)`
-  color: ${(props) => props.theme.colors.bg};
+  color: var(--dark-bg);
 `;
 
 const CVHeadingWrapper = styled.div`
@@ -123,6 +123,6 @@ const ContactLink = styled(Link)`
 const ContactLinkText = styled.p`
   width: fit-content;
   margin: 0 0.3em;
-  color: ${(props) => props.theme.colors.sec};
+  color: var(--dark-sec);
   font-weight: 600;
 `;

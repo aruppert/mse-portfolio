@@ -44,7 +44,7 @@ const SlideTitleWrapper = styled.h2`
 `;
 const SlideTitle = styled(Link)`
   text-decoration: none;
-  color: ${(props) => props.theme.colors.sec};
+  color: var(--dark-sec);
   font-weight: 600;
   text-transform: uppercase;
 `;
