@@ -81,7 +81,7 @@ export default function DetailVideo() {
             rituals of the turkish-islamic Community in Cologne.
             <VideoLink
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               href="https://vimeo.com/135182937"
             >
               Here you find a summary.

@@ -7,6 +7,59 @@ import { Link } from "react-router-dom";
 import SliderStartpage from "../components/SliderStartpage";
 import { mq } from "../components/MediaQueries";
 
+export default function Start() {
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  });
+  return (
+    <Container>
+      <TopWrapper>
+        <Left>
+          <LadyWrapper>
+            <Lady src={lady} />
+          </LadyWrapper>
+        </Left>
+        <Right>
+          <ThisIsME />
+          <Teaser>
+            I'm a passionate young designer working in the world of digital and
+            audiovisual media! I can offer the whole range of video production
+            starting from the concept up to the final clip. I am also an
+            experienced photographer and graphic designer, who is able to plan
+            and create a project from the first step.{" "}
+          </Teaser>
+          <MiddleWrapper>
+            <MoreWrapper to="/aboutMe">
+              <ActionIcon /> <MoreText>More about me.</MoreText>
+            </MoreWrapper>
+          </MiddleWrapper>
+        </Right>
+      </TopWrapper>
+      <div>
+        <SliderStartpage />
+        <WorkLinkContainer>
+          <WorkLink to="/detailUXUI">
+            <ActionIcon />
+            <WorkLinkText>UX/UI design.</WorkLinkText>
+          </WorkLink>
+          <WorkLink to="/detailVideo">
+            <ActionIcon />
+            <WorkLinkText>Videography.</WorkLinkText>
+          </WorkLink>
+          <WorkLink to="/detailFoto">
+            <ActionIcon />
+            <WorkLinkText>Photography.</WorkLinkText>
+          </WorkLink>
+          <WorkLink to="/detailGraphic">
+            <ActionIcon />
+            <WorkLinkText>Graphic design.</WorkLinkText>
+          </WorkLink>
+        </WorkLinkContainer>
+      </div>
+    </Container>
+  );
+}
+
 const Container = styled.main`
   display: flex;
   flex-flow: column nowrap;
@@ -106,56 +159,3 @@ const WorkLinkText = styled.p`
   color: var(--dark-sec);
   font-weight: 600;
 `;
-
-export default function Start() {
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  });
-  return (
-    <Container>
-      <TopWrapper>
-        <Left>
-          <LadyWrapper>
-            <Lady src={lady} />
-          </LadyWrapper>
-        </Left>
-        <Right>
-          <ThisIsME />
-          <Teaser>
-            I'm a passionate young designer working in the world of digital and
-            audiovisual media! I can offer the whole range of video production
-            starting from the concept up to the final clip. I am also an
-            experienced photographer and graphic designer, who is able to plan
-            and create a project from the first step.{" "}
-          </Teaser>
-          <MiddleWrapper>
-            <MoreWrapper to="/aboutMe">
-              <ActionIcon /> <MoreText>More about me.</MoreText>
-            </MoreWrapper>
-          </MiddleWrapper>
-        </Right>
-      </TopWrapper>
-      <div>
-        <SliderStartpage />
-        <WorkLinkContainer>
-          <WorkLink to="/detailUXUI">
-            <ActionIcon />
-            <WorkLinkText>UX/UI design.</WorkLinkText>
-          </WorkLink>
-          <WorkLink to="/detailVideo">
-            <ActionIcon />
-            <WorkLinkText>Videography.</WorkLinkText>
-          </WorkLink>
-          <WorkLink to="/detailFoto">
-            <ActionIcon />
-            <WorkLinkText>Photography.</WorkLinkText>
-          </WorkLink>
-          <WorkLink to="/detailGraphic">
-            <ActionIcon />
-            <WorkLinkText>Graphic design.</WorkLinkText>
-          </WorkLink>
-        </WorkLinkContainer>
-      </div>
-    </Container>
-  );
-}

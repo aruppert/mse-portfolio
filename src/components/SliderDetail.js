@@ -8,59 +8,6 @@ import ArrowLeft from "../graphics/ArrowLeft";
 import ArrowRight from "../graphics/ArrowRight";
 import { mq } from "../components/MediaQueries";
 
-const SliderWrapper = styled.div`
-  width: 90%;
-  margin: 4rem auto 1rem;
-  ${mq("medium")} {
-    width: 95%;
-    margin: 2em 1em;
-  }
-`;
-
-const SliderDetailWrapper = styled.div`
-  width: 90%;
-  border-top: 2px solid white;
-  margin: auto;
-`;
-
-const Slide = styled.div`
-  display: block;
-`;
-
-const SlideImg = styled.img`
-  max-width: 100%;
-  height: 318px;
-  object-fit: cover;
-  object-position: center;
-  margin: auto;
-`;
-
-const SlideTitle = styled.h2`
-  font-size: 18px;
-  line-height: 22px;
-  font-weight: 600;
-  text-transform: uppercase;
-  margin: 6px 0 4px;
-`;
-
-const SlideSubtitle = styled(SlideTitle)`
-  text-transform: none;
-  margin: 3rem 0 0;
-`;
-
-const SlideYearWrapper = styled.div`
-  display: flex;
-  margin: 0 0 10px;
-`;
-const SlideYearPlaceholder = styled.div`
-  flex-grow: 1;
-`;
-const SlideYear = styled.aside`
-  width: fit-content;
-  border-top: 0.5px solid white;
-  font-weight: 100;
-`;
-
 export default function SliderDetail({
   title,
   subtitle,
@@ -105,6 +52,59 @@ export default function SliderDetail({
     </SliderWrapper>
   );
 }
+
+const SliderWrapper = styled.div`
+  width: 90%;
+  margin: 4rem auto 1rem;
+  ${mq("medium")} {
+    width: 95%;
+    margin: 2em 1em;
+  }
+`;
+
+const SliderDetailWrapper = styled.div`
+  width: 90%;
+  border-top: 2px solid var(--dark-pri);
+  margin: auto;
+`;
+
+const Slide = styled.div`
+  display: block;
+`;
+
+const SlideImg = styled.img`
+  max-width: 100%;
+  height: 318px;
+  object-fit: cover;
+  object-position: center;
+  margin: auto;
+`;
+
+const SlideTitle = styled.h2`
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 600;
+  text-transform: uppercase;
+  margin: 6px 0 4px;
+`;
+
+const SlideSubtitle = styled(SlideTitle)`
+  text-transform: none;
+  margin: 3rem 0 0;
+`;
+
+const SlideYearWrapper = styled.div`
+  display: flex;
+  margin: 0 0 10px;
+`;
+const SlideYearPlaceholder = styled.div`
+  flex-grow: 1;
+`;
+const SlideYear = styled.aside`
+  width: fit-content;
+  border-top: 0.5px solid var(--dark-pri);
+  font-weight: 100;
+`;
 
 SliderDetail.propTypes = {
   title: PropTypes.string,

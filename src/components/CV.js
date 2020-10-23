@@ -50,10 +50,11 @@ const SectionContainer = styled.section`
   width: 90%;
   max-width: 23em;
   height: 30em;
-  border-top: 0.2em solid #fff;
+  border-top: 0.2em solid var(--dark-pri);
   margin: 2rem 0;
   ${mq("medium")} {
     margin: 3em 1em;
+    justify-self: center;
   }
 `;
 
@@ -88,7 +89,7 @@ const CVHeading = styled.h2`
   width: fit-content;
   font-weight: 100;
   font-size: 1.3rem;
-  border-top: 0.03em solid white;
+  border-top: 0.03em solid var(--dark-pri);
 `;
 
 const CVEntryContainer = styled.div`
@@ -107,7 +108,7 @@ const CVEntryYear = styled.aside`
 const CVEntryText = styled.p`
   width: 75%;
   font-weight: 100;
-  border-left: 0.006em solid #fff;
+  border-left: 0.006em solid var(--dark-pri);
   margin: 0;
   padding: 0 0.6rem;
 `;

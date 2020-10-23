@@ -26,7 +26,7 @@ export default function DetailGraphic() {
           <GraphicDesign />
         </SVGWrapper>
         <Teaser>
-          “If no one hates it, no one really loves it.” – Jessica Walsh
+          "If no one hates it, no one really loves it." – Jessica Walsh
         </Teaser>
       </div>
       <Container>
