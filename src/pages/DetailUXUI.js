@@ -39,7 +39,7 @@ export default function DetailUXUI() {
             data={economadData}
           />
           <Description>
-            The task during the UX-AdobeXD course at “cimdata Bildungsakademie”
+            The task during the UX-AdobeXD course at “cimdata Bildungs-akademie”
             was to develop a project from idea generation to a first prototype.
             Our group has dealt with the idea of ​​a sustainable travel tool
             that connects fair and climate-friendly businesses with travelers. A

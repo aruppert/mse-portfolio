@@ -3,7 +3,7 @@ import styled from "@emotion/styled";
 import { mq } from "../components/MediaQueries";
 
 const Svg = styled.svg`
-  fill: ${(props) => props.theme.colors.pri};
+  fill: var(--dark-pri);
   width: 7.5em;
   ${mq("medium")} {
     width: 12em;

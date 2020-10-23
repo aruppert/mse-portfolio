@@ -2,6 +2,14 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 
+export default function Footer() {
+  return (
+    <Navbar>
+      <Navbutton to="/imprint">Impressum.</Navbutton>
+    </Navbar>
+  );
+}
+
 const Navbar = styled.footer`
   display: flex;
   justify-content: flex-end;
@@ -11,13 +19,5 @@ const Navbar = styled.footer`
 
 const Navbutton = styled(Link)`
   text-decoration: none;
-  color: ${(props) => props.theme.colors.pri};
+  color: var(--dark-pri);
 `;
-
-export default function Footer() {
-  return (
-    <Navbar>
-      <Navbutton to="/imprint">Impressum.</Navbutton>
-    </Navbar>
-  );
-}

@@ -1,8 +1,9 @@
 import React from "react";
+import styled from "@emotion/styled";
 
 export default function Imprint() {
   return (
-    <>
+    <Container>
       <h1>Impressum</h1>
       <p>
         Miriam Exner
@@ -22,7 +23,11 @@ export default function Imprint() {
       </p>
       <p>
         Programmierung der Seite: A. Ruppert{" "}
-        <a href="github.com/aruppert" target="_blank" rel="nofollow">
+        <a
+          href="https://github.com/aruppert"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           GitHub-Profil
         </a>
       </p>
@@ -617,6 +622,11 @@ export default function Imprint() {
           Datenschutzerklärung von Juraforum.de
         </a>
       </p>
-    </>
+    </Container>
   );
 }
+
+const Container = styled.div`
+  width: 90%;
+  margin: 2em auto;
+`;

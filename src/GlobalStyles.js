@@ -5,7 +5,7 @@ import { mq } from "../src/components/MediaQueries";
 function GlobalStyles() {
   return (
     <Global
-      styles={(theme) => css`
+      styles={css`
         *,
         *:before,
         *:after {
@@ -18,8 +18,8 @@ function GlobalStyles() {
             font-size: 1.25em;
           }
           margin: 0;
-          background: ${theme.colors.bg};
-          color: ${theme.colors.txt};
+          background: #231d24;
+          color: #fff;
           font-family: "Montserrat", sans-serif, "Abril Fatface", cursive;
         }
         #root {

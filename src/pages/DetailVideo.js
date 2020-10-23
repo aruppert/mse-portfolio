@@ -19,7 +19,7 @@ import {
 
 const VideoLink = styled.a`
   display: block;
-  color: ${(props) => props.theme.colors.sec};
+  color: var(--dark-sec);
 `;
 
 export default function DetailVideo() {
@@ -81,7 +81,7 @@ export default function DetailVideo() {
             rituals of the turkish-islamic Community in Cologne.
             <VideoLink
               target="_blank"
-              rel="noreferrer"
+              rel="noreferrer noopener"
               href="https://vimeo.com/135182937"
             >
               Here you find a summary.

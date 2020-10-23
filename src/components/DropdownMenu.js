@@ -2,23 +2,6 @@ import React from "react";
 import styled from "@emotion/styled";
 import { Link } from "react-router-dom";
 
-const Container = styled("div")`
-  position: absolute;
-  display: flex;
-  flex-flow: column;
-  justify-content: center;
-  align-items: center;
-  display: none;
-  width: 8.5em;
-  background: #fff;
-`;
-
-const Items = styled(Link)`
-  align-self: flex-start;
-  color: ${(props) => props.theme.colors.bg};
-  text-decoration: none;
-`;
-
 export default function DropdownMenu() {
   function loseFocus() {
     document.activeElement.blur();
@@ -40,3 +23,20 @@ export default function DropdownMenu() {
     </Container>
   );
 }
+
+const Container = styled.div`
+  position: absolute;
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  display: none;
+  width: 8.5em;
+  background: var(--dark-pri);
+`;
+
+const Items = styled(Link)`
+  align-self: flex-start;
+  color: var(--dark-bg);
+  text-decoration: none;
+`;
