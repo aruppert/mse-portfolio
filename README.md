@@ -8,7 +8,7 @@ This websites acts as a digital portfolio of Miriam's work. It's design and conc
 
 ## Motivation
 
-This is my first cooperation with a designer and first website development which got properly released. It's not part of any course work. It was really interesting to totally focus on the developing part of the creational process and deliver a product as close as possible to Miriam's vision and wishes.
+This is my first cooperation with a designer and fist website development which got properly released. It's not part of any educational course environment. It was really interesting to totally focus on the developing part of the creational process and deliver a product as close as possible to Miriam's vision and wishes.
 
 ## Tech/framework highlights
 
@@ -84,7 +84,7 @@ email=<YOUR.EMAIL.ADDRESS@GMAIL.COM>
 password=<YOUR.PASSWORD>
 ```
 
-Note: The website doesn’t save, share or otherwise endangers you login data if you chose to try it out. But as it is required to write down your login data in an unencrypted fashion, this still is a potential dangerous. To be totally safe, I strongly advise to create a new gmail account for this or use an unimportant one (e.g. your account for spam mails).
+Note: The website doesn’t save, share or otherwise endangers you login data if you chose to try this. But as it is required to write down your login data in an unencrypted fashion, this still is a potentially dangerous. **To be totally safe, I strongly recommend to create a new gmail account for this** or use an unimportant one (e.g. your account for spam mails).
 
 ## How to start
 
