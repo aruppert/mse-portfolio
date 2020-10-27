@@ -1,74 +1,112 @@
 # Portfolio for Miriam S. Exner
 
-A great designer with many talents. Stay tuned...
+Miriam S. Exner is great designer with experience in UX/UI - web design, photography, videography and graphic design. Check out the current preview here https://mse.alexanderruppert.com/ [or find a less frequently updated version here: https://www.miriam-exner-design.de/ (Some features might be missing)]
 
----
+## Description
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This websites acts as a digital portfolio of Miriam's work. It's design and conception was made by Miriam and I developed her idea in code.
 
-## Available Scripts
+## Motivation
 
-In the project directory, you can run:
+This is my first cooperation with a designer and first website development which got properly released. It's not part of any course work. It was really interesting to totally focus on the developing part of the creational process and deliver a product as close as possible to Miriam's vision and wishes.
 
-### `npm start`
+## Tech/framework highlights
 
-Runs the app in the development mode.<br />
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+<b>Built mainly with </b>
 
-The page will reload if you make edits.<br />
-You will also see any lint errors in the console.
+- React
+- React-Router
+- Emotion
+- PropTypes
+- Node.js
+- Express
+- Nodemailer
+- npm
 
-### `npm test`
+## Features
 
-Launches the test runner in the interactive watch mode.<br />
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+General:
+- Get an overview of the designers work
+- Learn more about the designer in short teaser texts
+- Check out the ‘About me’-section to get a closer look
+- Browse through her work with image carousels
+- Follow external links to her work by clicking on some images
+- Use the contact form to send an email to the designer
+- Find a detailed overview of each working field on subpages
 
-### `npm run build`
 
-Builds the app for production to the `build` folder.<br />
-It correctly bundles React in production mode and optimizes the build for the best performance.
+## Code Example
 
-The build is minified and the filenames include the hashes.<br />
-Your app is ready to be deployed!
+```
+  const { register, errors } = useForm({
+    mode: "onBlur",
+  });
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+  const sendEmail = (event) => {
+    event.preventDefault();
+    if (state.name && state.email && state.message) {
+      setLoading(true);
+      axios
+        .post("/send", { ...state })
+        .then((response) => {
+          setResult(response.data);
+          setState({
+            name: "",
+            email: "",
+            subject: "",
+            message: "",
+            tel: "",
+          });
+        })
+        .catch(() => {
+          setResult({
+            success: false,
+            message: "Something went wrong. Reload and try again later",
+          });
+        });
+    }
+  };
+```
 
-### `npm run eject`
+## Installation
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Clone the repo. Run:
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+```
+ npm install
+```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+If you like to test the contact form, you need a gmail account. Please create a file in the root directory called “.env” with the following content (replacing the <PLACEHOLDERS> with you personal login):
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
+```
+email=<YOUR.EMAIL.ADDRESS@GMAIL.COM>
+password=<YOUR.PASSWORD>
+```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Note: The website doesn’t save, share or otherwise endangers you login data if you chose to try it out. But as it is required to write down your login data in an unencrypted fashion, this still is a potential dangerous. To be totally safe, I strongly advise to create a new gmail account for this or use an unimportant one (e.g. your account for spam mails).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## How to start
 
-### Code Splitting
+To just preview the website run:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
+```
+npm run start
+```
 
-### Analyzing the Bundle Size
+To preview the website and try the contact form with your own account (see above):
+Open two terminals.
+In one run:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
+```
+npm run server
+```
 
-### Making a Progressive Web App
+And in the other:
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
+```
+npm run start
+```
 
-### Advanced Configuration
 
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
+The app should start either way in your browser (usually on http://localhost:3000)
