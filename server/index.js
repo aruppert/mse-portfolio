@@ -2,10 +2,14 @@ require("dotenv").config();
 const path = require("path");
 const express = require("express");
 const transporter = require("./config");
+const compression = require("compression");
 
 const app = express();
 
 const buildPath = path.join(__dirname, "..", "build");
+
+app.use(compression());
+
 app.use(express.json());
 app.use(express.static(buildPath));
 
