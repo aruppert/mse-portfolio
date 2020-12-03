@@ -40,10 +40,10 @@ export default function SliderStartpage() {
             <SlideImgWrapper>
               {slide.link ? (
                 <a href={slide.link} target="_blank" rel="noopener noreferrer">
-                  <SlideImg src={slide.src} />
+                  <SlideImg src={slide.src} alt={slide.title} />
                 </a>
               ) : (
-                <SlideImg src={slide.src} />
+                <SlideImg src={slide.src} alt={slide.title} />
               )}
             </SlideImgWrapper>
             <SlideLabel>{slide.label}</SlideLabel>

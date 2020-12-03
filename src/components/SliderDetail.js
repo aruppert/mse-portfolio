@@ -37,12 +37,22 @@ export default function SliderDetail({
             <Slide key={slide.id}>
               {slide.link ? (
                 <a href={slide.link} target="_blank" rel="noopener noreferrer">
-                  <SlideImg src={slide.src} />
+                  <SlideImg
+                    src={slide.src}
+                    alt={title + " image No. " + slide.id}
+                  />
                 </a>
               ) : imagestyle === "contain" ? (
-                <SlideImg src={slide.src} style={{ "object-fit": "contain" }} />
+                <SlideImg
+                  src={slide.src}
+                  style={{ "object-fit": "contain" }}
+                  alt={title + " image No. " + slide.id}
+                />
               ) : (
-                <SlideImg src={slide.src} />
+                <SlideImg
+                  src={slide.src}
+                  alt={title + " image No. " + slide.id}
+                />
               )}
             </Slide>
           ))}
