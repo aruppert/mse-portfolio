@@ -137,6 +137,7 @@ export default function Contact() {
         />
         <SubmitButton
           type="submit"
+          aria-label="Submit button fot contact form"
           disabled={loading || !state.name || !state.message || !state.email}
         >
           <ActionIcon />

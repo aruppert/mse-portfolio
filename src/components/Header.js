@@ -44,19 +44,30 @@ export default function Header() {
   return (
     <>
       <Headerbar>
-        <LogoLink to="/">
+        <LogoLink to="/" aria-label="Link to home">
           <img src={logo} alt="Logo" />
         </LogoLink>
         <ResponsivePlaceholder />
         <Navbar>
-          <WorkWrapper pathname={pathname}>
+          <WorkWrapper
+            pathname={pathname}
+            aria-label="Button for Dropdown menu"
+          >
             Work.
             <DropdownMenu />
           </WorkWrapper>
-          <AboutLink pathname={pathname} to="/aboutMe">
+          <AboutLink
+            pathname={pathname}
+            to="/aboutMe"
+            aria-label="Link to about me section"
+          >
             About me.
           </AboutLink>
-          <ContactLink pathname={pathname} to="/contact">
+          <ContactLink
+            pathname={pathname}
+            to="/contact"
+            aria-label="Link to contact section"
+          >
             Contact.
           </ContactLink>
         </Navbar>
