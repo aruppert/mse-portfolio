@@ -39,7 +39,12 @@ export default function SliderStartpage() {
             </SlideYearWrapper>
             <SlideImgWrapper>
               {slide.link ? (
-                <a href={slide.link} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={slide.link}
+                  aria-label={slide.title}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SlideImg src={slide.src} alt={slide.title} />
                 </a>
               ) : (

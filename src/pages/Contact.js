@@ -74,7 +74,11 @@ export default function Contact() {
       <ContactDetails>M. 0178 764 16 68</ContactDetails>
       <ContactDetails>
         E.{" "}
-        <a href="mailto:exner.miriam@gmail.com" type="email">
+        <a
+          href="mailto:exner.miriam@gmail.com"
+          type="email"
+          aria-label="Mail to Link"
+        >
           exner.miriam@gmail.com
         </a>
       </ContactDetails>
