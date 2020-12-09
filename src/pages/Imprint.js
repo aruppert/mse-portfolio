@@ -18,7 +18,9 @@ export default function Imprint() {
         Telefon: 01787641668
         <br />
         E-Mail:{" "}
-        <a href="mailto:exner.miriam@gmail.com">exner.miriam@gmail.com</a>
+        <a href="mailto:exner.miriam@gmail.com" aria-label="Mail to Link">
+          exner.miriam@gmail.com
+        </a>
         <br />
       </p>
       <p>
@@ -27,13 +29,17 @@ export default function Imprint() {
           href="https://github.com/aruppert"
           target="_blank"
           rel="noopener noreferrer"
+          aria-label="Github Profil of A. Ruppert"
         >
           GitHub-Profil
         </a>
       </p>
       <p>
         Quelle:{" "}
-        <a href="https://www.juraforum.de/impressum-generator/">
+        <a
+          href="https://www.juraforum.de/impressum-generator/"
+          aria-label="JuraForum.de"
+        >
           Impressum Vorlage von JuraForum.de
         </a>
       </p>
@@ -427,6 +433,7 @@ export default function Imprint() {
             href="https://adssettings.google.com/authenticated"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Google authentificator"
           >
             https://adssettings.google.com/authenticated
           </a>
@@ -439,8 +446,9 @@ export default function Imprint() {
             href="https://www.youtube.com/t/terms"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Terms of youtube"
           >
-            https://www.youtube.com/t/terms
+            > https://www.youtube.com/t/terms
           </a>
           &nbsp;und in der Datenschutzerkl&auml;rung f&uuml;r Werbung von Google
           unter&nbsp;
@@ -448,8 +456,9 @@ export default function Imprint() {
             href="https://policies.google.com/technologies/ads"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Ad terms of google"
           >
-            https://policies.google.com/technologies/ads
+            > https://policies.google.com/technologies/ads
           </a>
           &nbsp;finden Sie weitere Informationen zur
           <br />
@@ -463,8 +472,9 @@ export default function Imprint() {
             href="https://policies.google.com/privacy"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="privacy policy of google"
           >
-            https://policies.google.com/privacy
+            > https://policies.google.com/privacy
           </a>
           .<br />
           <br />
@@ -618,7 +628,10 @@ export default function Imprint() {
       <strong>Stand: 17.10.2020</strong>
       <p>
         Quelle:{" "}
-        <a href="https://www.juraforum.de/datenschutzerklaerung-muster/">
+        <a
+          href="https://www.juraforum.de/datenschutzerklaerung-muster/"
+          aria-label="Datenschutzerklärung von Juraforum.de"
+        >
           Datenschutzerklärung von Juraforum.de
         </a>
       </p>

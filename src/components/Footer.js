@@ -5,7 +5,9 @@ import { Link } from "react-router-dom";
 export default function Footer() {
   return (
     <Navbar>
-      <Navbutton to="/imprint">Impressum.</Navbutton>
+      <NavLink to="/imprint" aria-label="Link to the imprint">
+        Impressum.
+      </NavLink>
     </Navbar>
   );
 }
@@ -17,7 +19,7 @@ const Navbar = styled.footer`
   font-weight: 400;
 `;
 
-const Navbutton = styled(Link)`
+const NavLink = styled(Link)`
   text-decoration: none;
   color: var(--dark-pri);
 `;

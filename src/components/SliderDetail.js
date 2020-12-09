@@ -36,7 +36,12 @@ export default function SliderDetail({
           {data.map((slide) => (
             <Slide key={slide.id}>
               {slide.link ? (
-                <a href={slide.link} target="_blank" rel="noopener noreferrer">
+                <a
+                  href={slide.link}
+                  aria-label={title + " image No. " + slide.id}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
                   <SlideImg
                     src={slide.src}
                     alt={title + " image No. " + slide.id}
