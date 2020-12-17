@@ -13,6 +13,14 @@ app.use(compression());
 app.use(express.json());
 app.use(express.static(buildPath));
 
+app.get("/*", function (req, res) {
+  res.sendFile(path.join(__dirname, "../build/index.html"), function (err) {
+    if (err) {
+      res.status(500).send(err);
+    }
+  });
+});
+
 app.post("/send", (req, res) => {
   try {
     const mailOptions = {
