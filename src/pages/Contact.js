@@ -71,7 +71,7 @@ export default function Contact() {
     <Container>
       <ContactSVGstyled />
       <Name>Miriam Exner</Name>
-      <ContactDetails>M. 0178 764 16 68</ContactDetails>
+      {/* <ContactDetails>M. 0178 764 16 68</ContactDetails> */}
       <ContactDetails>
         E.{" "}
         <a
@@ -82,7 +82,7 @@ export default function Contact() {
           exner.miriam@gmail.com
         </a>
       </ContactDetails>
-      {loading && !result && (
+      {/* {loading && !result && (
         <LoadingMessage>Sending form... please wait.</LoadingMessage>
       )}
       {result && (
@@ -143,7 +143,7 @@ export default function Contact() {
           <ActionIcon />
           Send
         </SubmitButton>
-      </Form>
+      </Form> */}
     </Container>
   );
 }
