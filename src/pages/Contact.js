@@ -71,7 +71,7 @@ export default function Contact() {
     <Container>
       <ContactSVGstyled />
       <Name>Miriam Exner</Name>
-      <ContactDetails>M. 0178 764 16 68</ContactDetails>
+//       <ContactDetails>M. 0178 764 16 68</ContactDetails>
       <ContactDetails>
         E.{" "}
         <a
@@ -82,68 +82,68 @@ export default function Contact() {
           exner.miriam@gmail.com
         </a>
       </ContactDetails>
-      {loading && !result && (
-        <LoadingMessage>Sending form... please wait.</LoadingMessage>
-      )}
-      {result && (
-        <ResultMessage result={result.success}>{result.message}</ResultMessage>
-      )}
-      <Form onSubmit={sendEmail}>
-        <NameInput
-          ref={register({
-            required: true,
-            minLength: 2,
-            maxLength: 200,
-          })}
-          type="text"
-          name="name"
-          value={state.name}
-          placeholder="Name *"
-          errors={errors}
-          onChange={onInputChange}
-        />
-        <MiscInput
-          type="text"
-          name="subject"
-          value={state.subject}
-          placeholder="Subject"
-          onChange={onInputChange}
-        />
-        <EmailInput
-          ref={register({
-            required: true,
-            validate: (input) => isEmail(input),
-          })}
-          type="email"
-          name="email"
-          value={state.email}
-          placeholder="E-Mail *"
-          errors={errors}
-          onChange={onInputChange}
-        />
-        <MiscInput
-          name="tel"
-          placeholder="Telefon"
-          value={state.tel}
-          onChange={onInputChange}
-        />
-        <MessageInput
-          ref={register({ required: true, minLength: 2, maxLength: 10000 })}
-          name="message"
-          placeholder="Message *"
-          errors={errors}
-          value={state.message}
-          onChange={onInputChange}
-        />
-        <SubmitButton
-          type="submit"
-          aria-label="Submit button fot contact form"
-          disabled={loading || !state.name || !state.message || !state.email}
-        >
-          <ActionIcon />
-          Send
-        </SubmitButton>
-      </Form>
+//       {loading && !result && (
+//         <LoadingMessage>Sending form... please wait.</LoadingMessage>
+//       )}
+//       {result && (
+//         <ResultMessage result={result.success}>{result.message}</ResultMessage>
+//       )}
+//       <Form onSubmit={sendEmail}>
+//         <NameInput
+//           ref={register({
+//             required: true,
+//             minLength: 2,
+//             maxLength: 200,
+//           })}
+//           type="text"
+//           name="name"
+//           value={state.name}
+//           placeholder="Name *"
+//           errors={errors}
+//           onChange={onInputChange}
+//         />
+//         <MiscInput
+//           type="text"
+//           name="subject"
+//           value={state.subject}
+//           placeholder="Subject"
+//           onChange={onInputChange}
+//         />
+//         <EmailInput
+//           ref={register({
+//             required: true,
+//             validate: (input) => isEmail(input),
+//           })}
+//           type="email"
+//           name="email"
+//           value={state.email}
+//           placeholder="E-Mail *"
+//           errors={errors}
+//           onChange={onInputChange}
+//         />
+//         <MiscInput
+//           name="tel"
+//           placeholder="Telefon"
+//           value={state.tel}
+//           onChange={onInputChange}
+//         />
+//         <MessageInput
+//           ref={register({ required: true, minLength: 2, maxLength: 10000 })}
+//           name="message"
+//           placeholder="Message *"
+//           errors={errors}
+//           value={state.message}
+//           onChange={onInputChange}
+//         />
+//         <SubmitButton
+//           type="submit"
+//           aria-label="Submit button fot contact form"
+//           disabled={loading || !state.name || !state.message || !state.email}
+//         >
+//           <ActionIcon />
+//           Send
+//         </SubmitButton>
+//       </Form>
     </Container>
   );
 }
