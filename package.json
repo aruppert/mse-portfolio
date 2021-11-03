@@ -21,7 +21,7 @@
     "react-scripts": "^3.4.3",
     "react-slick": "^0.27.1",
     "slick-carousel": "^1.8.1",
-    "validator": "^13.1.17"
+    "validator": "^13.7.0"
   },
   "scripts": {
     "start": "react-scripts start",
